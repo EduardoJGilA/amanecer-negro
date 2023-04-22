@@ -21,6 +21,9 @@
     {
       "name": "Kindred",
       "source": "Amanecer Negro",
+      "creatureTypes": [
+				"fey"
+			],
       "ability": [
         {
           "dex": 2,
@@ -30,10 +33,9 @@
       "size": ["M"],
       "speed": {
         "walk": 30,
-        "climb": 30
+        "climb": true
       },
       "darkvision": 60,
-      "traitTags": [""],
       "weaponProficiencies": [{}],
       "languageProficiencies": [
         {
@@ -116,7 +118,6 @@
           "type": "entries"
         }
       ],
-      "fluff": {},
       "heightAndWeight": {
         "baseHeight": 56,
         "heightMod": "2d8",
