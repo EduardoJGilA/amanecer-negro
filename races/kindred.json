@@ -1,0 +1,128 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "kindred",
+        "abbreviation": "AN",
+        "full": "Kindred",
+        "authors": ["MiGaki"],
+        "convertedBy": ["MiGaki"],
+        "version": "0.1",
+        "color": "ffffff",
+        "url": "",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "wip",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "race": [
+    {
+      "name": "Kindred",
+      "source": "Amanecer Negro",
+      "ability": [
+        {
+          "dex": 2,
+          "wis": 1
+        }
+      ],
+      "size": ["M"],
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "darkvision": 60,
+      "traitTags": [""],
+      "weaponProficiencies": [{}],
+      "languageProficiencies": [
+        {
+          "": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "": true
+        }
+      ],
+      "entries": [
+        "As a Kindred, your character has the following traits:",
+        {
+          "name": "Age",
+          "entries": [
+            "Your age is affected by your race of birth, if your race of birth already dictates your age your life expectancy will be that, otherwise your life expectancy will be 1000 years."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alignment",
+          "entries": [
+            "Your alignment is determined by your race of birth, but kinships are by nature neutral."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Size",
+          "entries": [
+            "Your size is determined by your race, but kin are usually medium"
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Night Vision",
+          "entries": [
+            "You can see dim light within 60 feet of you as bright light, and in the dark as dim light, your wolf supports you, you can see colors and what you need, time as day, always and when there is dim light."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Death mark.",
+          "entries": [
+            "When starting a fight you can choose a target which will be marked by you, this target will receive an extra point of damage in each of your attacks, if the target dies you gain a stack, every 4 targets increase the range of your weapon by 5 feet and the damage is increased by one more point (for example if you have 16 marks in a combat, your weapon gains 20 more feet of range and 4 more damage to the marked target), this counter is reset at the end of the combat."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Wolf.",
+          "entries": [
+            "The wolf can attack a marked target, it has its free action but the range of this attack is 20 feet, the wolf does {@damage 1d4} + your dexterity modifier. After the wolf has downed 4 enemies, you regain {@damage 1d8} + your Constitution modifier in hit points."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Keen Senses",
+          "entries": ["You have proficiency in the {@skill Perception} skill."],
+          "type": "entries"
+        },
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "The lamb sighed.",
+          "entries": [
+            "When you are reduced to 0 hit points but not killed outright, you may drop to 1 hit point instead. You can use this ability a number of times equal to your Constitution modifier."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        }
+      ],
+      "fluff": {},
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d8",
+        "baseWeight": 90,
+        "weightMod": "1d4"
+      }
+    }
+  ]
+}
