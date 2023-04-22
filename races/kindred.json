@@ -27,6 +27,7 @@
       "languageProficiencies": [
         {
             "any": 1,
+            "sylvan": true,
             "common": true
         }
       ],
@@ -87,7 +88,7 @@
         {
           "name": "Wolf.",
           "entries": [
-            "The wolf can attack a marked target, it has its free action but the range of this attack is 20 feet, the wolf does {@damage 1d4} + your dexterity modifier. After the wolf has downed 4 enemies, you regain {@damage 1d8} + your Constitution modifier in hit points."
+            "The wolf is your guardian spirit, he is the one who advises you, he has been with you all your life and sleeps inside you, this wolf only speaks one language and he is a Sylvan. The wolf can attack a marked target, it has its free action but the range of this attack is 20 feet, the wolf does {@damage 1d4} + your dexterity modifier. After the wolf has downed 4 enemies, you regain {@damage 1d8} + your Constitution modifier in hit points."
           ],
           "type": "entries"
         },
@@ -113,7 +114,7 @@
         {
           "name": "Languages",
           "entries": [
-            "You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+            "You can read, write, and speak the language of your race of birth, Common and also Sylvan."
           ],
           "type": "entries"
         }
