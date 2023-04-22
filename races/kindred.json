@@ -23,6 +23,17 @@
       "creatureTypes": [
 				"fey"
 			],
+      "languageProficiencies": [
+        {
+            "any": 1,
+            "common": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+            "perception": true
+        }
+      ],
       "ability": [
         {
           "dex": 2,
@@ -35,17 +46,6 @@
         "climb": true
       },
       "darkvision": 60,
-      "weaponProficiencies": [{}],
-      "languageProficiencies": [
-        {
-          "": true
-        }
-      ],
-      "skillProficiencies": [
-        {
-          "": true
-        }
-      ],
       "entries": [
         "As a Kindred, your character has the following traits:",
         {
@@ -117,6 +117,26 @@
           "type": "entries"
         }
       ],
+      "fluff": {
+        "entries": [
+            {
+                "type": "entries",
+                "name": "Kindred",
+                "entries": [
+                    "Death is something recurring in the world, most mortal people of innumerable races associate it with what has been death, the so-called soul harvester, a skeletal monster with a large hood that covers its body and a huge scythe, this may be an everyday interpretation, something normal, but not for the true reaper of souls. The kindred are creatures from different places, some associate them with the fey, others with the shadowfell, some others with hell and others with heaven, they are a remarkable race, but no one knows their true nature. The kindred are two creatures that have combined their souls, a wolf and its carrier, whether called a sheep, rabbit or some animal associated with its behavior, the wolf is the guardian spirit of the carrier, it is in charge of protecting it until the day it dies. death where his soul will become a new blinder of souls, becoming a hunter, the wolf can follow him or wait for someone else, but when the kindred die they hunt people by collecting their souls and deciding where they will stop."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "type": "image",
+                "href": {
+                    "type": "external",
+                    "url": "https://images4.alphacoders.com/648/648862.jpg"
+                }
+            }
+        ]
+    },
       "heightAndWeight": {
         "baseHeight": 56,
         "heightMod": "2d8",
