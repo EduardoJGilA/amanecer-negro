@@ -26,9 +26,9 @@
 			],
       "languageProficiencies": [
         {
-            "any": 1,
-            "sylvan": true,
-            "common": true
+          "sylvan": true,
+          "common": true,
+          "any": 1
         }
       ],
       "skillProficiencies": [
