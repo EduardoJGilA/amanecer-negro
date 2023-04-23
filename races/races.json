@@ -154,7 +154,7 @@
       }
     },
     {
-			"name": "Pureblood vampire.",
+			"name": "Pureblood vampire",
 			"source": "AN",
 			"ability": [
 				{
@@ -264,7 +264,7 @@
 			"languageProficiencies": [
 				{
 					"common": true,
-					"other": true
+					"any": 1
 				}
         
 			],
