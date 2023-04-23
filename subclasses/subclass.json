@@ -36,11 +36,11 @@
     "subclassFeature": [
         {
             "name": "Bloody tradition",
-            "source": "AN",
+            "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "AN",
+            "subclassSource": "RBlood",
             "level": 3,
             "header": 1,
             "entries": [
@@ -55,7 +55,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "AN",
+            "subclassSource": "RBlood",
             "level": 3,
             "header": 1,
             "entries": [
@@ -70,7 +70,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "AN",
+            "subclassSource": "RBlood",
             "level": 9,
             "header": 2,
             "entries": [
@@ -84,7 +84,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "AN",
+            "subclassSource": "RBlood",
             "level": 13,
             "header": 2,
             "entries": [
@@ -97,7 +97,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "AN",
+            "subclassSource": "RBlood",
             "level": 17,
             "header": 2,
             "entries": [
