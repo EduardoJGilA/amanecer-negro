@@ -25,7 +25,8 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue of blood|Rogue||Rogue Blood|Rogue of blood|3",
+                "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3",
+                "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3",
                 "Changing The Odds|Rogue||Rogue Blood|Rogue of blood|9",
                 "Versatile projectile|Rogue||Rogue Blood|Rogue of blood|13",
                 "Hemorrhage|Rogue||Rogue Blood|Rogue of blood|17"
@@ -33,27 +34,6 @@
         }
     ],
     "subclassFeature": [
-        {
-            "name": "Rogue of blood",
-            "source": "Rogue of blood",
-            "className": "Rogue",
-            "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
-            "subclassSource": "Rogue of blood",
-            "level": 3,
-            "header": 1,
-            "entries": [
-                "Some rogues enhance their fine-honed skills of stealth and agility with magic, learning the bard secrets of preformance. These rogues include burglars, pranksters, mischief-makers, and a significant number of adventurers.",
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3"
-                },
-                {
-                    "type": "refSubclassFeature",
-                    "subclassFeature": "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3"
-                }
-            ]
-        },
         {
             "name": "Bloody tradition",
             "source": "Rogue of blood",
