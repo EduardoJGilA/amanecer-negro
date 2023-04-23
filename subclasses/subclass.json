@@ -20,16 +20,16 @@
     "subclass": [
         {
             "name": "Rogue of blood",
-            "source": "AN",
+            "source": "Rogue of blood",
             "shortName": "RBlood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Bloody tradition|Rogue||RBlood|AN|3",
-                "Crimson Draft|Rogue||RBlood|AN|3",
-                "Changing The Odds|Rogue||RBlood|AN|9",
-                "Versatile projectile|Rogue||RBlood|AN|13",
-                "Hemorrhage|Rogue||RBlood|AN|17"
+                "Bloody tradition|Rogue||RBlood|Rogue of blood|3",
+                "Crimson Draft|Rogue||RBlood|Rogue of blood|3",
+                "Changing The Odds|Rogue||RBlood|Rogue of blood|9",
+                "Versatile projectile|Rogue||RBlood|Rogue of blood|13",
+                "Hemorrhage|Rogue||RBlood|Rogue of blood|17"
             ]
         }
     ],
@@ -40,7 +40,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "RBlood",
+            "subclassSource": "Rogue of blood",
             "level": 3,
             "header": 1,
             "entries": [
@@ -51,11 +51,11 @@
         },
         {
             "name": "Crimson Draft",
-            "source": "AN",
+            "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "RBlood",
+            "subclassSource": "Rogue of blood",
             "level": 3,
             "header": 1,
             "entries": [
@@ -66,11 +66,11 @@
         },
         {
             "name": "Changing The Odds",
-            "source": "AN",
+            "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "RBlood",
+            "subclassSource": "Rogue of blood",
             "level": 9,
             "header": 2,
             "entries": [
@@ -80,11 +80,11 @@
         },
         {
             "name": "Versatile projectile",
-            "source": "AN",
+            "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "RBlood",
+            "subclassSource": "Rogue of blood",
             "level": 13,
             "header": 2,
             "entries": [
@@ -93,11 +93,11 @@
         },
         {
             "name": "Hemorrhage",
-            "source": "AN",
+            "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "RBlood",
-            "subclassSource": "RBlood",
+            "subclassSource": "Rogue of blood",
             "level": 17,
             "header": 2,
             "entries": [
