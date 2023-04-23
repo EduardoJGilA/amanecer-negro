@@ -25,6 +25,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
+                "Rogue Of Blood|Rogue||Rogue Blood|Rogue of blood|3",
                 "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3",
                 "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3",
                 "Changing The Odds|Rogue||Rogue Blood|Rogue of blood|9",
@@ -34,6 +35,20 @@
         }
     ],
     "subclassFeature": [
+        {
+            "name": "Rogue Of Blood",
+            "source": "Rogue of blood",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Rogue Blood",
+            "subclassSource": "Rogue of blood",
+            "level": 3,
+            "entries": [
+                "Some rogues prefer to hone their skill and precision, others hone their silver tongue, but you... You are special, your blood has been blessed (or cursed) by some kind of force that allows you to use it as you please, or perhaps just maybe, you learned it as if you were a magician, from some book, anyway, you are special.",
+
+                "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift"
+            ]
+        },
         {
             "name": "Bloody tradition",
             "source": "Rogue of blood",
