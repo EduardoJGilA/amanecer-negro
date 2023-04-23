@@ -284,6 +284,152 @@
 					"ability": "cha"
 				}
 			]
+		},
+    {
+			"name": "Qilin",
+			"source": "AN",
+			"ability": [
+				{
+					"int": 2,
+					"dex": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": 35,
+			"darkvision": 60,
+			"entries": [
+				"As a Vampire, your character has the following traits:",
+				{
+					"name": "Age",
+					"entries": [
+						"Your life expectancy will be 1000 years."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Qilin are usually good neutrals, however they can be of any alignment except chaotic neutral. Those who choose to be from an Evil alignment are fewer in number than those who choose to be from the Neutral or Good alignments, but there have been such cases in Qilin's history."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Your size is Medium."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"You can move 35 feet, in his dragon form you can fly 60 feet."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see dim light within 60 feet of you as bright light, and in the dark as dim light."
+					],
+					"type": "entries"
+				},
+				{
+          "name": "Keen Senses",
+          "entries": ["You have proficiency in the {@skill Perception} skill."],
+          "type": "entries"
+        },
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Natural Weapon",
+          "entries": [
+            "In your natural form your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          ],
+          "type": "entries"
+        },
+        {
+          "type": "entries",
+          "name": "Breath Weapon",
+          "entries": [
+            "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+            "When you use your breath weapon, each creature in the area of exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 2d6} radiant damage on a failed save, and half as much damage on a successful one. The damage increases by an additional {@dice 1d6} at 5th level, 8th level, 11th level, and 17th level.",
+            "After you use your breath weapon, you can't use it again until it's recharged. At the start of each of your turns, provided you already used your breath weapon, you can roll a {@dice d6}. On a 6, you regain the use of your breath weapon. Otherwise, your breath weapon recharges 1 minute after you used it."
+          ]
+        },
+				{
+					"name": "Magical Qilin",
+					"entries": [
+						"You know the cantrip {@spell dancing lights} and can cast it at will. At 3rd level, you can cast the {@spell charm person} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so after you finish a long rest. Intelligence is your spellcasting ability for these spells."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read and write in common, as well as in sylvan"
+					],
+					"type": "entries"
+				}
+			],
+      "fluff": {
+        "entries": [
+            {
+                "type": "entries",
+                "name": "Qilin",
+                "entries": [
+                    "Like the ancient elves, the Qilin come from the fey, they are creatures that understand humanoid societies because their status in it is more than notorious, the Qilin normally play an important political or economic role in society wherever they step, it is normal for the Qilin They will not have pure blood children, since their genetics are not adapted, but it is a miracle to see when a pure Qilin is born from a mixture.",
+
+                    "They delight in the arts, particularly puzzles and storytelling, and draw on ancestral clans, drawing their intelligence from both the living and spirits. Strategists and scholars, Qilin is an excellent magician and artificer. It is not uncommon for one to seek some important position in society, while the few born with white scales and clear eyes are often defined in oracles."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "type": "image",
+                "href": {
+                    "type": "external",
+                    "url": "https://i.imgur.com/MidhYoh.jpg"
+                }
+            }
+        ]
+      },
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d8",
+        "baseWeight": 90,
+        "weightMod": "1d4"
+      },
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true
+				}
+        
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"dancing lights#c"
+						],
+						"3": [
+							"charm person"
+						],
+						"5": [
+							"alter self"
+						]
+					},
+					"ability": "int"
+				}
+			]
 		}
   ]
 }

@@ -21,14 +21,14 @@
         {
             "name": "Rogue of blood",
             "source": "Rogue of blood",
-            "shortName": "Rogue Blood",
+            "shortName": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue of blood|Rogue||Rogue Blood|Rogue of blood|3",
-                "Changing The Odds|Rogue||Rogue Blood|Rogue of blood|9",
-                "Versatile projectile|Rogue||Rogue Blood|Rogue of blood|13",
-                "Hemorrhage|Rogue||Rogue Blood|Rogue of blood|17"
+                "Rogue of blood|Rogue||Rogue of blood|Rogue of blood|3",
+                "Changing The Odds|Rogue||Rogue of blood|Rogue of blood|9",
+                "Versatile projectile|Rogue||Rogue of blood|Rogue of blood|13",
+                "Hemorrhage|Rogue||Rogue of blood|Rogue of blood|17"
             ]
         }
     ],
@@ -38,7 +38,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 3,
             "header": 1,
@@ -47,11 +47,11 @@
                 "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3"
+                    "subclassFeature": "Bloody tradition|Rogue||Rogue of blood|Rogue of blood|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3"
+                    "subclassFeature": "Crimson Draft|Rogue||Rogue of blood|Rogue of blood|3"
                 }
             ]
         },
@@ -60,7 +60,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 3,
             "header": 1,
@@ -75,7 +75,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 3,
             "header": 1,
@@ -90,7 +90,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 9,
             "header": 2,
@@ -104,7 +104,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 13,
             "header": 2,
@@ -117,7 +117,7 @@
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue Blood",
+            "subclassShortName": "Rogue of blood",
             "subclassSource": "Rogue of blood",
             "level": 17,
             "header": 2,
