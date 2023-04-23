@@ -21,7 +21,7 @@
         {
             "name": "Rogue of blood",
             "source": "AN",
-            "shortName": "Blood",
+            "shortName": "Rogue of Blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
@@ -39,10 +39,10 @@
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Blood",
+            "subclassShortName": "Rogue of Blood",
             "subclassSource": "AN",
             "level": 3,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: History, Religion, Arcana.",
 
@@ -54,10 +54,10 @@
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Blood",
+            "subclassShortName": "Rogue of Blood",
             "subclassSource": "AN",
             "level": 3,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "At 3rd level, as a bonus action, you can ready a bladed weapon or arrow/bolt/bullet to become jagged for 1 minute, to do this you must spend {@damage 1d6} of your own blood, giving the weapon a jagged-toothed appearance. If the serrated weapon hits a target in melee, the target takes {@damage 1d4} bleed damage at the start of its turn until it attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic benefits A serrated weapon that hits a ranged target has that weapon embedded in it, any attempt to remove the weapon causes massive bleed as its jagged teeth tear through flesh, it takes {@damage 1d6} slashing damage on retreat and bleeds for {@damage 1d6} damage. per turn until he attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage..",
                 "Creatures without blood are not affected by bleeding damage.",
@@ -69,10 +69,10 @@
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Blood",
+            "subclassShortName": "Rogue of Blood",
             "subclassSource": "AN",
             "level": 9,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "Starting at 9th level, you are someone who knows how to escape or enter dangerous situations, you don't want to fall into the clutches of your enemies, it's time to disappear in style. As a bonus action, you can disappear or enter with a dramatic flourish. Each creature within 10 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Charisma modifier), taking {@damage 4d10) necrotic damage on a failed save, or half as much on a successful one, you must spend {@damage 2d10) Hit Points to deal this damage.",
                 "After or before spawning in an unoccupied space that you can see within 30 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
@@ -83,10 +83,10 @@
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Blood",
+            "subclassShortName": "Rogue of Blood",
             "subclassSource": "AN",
             "level": 13,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "At 13th level, your mastery of the blood project has given you control over your opponents, if the target fails a Constitution save of DC = 8 + your proficiency bonus + your charisma modifier, the target is stunned, plus you can change the type of bleed damage to one of the following when you fill the arrow with your blood: psychic, acidic, necrotic"
             ]
@@ -96,10 +96,10 @@
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Blood",
+            "subclassShortName": "Rogue of Blood",
             "subclassSource": "AN",
             "level": 17,
-            "header": 2,
+            "header": 1,
             "entries": [
                 "At 17th level, when you deal more than 50 hit points of damage to a single creature in an attack on your turn and end up at 100 hit points or less after your attack, you can use your bonus action to force that creature to move. make a Constitution saving throw equal to 8 + your Charisma modifier + your proficiency bonus. If they fail, they are immediately down to 0 health and knocked unconscious.",
                 "You can use this feature 2 times."
