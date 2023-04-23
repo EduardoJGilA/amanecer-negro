@@ -25,9 +25,7 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue Of Blood|Rogue||Rogue Blood|Rogue of blood|3",
-                "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3",
-                "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3",
+                "Rogue of blood|Rogue||Rogue Blood|Rogue of blood|3",
                 "Changing The Odds|Rogue||Rogue Blood|Rogue of blood|9",
                 "Versatile projectile|Rogue||Rogue Blood|Rogue of blood|13",
                 "Hemorrhage|Rogue||Rogue Blood|Rogue of blood|17"
@@ -36,17 +34,24 @@
     ],
     "subclassFeature": [
         {
-            "name": "Rogue Of Blood",
+            "name": "Rogue of blood",
             "source": "Rogue of blood",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassShortName": "Rogue Blood",
             "subclassSource": "Rogue of blood",
             "level": 3,
+            "header": 1,
             "entries": [
-                "Some rogues prefer to hone their skill and precision, others hone their silver tongue, but you... You are special, your blood has been blessed (or cursed) by some kind of force that allows you to use it as you please, or perhaps just maybe, you learned it as if you were a magician, from some book, anyway, you are special.",
-
-                "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift"
+                "Some rogues enhance their fine-honed skills of stealth and agility with magic, learning the bard secrets of preformance. These rogues include burglars, pranksters, mischief-makers, and a significant number of adventurers.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bloody tradition|Rogue||Rogue Blood|Rogue of blood|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Crimson Draft|Rogue||Rogue Blood|Rogue of blood|3"
+                }
             ]
         },
         {
