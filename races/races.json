@@ -2,9 +2,9 @@
   "_meta": {
     "sources": [
       {
-        "json": "kindred",
+        "json": "races",
         "abbreviation": "AN",
-        "full": "Kindred",
+        "full": "Races Amanecer Negro",
         "authors": ["MiGaki"],
         "convertedBy": ["MiGaki"],
         "version": "0.1",
@@ -145,10 +145,8 @@
         "baseWeight": 90,
         "weightMod": "1d4"
       }
-    }
-  ],
-  "race": [
-		{
+    },
+    {
 			"name": "Dhampyr",
 			"source": "MFOV:R_Dh",
 			"ability": [
@@ -294,5 +292,5 @@
 				}
 			]
 		}
-	]
+  ]
 }
