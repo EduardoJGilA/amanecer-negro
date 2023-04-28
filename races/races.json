@@ -154,7 +154,7 @@
       }
     },
     {
-			"name": "Pureblood vampire",
+			"name": "Pureblood Vampire",
 			"source": "AN",
 			"ability": [
 				{
@@ -164,6 +164,10 @@
 			],
 			"size": [
 				"M"
+			],
+      "resist": [
+				"poison",
+        "necrotic"
 			],
 			"speed": 30,
 			"darkvision": 120,
@@ -208,6 +212,13 @@
 					"name": "Blood drinker.",
 					"entries": [
 						"Even though you are undead, you still require sustenance in the form of blood to sustain your unholy existence. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish, although this food is always tasteless and stale to you. If you go more than seven days without drinking at least one serving of blood, at midnight on the seventh day and every midnight thereafter, you suffer a level of exhaustion, which can only be removed by drinking one serving of blood. After consuming a blood ration, you regain all exhaustion levels caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Vampiric Resistance.",
+					"entries": [
+						"You have resistance to necrotic damage, you have advantage on saving throws against poison, and you have resistance against poison damage."
 					],
 					"type": "entries"
 				},
@@ -300,7 +311,7 @@
 			"speed": 35,
 			"darkvision": 60,
 			"entries": [
-				"As a Vampire, your character has the following traits:",
+				"As a Qilin, your character has the following traits:",
 				{
 					"name": "Age",
 					"entries": [

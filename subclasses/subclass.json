@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
         {
-            "json": "subclass",
+            "json": "AN",
             "abbreviation": "AN",
             "full": "Subclases Amanecer Negro",
             "authors": ["MiGaki"],
@@ -19,112 +19,363 @@
     },
     "subclass": [
         {
-            "name": "Rogue of blood",
-            "source": "Rogue of blood",
-            "shortName": "Rogue of blood",
+            "name": "Rogue Of Blood",
+            "shortName": "Blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue of blood|Rogue||Rogue of blood|Rogue of blood|3",
-                "Changing The Odds|Rogue||Rogue of blood|Rogue of blood|9",
-                "Versatile projectile|Rogue||Rogue of blood|Rogue of blood|13",
-                "Hemorrhage|Rogue||Rogue of blood|Rogue of blood|17"
+                "Rogue Of Blood|Rogue||Blood|AN|3",
+                "Changing The Odds|Rogue||Blood|AN|9",
+                "Verdapcsatile projectile|Rogue||Blood|AN|13",
+                "Hemorrhage|Rogue||Blood|AN|17"
             ]
-        }
+        },
+        {
+			"name": "Oath of the Blood",
+			"shortName": "Oath Blood",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassSpells": [
+				"bloodburn|dapc",
+				"cruorwhip|dapc",
+				"blood seal|dapc",
+				"sanguine rope|dapc",
+				"bloodsight|dapc",
+				"tides of blood|dapc",
+				"draining thread|dapc",
+				"sanguine sanctum|dapc",
+				"bloodcurse|dapc",
+				"ray of fatigue|dapc"
+			],
+            "additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"bloodburn|dapc",
+							"cruorwhip|dapc"
+						],
+						"2": [
+							"blood seal|dapc",
+							"sanguine rope|dapc"
+						],
+						"3": [
+							"blood sight|dapc",
+							"tides of blood|dapc"
+						],
+						"4": [
+							"draining thread|dapc",
+							"sanguine sanctum|dapc"
+						],
+						"5": [
+							"bloodcurse|dapc",
+							"ray of fatigue|dapc"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Blood|Paladin||Oath Blood|AN|3",
+				"Aura of Blood|Paladin||Oath Blood|AN|7",
+				"Absorb Life|Paladin||Oath Blood|AN|15",
+				"Circle of Ichor|Paladin||Oath Blood|AN|20"
+			]
+		}
     ],
     "subclassFeature": [
         {
-            "name": "Rogue of blood",
-            "source": "Rogue of blood",
+            "name": "Rogue Of Blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 3,
-            "header": 1,
             "entries": [
                 "Some rogues prefer to hone their skill and precision, others hone their silver tongue, but you... You are special, your blood has been blessed (or cursed) by some kind of force that allows you to use it as you please, or perhaps just maybe, you learned it as if you were a magician, from some book, anyway, you are special.",
                 "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bloody tradition|Rogue||Rogue of blood|Rogue of blood|3"
+                    "subclassFeature": "Crimson Draft|Rogue||Blood|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Crimson Draft|Rogue||Rogue of blood|Rogue of blood|3"
+                    "subclassFeature": "Bloody Tradition|Rogue||Blood|AN|3"
                 }
             ]
         },
         {
-            "name": "Bloody tradition",
-            "source": "Rogue of blood",
+            "name": "Bloody Tradition",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: History, Religion, Arcana.",
+                "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: {@skill History}, {@skill Religion}, {@skill Arcana}.",
 
                 "In addition, you gain 2 extra health points and 1 more health point each time you level up after level 3, representing your stamina and adaptability to your innate power."
             ]
         },
         {
             "name": "Crimson Draft",
-            "source": "Rogue of blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
+            "effects": [
+				{
+					"name": "HP Increase",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "ADD",
+							"value": "@classes.rogue.levels"
+						},
+						{
+							"key": "data.attributes.hp.max",
+							"mode": "ADD",
+							"value": "5"
+						}
+					]
+				}
+			],
             "entries": [
                 "At 3rd level, as a bonus action, you can ready a bladed weapon or arrow/bolt/bullet to become jagged for 1 minute, to do this you must spend {@damage 1d6} of your own blood, giving the weapon a jagged-toothed appearance. If the serrated weapon hits a target in melee, the target takes {@damage 1d4} bleed damage at the start of its turn until it attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic benefits A serrated weapon that hits a ranged target has that weapon embedded in it, any attempt to remove the weapon causes massive bleed as its jagged teeth tear through flesh, it takes {@damage 1d6} slashing damage on retreat and bleeds for {@damage 1d6} damage. per turn until he attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage..",
                 "Creatures without blood are not affected by bleeding damage.",
-                "At 9th level, the bleed damage upgrades to 2d4 for melee attacks (increasing the damage die he takes to {@damage 2d6). Removing a ranged weapon deals {@damage 2d6) damage and {@damage 2d6) bleed damage."
+                "At 9th level, the bleed damage upgrades to {@dice 2d4} for melee attacks (increasing the damage die he takes to {@dice 2d6}). Removing a ranged weapon deals {@dice 2d6}) damage and {@dice 2d6}) bleed damage."
             ]
         },
         {
             "name": "Changing The Odds",
-            "source": "Rogue of blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 9,
             "header": 2,
             "entries": [
-                "Starting at 9th level, you are someone who knows how to escape or enter dangerous situations, you don't want to fall into the clutches of your enemies, it's time to disappear in style. As a bonus action, you can disappear or enter with a dramatic flourish. Each creature within 10 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Charisma modifier), taking {@damage 4d10) necrotic damage on a failed save, or half as much on a successful one, you must spend {@damage 2d10) Hit Points to deal this damage.",
+                "Starting at 9th level, you are someone who knows how to escape or enter dangerous situations, you don't want to fall into the clutches of your enemies, it's time to disappear in style. As a bonus action, you can disappear or enter with a dramatic flourish. Each creature within 10 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Charisma modifier), taking {@dice 4d10} necrotic damage on a failed save, or half as much on a successful one, you must spend {@dice 2d10} Hit Points to deal this damage.",
                 "After or before spawning in an unoccupied space that you can see within 30 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
             ]
         },
         {
             "name": "Versatile projectile",
-            "source": "Rogue of blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 13,
             "header": 2,
             "entries": [
-                "At 13th level, your mastery of the blood project has given you control over your opponents, if the target fails a Constitution save of DC = 8 + your proficiency bonus + your charisma modifier, the target is stunned, plus you can change the type of bleed damage to one of the following when you fill the arrow with your blood: psychic, acidic, necrotic"
+                "At 13th level, your mastery of the blood project has given you control over your opponents, if the target fails a Constitution save of DC = 8 + your proficiency bonus + your charisma modifier, the target is {@condition stunned}, plus you can change the type of bleed damage to one of the following when you fill the arrow with your blood: psychic, acidic, necrotic"
             ]
         },
         {
             "name": "Hemorrhage",
-            "source": "Rogue of blood",
+            "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Rogue of blood",
-            "subclassSource": "Rogue of blood",
+            "subclassShortName": "Blood",
+            "subclassSource": "AN",
             "level": 17,
             "header": 2,
             "entries": [
-                "At 17th level, when you deal more than 50 hit points of damage to a single creature in an attack on your turn and end up at 100 hit points or less after your attack, you can use your bonus action to force that creature to move. make a Constitution saving throw equal to 8 + your Charisma modifier + your proficiency bonus. If they fail, they are immediately down to 0 health and knocked unconscious.",
+                "At 17th level, when you deal more than 50 hit points of damage to a single creature in an attack on your turn and end up at 100 hit points or less after your attack, you can use your bonus action to force that creature to move. make a Constitution saving throw equal to 8 + your Charisma modifier + your proficiency bonus. If they fail, they are immediately down to 0 health and knocked {@condition unconscious}.",
                 "You can use this feature 2 times."
             ]
-        }
+        },
+        {
+			"name": "Oath of the Blood",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 3,
+			"entries": [
+				"Some paladins serve gods or their dogmas, to fulfill the will to save lives, take revenge, protect their kings, destroy their enemies, but this group is only guided by force, it is thought that this group of paladins arose as a result from the discovery of a magic as old as dangerous, hemonancia, few managed to control these dogmas so that they do not consume them as well as the powers that they entail, but others who managed to adopt all this were eliminated in bloodthirsty warriors who used this to achieve their mission.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Blood|Paladin||Oath Blood|AN|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Oath Blood|AN|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin||Oath Blood|AN|3"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Blood",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Oath of the Blood feature)}",
+				"The tenets of the blood are applied very harshly, as many who strive to follow this path are unable to control their minds once exposed to the dark magic they now cast, the principles being the only thing that keeps these paladins going. like heroes.",
+				{
+					"name": "Bleed and be victorious.",
+					"type": "entries",
+					"entries": [
+						"No matter how much blood you have to shed, but you must control your impulses, you have great power, use it to help your comrades and lead them to bloody victory."
+					]
+				},
+				{
+					"name": "No negotiations",
+					"type": "entries",
+					"entries": [
+						"With your mind so close to the brink of corruption, many vile creatures (Evil Entities) will try to take advantage of you. Those creatures must die."
+					]
+				},
+				{
+					"name": "Never forget.",
+					"type": "entries",
+					"entries": [
+						"By taking this oath, you affirm that you will not give in to your cursed gift. You're not a disgusting vampire; you are a hero of the people, and you will remember it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Oath of the Blood feature)}",
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Blood Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell bloodburn|dapc}, {@spell cruorwhip|dapc}"
+						],
+						[
+							"5th",
+							"{@spell blood seal|dapc}, {@spell sanguine rope|dapc}"
+						],
+						[
+							"9th",
+							"{@spell bloodsight|dapc}, {@spell tides of blood|dapc}"
+						],
+						[
+							"13th",
+							"{@spell draining thread|dapc}, {@spell sanguine sanctum|dapc}"
+						],
+						[
+							"17th",
+							"{@spell bloodcurse|dapc}, {@spell ray of fatigue|dapc}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i (3rd-level Oath of the Blood feature)}",
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity Options.",
+				{
+					"name": "Draining Strike",
+					"type": "entries",
+					"entries": [
+						"Immediately after you deal damage to a creature with your Divine Smite ability, you can use your Channel Divinity as a bonus action and distribute hit points to creatures of your choice within 30 feet of you, which can include you. The total number of hit points you can distribute is equal to half the total damage dealt by the attack rounded down."
+					]
+				},
+				{
+					"name": "Bloody weapon.",
+					"type": "entries",
+					"entries": [
+						"As an additional action you can increase the damage of your sword, you spend {@damage 1d8} of life to give this property to your weapon filling it with its blood which increases its damage with the result of the dice, the target receives {@damage 1d4} points of piercing damage (only with the first hit that hits with this property, if you give another target this property also applies) by bleeding at the beginning of its turn until it tries to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage. The wound is so deep from his weapon that it leaves this sequel, the wound is so deep that it does not stop bleeding, since the edge is so sharp that it can tear the metal itself (if it exceeds the AC), this makes the weapon magical because your blood has that property."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Blood",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i (7th-level Oath of the Blood feature)}",
+				"Your mind is allowing itself to be guided by the pact, your blood boils, your mind is playing tricks on you, you feel how your life begins to become only the desire to murder. As an action, all creatures within 10 feet of you that you don't consider to be allies, because you managed to keep a bit of your mind, must make an Intelligence save (8 + Proficiency + Charisma Modifier), if they fail they take {@damage 1d12} psychic damage. Half of the damage you deal to creatures you can take that as temporary points. You cannot use this action until a short rest.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Absorb Life",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i (15th-level Oath of the Blood feature)}",
+				"Starting at level 15, whenever you reduce a creature to 0 through a melee weapon attack or melee spell attack, you can use your reaction to gain temporary hit points equal to your Paladin level. These temporary hit points last until you finish a long rest. As long as you have these temporary hit points, you have advantage on Constitution Saving Throws. You can use this ability a number of times equal to your Charisma Modifier (minimum 1) and regain all expended uses after finishing a long rest."
+			]
+		},
+		{
+			"name": "Circle of Ichor",
+			"source": "AN",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Oath Blood",
+			"subclassSource": "AN",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"{@i (20th-level Oath of the Blood feature)}",
+				"At 20th level, you gain the ability to perform a ritual to control the life forces of nearby creatures. As an action, you project a pentagram of your blood onto the ground in a 30-foot radius centered on you for 1 minute, spending 2d12 life for this, granting the following benefits:",
+				"While enemy creatures are within 30 feet of you, they move as if they were in difficult terrain, including flying, swimming, and hovering enemies.",
+				"Bloody wings come out of your back. You can fly even with armor, you use your normal speed for this feature.",
+				"If a creature within 30 feet of you takes damage, you can use your reaction to cause another creature within 30 feet of you to take that damage as necrotic, psychic, or radiant damage.",
+				"Your melee attacks deal an additional {@damage 2d12} necrotic, psychic, or radiant damage.",
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		}
     ]
 }
