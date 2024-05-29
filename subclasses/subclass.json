@@ -33,7 +33,7 @@
         },
         {
 			"name": "Oath of the Blood",
-			"shortName": "Oath Blood",
+			"shortName": "OathBlood",
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -76,10 +76,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Oath of the Blood|Paladin||Oath Blood|AN|3",
-				"Aura of Blood|Paladin||Oath Blood|AN|7",
-				"Absorb Life|Paladin||Oath Blood|AN|15",
-				"Circle of Ichor|Paladin||Oath Blood|AN|20"
+				"Oath of the Blood|Paladin||OathBlood|AN|3",
+				"Aura of Blood|Paladin||OathBlood|AN|7",
+				"Absorb Life|Paladin||OathBlood|AN|15",
+				"Circle of Ichor|Paladin||OathBlood|AN|20"
 			]
 		}
     ],
@@ -199,22 +199,22 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 3,
 			"entries": [
 				"Some paladins serve gods or their dogmas, to fulfill the will to save lives, take revenge, protect their kings, destroy their enemies, but this group is only guided by force, it is thought that this group of paladins arose as a result from the discovery of a magic as old as dangerous, hemonancia, few managed to control these dogmas so that they do not consume them as well as the powers that they entail, but others who managed to adopt all this were eliminated in bloodthirsty warriors who used this to achieve their mission.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tenets of the Blood|Paladin||Oath Blood|AN|3"
+					"subclassFeature": "Tenets of the Blood|Paladin||OathBlood|AN|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oath Spells|Paladin||Oath Blood|AN|3"
+					"subclassFeature": "Oath Spells|Paladin||OathBlood|AN|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity|Paladin||Oath Blood|AN|3"
+					"subclassFeature": "Channel Divinity|Paladin||OathBlood|AN|3"
 				}
 			]
 		},
@@ -223,7 +223,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 3,
 			"header": 1,
@@ -258,7 +258,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 3,
 			"header": 1,
@@ -306,7 +306,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 3,
 			"header": 1,
@@ -334,7 +334,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 7,
 			"header": 2,
@@ -349,7 +349,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 15,
 			"header": 2,
@@ -363,7 +363,7 @@
 			"source": "AN",
 			"className": "Paladin",
 			"classSource": "PHB",
-			"subclassShortName": "Oath Blood",
+			"subclassShortName": "OathBlood",
 			"subclassSource": "AN",
 			"level": 20,
 			"header": 2,
