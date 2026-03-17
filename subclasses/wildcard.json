@@ -1,0 +1,205 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "WildCardHomebrew",
+                "abbreviation": "WCHB",
+                "full": "Wild Card Rogue (Revised)",
+                "authors": [
+                    "User"
+                ],
+                "convertedBy": [
+                    "Gemini"
+                ],
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Wild Card",
+            "shortName": "Wild Card",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Wild Card|Rogue||Wild Card|WildCardHomebrew|3",
+                "Cambiando las Probabilidades|Rogue||Wild Card|WildCardHomebrew|9",
+                "Giro del Destino|Rogue||Wild Card|WildCardHomebrew|13",
+                "Comodín Definitivo|Rogue||Wild Card|WildCardHomebrew|17"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Wild Card",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Trucos bajo la Manga|Rogue||Wild Card|WildCardHomebrew|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Gambito del Comodín|Rogue||Wild Card|WildCardHomebrew|3"
+                }
+            ]
+        },
+        {
+            "name": "Trucos bajo la Manga",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Aprendes el conjuro {@spell guidance}.",
+                {
+                    "type": "entries",
+                    "name": "Mejora de Nivel 9",
+                    "entries": [
+                        "A partir del nivel 9, este conjuro tiene un alcance de 30 pies y puedes lanzarlo como una acción adicional."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Gambito del Comodín",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
+                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@feature Sneak Attack|PHB}.",
+                "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
+                {
+                    "type": "table",
+                    "caption": "Daño Base y Alcance",
+                    "colLabels": [
+                        "Nivel",
+                        "Daño Base",
+                        "Alcance"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-4 text-center",
+                        "col-6 text-center"
+                    ],
+                    "rows": [
+                        [
+                            "1–2",
+                            "{@dice 1d4}",
+                            "30/60 pies"
+                        ],
+                        [
+                            "3–4",
+                            "{@dice 1d6}",
+                            "60/120 pies"
+                        ],
+                        [
+                            "5–6",
+                            "{@dice 1d8}",
+                            "60/120 pies"
+                        ],
+                        [
+                            "7–8",
+                            "{@dice 1d10}",
+                            "90/180 pies"
+                        ],
+                        [
+                            "9–12",
+                            "{@dice 1d12}",
+                            "90/180 pies"
+                        ],
+                        [
+                            "13–16",
+                            "{@dice 2d8}",
+                            "120/240 pies"
+                        ],
+                        [
+                            "17–20",
+                            "{@dice 2d10}",
+                            "120/240 pies"
+                        ]
+                    ]
+                },
+                {
+                    "type": "list",
+                    "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
+                    "items": [
+                        "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo sufre daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
+                        "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
+                        "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
+                        "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
+                        "{@b 5. La Corona (Nivel 6):} El objetivo hace una salvación de {@savingThrow Wisdom} o usa su reacción para atacar a un aliado de tu elección.",
+                        "{@b 7. La Muerte (Nivel 9):} Si tiene 30 HP o menos, debe hacer una salvación de {@savingThrow Constitution} o muere. Si tiene éxito, queda {@condition paralyzed}.",
+                        "{@b 8. La Rueda (Nivel 13):} El objetivo hace una salvación de {@savingThrow Dexterity} o queda {@condition prone}.",
+                        "{@b 10. El Juicio (Nivel 17):} El objetivo hace una salvación de {@savingThrow Wisdom} o queda {@condition paralyzed} y gana vulnerabilidad a todo el daño."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cambiando las Probabilidades",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "Como una acción adicional, las criaturas a 10 pies hacen una salvación de {@savingThrow Dexterity} (CD 8 + proficiencia + mod. de Carisma) o reciben {@damage 6d10} daño de fuerza y quedan {@condition prone}. Luego te teletransportas hasta 60 pies.",
+                "Ganas resistencia a todo el daño y ventaja en salvaciones de Destreza hasta tu próximo turno. Se recupera tras un descanso corto o largo."
+            ]
+        },
+        {
+            "name": "Giro del Destino",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 13,
+            "header": 2,
+            "entries": [
+                "Puedes intercambiar iniciativa con una criatura que veas. Enemigos deben hacer una salvación de {@savingThrow Wisdom} (CD 8 + proficiencia + mod. de Carisma).",
+                "Tú y un aliado ganan +10 de velocidad y ventaja en la primera tirada de ataque del combate."
+            ]
+        },
+        {
+            "name": "Comodín Definitivo",
+            "source": "WildCardHomebrew",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassShortName": "Wild Card",
+            "subclassSource": "WildCardHomebrew",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "Como una acción adicional, adoptas una forma incorpórea por 1 minuto.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Recuperas usos de Gambito del Comodín.",
+                        "Velocidad duplicada.",
+                        "Resistencia a todo el daño e inmunidad a {@condition grappled}, {@condition paralyzed}, {@condition stunned} y {@condition restrained}.",
+                        "Puedes moverte a través de objetos y criaturas. Si terminas dentro de una criatura, esta sufre {@damage 1d10} daño de fuerza."
+                    ]
+                },
+                "Se recupera tras un descanso largo."
+            ]
+        }
+    ]
+}

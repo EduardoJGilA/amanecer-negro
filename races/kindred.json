@@ -1,0 +1,164 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Races Amanecer Negro",
+                "authors": [
+                    "MiGaki"
+                ],
+                "convertedBy": [
+                    "MiGaki"
+                ],
+                "version": "0.1",
+                "color": "ffffff",
+                "dateReleased": "2023-04-22"
+            }
+        ],
+        "status": "wip",
+        "dateAdded": 1682204659,
+        "dateLastModified": 1682204659
+    },
+    "race": [
+        {
+            "name": "Kindred",
+            "source": "AN",
+            "creatureTypes": [
+                "fey"
+            ],
+            "languageProficiencies": [
+                {
+                    "sylvan": true,
+                    "common": true,
+                    "any": 1
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "perception": true
+                }
+            ],
+            "ability": [
+                {
+                    "dex": 2,
+                    "wis": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "climb": true
+            },
+            "darkvision": 60,
+            "entries": [
+                "As a Kindred, your character has the following traits:",
+                {
+                    "name": "Age",
+                    "entries": [
+                        "Your age is affected by your race of birth, if your race of birth already dictates your age your life expectancy will be that, otherwise your life expectancy will be 1000 years."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Alignment",
+                    "entries": [
+                        "Your alignment is determined by your race of birth, but kinships are by nature neutral."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Size",
+                    "entries": [
+                        "Your size is determined by your race, but kin are usually medium"
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Speed",
+                    "entries": [
+                        "30 feet, you can climb at that same speed."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Night Vision",
+                    "entries": [
+                        "You can see dim light within 60 feet of you as bright light, and in the dark as dim light, your wolf supports you, you can see colors and what you need, time as day, always and when there is dim light."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Death mark.",
+                    "entries": [
+                        "When starting a fight you can choose a target which will be marked by you, this target will receive an extra point of damage in each of your attacks, if the target dies you gain a stack, every 4 targets increase the range of your weapon by 5 feet and the damage is increased by one more point (for example if you have 16 marks in a combat, your weapon gains 20 more feet of range and 4 more damage to the marked target), this counter is reset at the end of the combat."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Wolf.",
+                    "entries": [
+                        "The wolf is your guardian spirit, he is the one who advises you, he has been with you all your life and sleeps inside you, this wolf only speaks one language and he is a Sylvan. The wolf can attack a marked target, it has its free action but the range of this attack is 20 feet, the wolf does {@damage 1d4} + your dexterity modifier. After the wolf has downed 4 enemies, you regain {@damage 1d8} + your Constitution modifier in hit points."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Keen Senses",
+                    "entries": [
+                        "You have proficiency in the {@skill Perception} skill."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "The lamb sighed.",
+                    "entries": [
+                        "When you are reduced to 0 hit points but not killed outright, you may drop to 1 hit point instead. You can use this ability a number of times equal to your Constitution modifier."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can read, write, and speak the language of your race of birth, Common and also Sylvan."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Kindred",
+                        "entries": [
+                            "Death is something recurring in the world, most mortal people of innumerable races associate it with what has been death, the so-called soul harvester, a skeletal monster with a large hood that covers its body and a huge scythe, this may be an everyday interpretation, something normal, but not for the true reaper of souls. The kindred are creatures from different places, some associate them with the fey, others with the shadowfell, some others with hell and others with heaven, they are a remarkable race, but no one knows their true nature. The kindred are two creatures that have combined their souls, a wolf and its carrier, whether called a sheep, rabbit or some animal associated with its behavior, the wolf is the guardian spirit of the carrier, it is in charge of protecting it until the day it dies. death where his soul will become a new blinder of souls, becoming a hunter, the wolf can follow him or wait for someone else, but when the kindred die they hunt people by collecting their souls and deciding where they will stop."
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://images4.alphacoders.com/648/648862.jpg"
+                        }
+                    }
+                ]
+            },
+            "heightAndWeight": {
+                "baseHeight": 56,
+                "heightMod": "2d8",
+                "baseWeight": 90,
+                "weightMod": "1d4"
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansión",
+                "authors": [
+                    "MiGaki",
+                    "User"
+                ],
+                "convertedBy": [
+                    "MiGaki",
+                    "Gemini"
+                ],
+                "version": "0.1",
+                "color": "ffffff",
+                "dateReleased": "2023-04-22"
+            }
+        ],
+        "status": "wip",
+        "dateAdded": 1682210907,
+        "dateLastModified": 1682210907,
+        "includes": {
+            "subclass": [
+                {
+                    "file": "subclasses/rogue-of-blood.json"
+                },
+                {
+                    "file": "subclasses/oath-of-blood.json"
+                },
+                {
+                    "file": "subclasses/wildcard.json"
+                }
+            ],
+            "race": [
+                {
+                    "file": "races/kindred.json"
+                },
+                {
+                    "file": "races/pureblood-vampire.json"
+                },
+                {
+                    "file": "races/qilin.json"
+                }
+            ]
+        }
+    }
+}
