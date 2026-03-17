@@ -32,7 +32,7 @@
       {
         "json": "ColegioSanacion",
         "abbreviation": "CS",
-        "full": "Colegio de Sanación (Bardo)",
+        "full": "Colegio de Sanacion (Bardo)",
         "authors": [
           "User"
         ],
@@ -54,19 +54,19 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773780320
+    "dateLastModified": 1773780604
   },
   "subclass": [
     {
-      "name": "Colegio de Sanación",
-      "shortName": "Sanación",
+      "name": "Colegio de Sanacion",
+      "shortName": "Sanacion",
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Colegio de Sanación|Bard||Sanación|ColegioSanacion|3",
-        "Primeros Auxilios Arcanos|Bard||Sanación|ColegioSanacion|6",
-        "Ritmo de Recuperación|Bard||Sanación|ColegioSanacion|14"
+        "Colegio de Sanacion|Bard||Sanacion|ColegioSanacion|3",
+        "Primeros Auxilios Arcanos|Bard||Sanacion|ColegioSanacion|6",
+        "Ritmo de Recuperación|Bard||Sanacion|ColegioSanacion|14"
       ]
     },
     {
@@ -159,26 +159,26 @@
   ],
   "subclassFeature": [
     {
-      "name": "Colegio de Sanación",
+      "name": "Colegio de Sanacion",
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 3,
       "entries": [
-        "Los bardos del Colegio de Sanación utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
+        "Los bardos del Colegio de Sanacion utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Proficiencias Adicionales|Bard||Sanación|ColegioSanacion|3"
+          "subclassFeature": "Proficiencias Adicionales|Bard||Sanacion|ColegioSanacion|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Conocimiento de Remedios|Bard||Sanación|ColegioSanacion|3"
+          "subclassFeature": "Conocimiento de Remedios|Bard||Sanacion|ColegioSanacion|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trato a la Cabecera|Bard||Sanación|ColegioSanacion|3"
+          "subclassFeature": "Trato a la Cabecera|Bard||Sanacion|ColegioSanacion|3"
         }
       ]
     },
@@ -187,7 +187,7 @@
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 3,
       "header": 1,
@@ -200,7 +200,7 @@
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 3,
       "header": 1,
@@ -209,7 +209,7 @@
         "Además, puedes aprender conjuros de la siguiente lista como conjuros de bardo:",
         {
           "type": "table",
-          "caption": "Conjuros de Sanación",
+          "caption": "Conjuros de Sanacion",
           "colLabels": [
             "Nivel",
             "Conjuros"
@@ -252,12 +252,12 @@
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 3,
       "header": 1,
       "entries": [
-        "Cada criatura que posea un dado de {@feature Bardic Inspiration|Bard|||1|Inspiración Bárdica} otorgado por ti tiene ventaja en las tiradas de salvación contra muerte.",
+        "Cada criatura que posea un dado de {@classFeature Bardic Inspiration|Bard|||1|Inspiración Bárdica} otorgado por ti tiene ventaja en las tiradas de salvación contra muerte.",
         "Cuando una criatura tiene éxito en una tirada de salvación contra muerte, puede lanzar ese dado para recuperar {@dice 1d8} (o el dado actual) puntos de vida, y ganar puntos de golpe temporales iguales al valor máximo del dado menos el resultado lanzado."
       ]
     },
@@ -266,7 +266,7 @@
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 6,
       "header": 2,
@@ -280,13 +280,13 @@
       "source": "ColegioSanacion",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanación",
+      "subclassShortName": "Sanacion",
       "subclassSource": "ColegioSanacion",
       "level": 14,
       "header": 2,
       "entries": [
         "Al lanzar un conjuro de bardo de nivel 1 o superior que no restaure vida, una criatura que pueda escucharte a 30 pies recupera puntos de vida igual a tu nivel de bardo dividido entre 4.",
-        "Tus rasgos Trato a la Cabecera y {@feature Song of Rest|Bard|||2|Canción de Descanso} aumentan la sanación en una cantidad igual a tu modificador de Carisma.",
+        "Tus rasgos Trato a la Cabecera y {@classFeature Song of Rest|Bard|||2|Canción de Descanso} aumentan la sanación en una cantidad igual a tu modificador de Carisma.",
         "Cuando lanzas un conjuro que restaure puntos de vida, activas un ritmo de sanación hasta tu siguiente turno; cualquier criatura que sanes durante este tiempo recupera vida adicional igual a tu modificador de Carisma."
       ]
     },
@@ -504,7 +504,7 @@
       "header": 1,
       "entries": [
         "Como una {@action action}, invocas el Velo (armadura de ébano).",
-        "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@feature Divine Smite|PHB} inflige daño necrótico en lugar de radiante."
+        "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@classFeature Divine Smite|Paladin||2|PHB} inflige daño necrótico en lugar de radiante."
       ]
     },
     {
@@ -693,7 +693,7 @@
       "header": 1,
       "entries": [
         "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@feature Sneak Attack|PHB}.",
+        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
         "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
         {
           "type": "table",

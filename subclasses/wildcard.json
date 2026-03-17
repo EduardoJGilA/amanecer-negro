@@ -81,7 +81,7 @@
             "header": 1,
             "entries": [
                 "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@feature Sneak Attack|PHB}.",
+                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
                 "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
                 {
                     "type": "table",

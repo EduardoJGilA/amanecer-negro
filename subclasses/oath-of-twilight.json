@@ -56,7 +56,7 @@
             "header": 1,
             "entries": [
                 "Como una {@action action}, invocas el Velo (armadura de ébano).",
-                "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@feature Divine Smite|PHB} inflige daño necrótico en lugar de radiante."
+                "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@classFeature Divine Smite|Paladin||2|PHB} inflige daño necrótico en lugar de radiante."
             ]
         },
         {
