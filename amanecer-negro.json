@@ -1,49 +1,1009 @@
 {
-    "_meta": {
-        "sources": [
-            {
-                "json": "AN",
-                "abbreviation": "AN",
-                "full": "Amanecer Negro Expansión",
-                "authors": [
-                    "MiGaki",
-                    "User"
-                ],
-                "convertedBy": [
-                    "MiGaki",
-                    "Gemini"
-                ],
-                "version": "0.1",
-                "color": "ffffff",
-                "dateReleased": "2023-04-22"
-            }
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansión",
+        "authors": [
+          "MiGaki",
+          "User"
         ],
-        "status": "wip",
-        "dateAdded": 1682210907,
-        "dateLastModified": 1682210907,
-        "includes": {
-            "subclass": [
-                {
-                    "file": "subclasses/rogue-of-blood.json"
-                },
-                {
-                    "file": "subclasses/oath-of-blood.json"
-                },
-                {
-                    "file": "subclasses/wildcard.json"
-                }
+        "convertedBy": [
+          "MiGaki",
+          "Gemini"
+        ],
+        "version": "0.1",
+        "color": "ffffff",
+        "dateReleased": "2023-04-22"
+      },
+      {
+        "json": "WildCardHomebrew",
+        "abbreviation": "WCHB",
+        "full": "Wild Card Rogue (Revised)",
+        "authors": [
+          "User"
+        ],
+        "convertedBy": [
+          "Gemini"
+        ],
+        "version": "1.0.0"
+      }
+    ],
+    "status": "wip",
+    "dateAdded": 1682210907,
+    "dateLastModified": 1773778603
+  },
+  "subclass": [
+    {
+      "name": "Oath of the Blood",
+      "shortName": "OathBlood",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassSpells": [
+        "bloodburn|dapc",
+        "cruorwhip|dapc",
+        "blood seal|dapc",
+        "sanguine rope|dapc",
+        "bloodsight|dapc",
+        "tides of blood|dapc",
+        "draining thread|dapc",
+        "sanguine sanctum|dapc",
+        "bloodcurse|dapc",
+        "ray of fatigue|dapc"
+      ],
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "bloodburn|dapc",
+              "cruorwhip|dapc"
             ],
-            "race": [
-                {
-                    "file": "races/kindred.json"
-                },
-                {
-                    "file": "races/pureblood-vampire.json"
-                },
-                {
-                    "file": "races/qilin.json"
-                }
+            "2": [
+              "blood seal|dapc",
+              "sanguine rope|dapc"
+            ],
+            "3": [
+              "blood sight|dapc",
+              "tides of blood|dapc"
+            ],
+            "4": [
+              "draining thread|dapc",
+              "sanguine sanctum|dapc"
+            ],
+            "5": [
+              "bloodcurse|dapc",
+              "ray of fatigue|dapc"
             ]
+          }
         }
+      ],
+      "subclassFeatures": [
+        "Oath of the Blood|Paladin||OathBlood|AN|3",
+        "Aura of Blood|Paladin||OathBlood|AN|7",
+        "Absorb Life|Paladin||OathBlood|AN|15",
+        "Circle of Ichor|Paladin||OathBlood|AN|20"
+      ]
+    },
+    {
+      "name": "Rogue Of Blood",
+      "shortName": "Blood",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Rogue Of Blood|Rogue||Blood|AN|3",
+        "Changing The Odds|Rogue||Blood|AN|9",
+        "Versatile projectile |Rogue||Blood|AN|13",
+        "Hemorrhage|Rogue||Blood|AN|17"
+      ]
+    },
+    {
+      "name": "Wild Card",
+      "shortName": "Wild Card",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Wild Card|Rogue||Wild Card|WildCardHomebrew|3",
+        "Cambiando las Probabilidades|Rogue||Wild Card|WildCardHomebrew|9",
+        "Giro del Destino|Rogue||Wild Card|WildCardHomebrew|13",
+        "Comodín Definitivo|Rogue||Wild Card|WildCardHomebrew|17"
+      ]
     }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Oath of the Blood",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 3,
+      "entries": [
+        "Some paladins serve gods or their dogmas, to fulfill the will to save lives, take revenge, protect their kings, destroy their enemies, but this group is only guided by force, it is thought that this group of paladins arose as a result from the discovery of a magic as old as dangerous, hemonancia, few managed to control these dogmas so that they do not consume them as well as the powers that they entail, but others who managed to adopt all this were eliminated in bloodthirsty warriors who used this to achieve their mission.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Tenets of the Blood|Paladin||OathBlood|AN|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Oath Spells|Paladin||OathBlood|AN|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Channel Divinity|Paladin||OathBlood|AN|3"
+        }
+      ]
+    },
+    {
+      "name": "Tenets of the Blood",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i (3rd-level Oath of the Blood feature)}",
+        "The tenets of the blood are applied very harshly, as many who strive to follow this path are unable to control their minds once exposed to the dark magic they now cast, the principles being the only thing that keeps these paladins going. like heroes.",
+        {
+          "name": "Bleed and be victorious.",
+          "type": "entries",
+          "entries": [
+            "No matter how much blood you have to shed, but you must control your impulses, you have great power, use it to help your comrades and lead them to bloody victory."
+          ]
+        },
+        {
+          "name": "No negotiations",
+          "type": "entries",
+          "entries": [
+            "With your mind so close to the brink of corruption, many vile creatures (Evil Entities) will try to take advantage of you. Those creatures must die."
+          ]
+        },
+        {
+          "name": "Never forget.",
+          "type": "entries",
+          "entries": [
+            "By taking this oath, you affirm that you will not give in to your cursed gift. You're not a disgusting vampire; you are a hero of the people, and you will remember it."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oath Spells",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i (3rd-level Oath of the Blood feature)}",
+        "You gain oath spells at the paladin levels listed.",
+        {
+          "type": "table",
+          "caption": "Oath of the Blood Spells",
+          "colLabels": [
+            "Paladin Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-3 text-center",
+            "col-9"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell bloodburn|dapc}, {@spell cruorwhip|dapc}"
+            ],
+            [
+              "5th",
+              "{@spell blood seal|dapc}, {@spell sanguine rope|dapc}"
+            ],
+            [
+              "9th",
+              "{@spell bloodsight|dapc}, {@spell tides of blood|dapc}"
+            ],
+            [
+              "13th",
+              "{@spell draining thread|dapc}, {@spell sanguine sanctum|dapc}"
+            ],
+            [
+              "17th",
+              "{@spell bloodcurse|dapc}, {@spell ray of fatigue|dapc}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Channel Divinity",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i (3rd-level Oath of the Blood feature)}",
+        "When you take this oath at 3rd level, you gain the following two Channel Divinity Options.",
+        {
+          "name": "Draining Strike",
+          "type": "entries",
+          "entries": [
+            "Immediately after you deal damage to a creature with your Divine Smite ability, you can use your Channel Divinity as a bonus action and distribute hit points to creatures of your choice within 30 feet of you, which can include you. The total number of hit points you can distribute is equal to half the total damage dealt by the attack rounded down."
+          ]
+        },
+        {
+          "name": "Bloody weapon.",
+          "type": "entries",
+          "entries": [
+            "As an additional action you can increase the damage of your sword, you spend {@damage 1d8} of life to give this property to your weapon filling it with its blood which increases its damage with the result of the dice, the target receives {@damage 1d4} points of piercing damage (only with the first hit that hits with this property, if you give another target this property also applies) by bleeding at the beginning of its turn until it tries to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage. The wound is so deep from his weapon that it leaves this sequel, the wound is so deep that it does not stop bleeding, since the edge is so sharp that it can tear the metal itself (if it exceeds the AC), this makes the weapon magical because your blood has that property."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Aura of Blood",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "{@i (7th-level Oath of the Blood feature)}",
+        "Your mind is allowing itself to be guided by the pact, your blood boils, your mind is playing tricks on you, you feel how your life begins to become only the desire to murder. As an action, all creatures within 10 feet of you that you don't consider to be allies, because you managed to keep a bit of your mind, must make an {@savingThrow Intelligence} save (DC 8 + Proficiency + Charisma Modifier), if they fail they take {@damage 1d12} psychic damage. Half of the damage you deal to creatures you can take that as temporary points. You cannot use this action until a short rest.",
+        "At 18th level, the range of this aura increases to 30 feet."
+      ]
+    },
+    {
+      "name": "Absorb Life",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "{@i (15th-level Oath of the Blood feature)}",
+        "Starting at level 15, whenever you reduce a creature to 0 through a melee weapon attack or melee spell attack, you can use your reaction to gain temporary hit points equal to your Paladin level. These temporary hit points last until you finish a long rest. As long as you have these temporary hit points, you have advantage on Constitution Saving Throws. You can use this ability a number of times equal to your Charisma Modifier (minimum 1) and regain all expended uses after finishing a long rest."
+      ]
+    },
+    {
+      "name": "Circle of Ichor",
+      "source": "AN",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "subclassShortName": "OathBlood",
+      "subclassSource": "AN",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "{@i (20th-level Oath of the Blood feature)}",
+        "At 20th level, you gain the ability to perform a ritual to control the life forces of nearby creatures. As an action, you project a pentagram of your blood onto the ground in a 30-foot radius centered on you for 1 minute, spending {@dice 2d12} life for this, granting the following benefits:",
+        "While enemy creatures are within 30 feet of you, they move as if they were in difficult terrain, including flying, swimming, and hovering enemies.",
+        "Bloody wings come out of your back. You can fly even with armor, you use your normal speed for this feature.",
+        "If a creature within 30 feet of you takes damage, you can use your reaction to cause another creature within 30 feet of you to take that damage as necrotic, psychic, or radiant damage.",
+        "Your melee attacks deal an additional {@damage 2d12} necrotic, psychic, or radiant damage.",
+        "Once you use this feature, you can't use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Rogue Of Blood",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 3,
+      "entries": [
+        "Some rogues prefer to hone their skill and precision, others hone their silver tongue, but you... You are special, your blood has been blessed (or cursed) by some kind of force that allows you to use it as you please, or perhaps just maybe, you learned it as if you were a magician, from some book, anyway, you are special.",
+        "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Crimson Draft|Rogue||Blood|AN|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Bloody Tradition|Rogue||Blood|AN|3"
+        }
+      ]
+    },
+    {
+      "name": "Bloody Tradition",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: {@skill History}, {@skill Religion}, {@skill Arcana}.",
+        "In addition, you gain 2 extra health points and 1 more health point each time you level up after level 3, representing your stamina and adaptability to your innate power."
+      ]
+    },
+    {
+      "name": "Crimson Draft",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 3,
+      "header": 1,
+      "effects": [
+        {
+          "name": "HP Increase",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.attributes.hp.max",
+              "mode": "ADD",
+              "value": "@classes.rogue.levels"
+            },
+            {
+              "key": "system.attributes.hp.max",
+              "mode": "ADD",
+              "value": "5"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "At 3rd level, as a bonus action, you can ready a bladed weapon or arrow/bolt/bullet to become jagged for 1 minute, to do this you must spend {@damage 1d6} of your own blood, giving the weapon a jagged-toothed appearance. If the serrated weapon hits a target in melee, the target takes {@damage 1d4} bleed damage at the start of its turn until it attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic benefits A serrated weapon that hits a ranged target has that weapon embedded in it, any attempt to remove the weapon causes massive bleed as its jagged teeth tear through flesh, it takes {@damage 1d6} slashing damage on retreat and bleeds for {@damage 1d6} damage. per turn until he attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage.",
+        "Creatures without blood are not affected by bleeding damage.",
+        "At 9th level, the bleed damage upgrades to {@dice 2d4} for melee attacks (increasing the damage die he takes to {@dice 2d6}). Removing a ranged weapon deals {@dice 2d6} damage and {@dice 2d6} bleed damage."
+      ]
+    },
+    {
+      "name": "Changing The Odds",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "Starting at 9th level, you are someone who knows how to escape or enter dangerous situations, you don't want to fall into the clutches of your enemies, it's time to disappear in style. As a bonus action, you can disappear or enter with a dramatic flourish. Each creature within 10 feet of you must make a {@savingThrow Dexterity} save (DC 8 + your proficiency bonus + your Charisma modifier), taking {@dice 4d10} necrotic damage on a failed save, or half as much on a successful one, you must spend {@dice 2d10} Hit Points to deal this damage.",
+        "After or before spawning in an unoccupied space that you can see within 30 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
+      ]
+    },
+    {
+      "name": "Versatile projectile ",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "At 13th level, your mastery of the blood project has given you control over your opponents, if the target fails a {@savingThrow Constitution} save of DC 8 + your proficiency bonus + your charisma modifier, the target is {@condition stunned}, plus you can change the type of bleed damage to one of the following when you fill the arrow with your blood: psychic, acidic, necrotic"
+      ]
+    },
+    {
+      "name": "Hemorrhage",
+      "source": "AN",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Blood",
+      "subclassSource": "AN",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "At 17th level, when you deal more than 50 hit points of damage to a single creature in an attack on your turn and end up at 100 hit points or less after your attack, you can use your bonus action to force that creature to move. make a {@savingThrow Constitution} save against DC 8 + your Charisma modifier + your proficiency bonus. If they fail, they are immediately down to 0 health and knocked {@condition unconscious}.",
+        "You can use this feature 2 times."
+      ]
+    },
+    {
+      "name": "Wild Card",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 3,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Trucos bajo la Manga|Rogue||Wild Card|WildCardHomebrew|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Gambito del Comodín|Rogue||Wild Card|WildCardHomebrew|3"
+        }
+      ]
+    },
+    {
+      "name": "Trucos bajo la Manga",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Aprendes el conjuro {@spell guidance}.",
+        {
+          "type": "entries",
+          "name": "Mejora de Nivel 9",
+          "entries": [
+            "A partir del nivel 9, este conjuro tiene un alcance de 30 pies y puedes lanzarlo como una acción adicional."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gambito del Comodín",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
+        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@feature Sneak Attack|PHB}.",
+        "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
+        {
+          "type": "table",
+          "caption": "Daño Base y Alcance",
+          "colLabels": [
+            "Nivel",
+            "Daño Base",
+            "Alcance"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-4 text-center",
+            "col-6 text-center"
+          ],
+          "rows": [
+            [
+              "1–2",
+              "{@dice 1d4}",
+              "30/60 pies"
+            ],
+            [
+              "3–4",
+              "{@dice 1d6}",
+              "60/120 pies"
+            ],
+            [
+              "5–6",
+              "{@dice 1d8}",
+              "60/120 pies"
+            ],
+            [
+              "7–8",
+              "{@dice 1d10}",
+              "90/180 pies"
+            ],
+            [
+              "9–12",
+              "{@dice 1d12}",
+              "90/180 pies"
+            ],
+            [
+              "13–16",
+              "{@dice 2d8}",
+              "120/240 pies"
+            ],
+            [
+              "17–20",
+              "{@dice 2d10}",
+              "120/240 pies"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
+          "items": [
+            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo sufre daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
+            "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
+            "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
+            "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
+            "{@b 5. La Corona (Nivel 6):} El objetivo hace una salvación de {@savingThrow Wisdom} o usa su reacción para atacar a un aliado de tu elección.",
+            "{@b 7. La Muerte (Nivel 9):} Si tiene 30 HP o menos, debe hacer una salvación de {@savingThrow Constitution} o muere. Si tiene éxito, queda {@condition paralyzed}.",
+            "{@b 8. La Rueda (Nivel 13):} El objetivo hace una salvación de {@savingThrow Dexterity} o queda {@condition prone}.",
+            "{@b 10. El Juicio (Nivel 17):} El objetivo hace una salvación de {@savingThrow Wisdom} o queda {@condition paralyzed} y gana vulnerabilidad a todo el daño."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cambiando las Probabilidades",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "Como una acción adicional, las criaturas a 10 pies hacen una salvación de {@savingThrow Dexterity} (CD 8 + proficiencia + mod. de Carisma) o reciben {@damage 6d10} daño de fuerza y quedan {@condition prone}. Luego te teletransportas hasta 60 pies.",
+        "Ganas resistencia a todo el daño y ventaja en salvaciones de Destreza hasta tu próximo turno. Se recupera tras un descanso corto o largo."
+      ]
+    },
+    {
+      "name": "Giro del Destino",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "Puedes intercambiar iniciativa con una criatura que veas. Enemigos deben hacer una salvación de {@savingThrow Wisdom} (CD 8 + proficiencia + mod. de Carisma).",
+        "Tú y un aliado ganan +10 de velocidad y ventaja en la primera tirada de ataque del combate."
+      ]
+    },
+    {
+      "name": "Comodín Definitivo",
+      "source": "WildCardHomebrew",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "Como una acción adicional, adoptas una forma incorpórea por 1 minuto.",
+        {
+          "type": "list",
+          "items": [
+            "Recuperas usos de Gambito del Comodín.",
+            "Velocidad duplicada.",
+            "Resistencia a todo el daño e inmunidad a {@condition grappled}, {@condition paralyzed}, {@condition stunned} y {@condition restrained}.",
+            "Puedes moverte a través de objetos y criaturas. Si terminas dentro de una criatura, esta sufre {@damage 1d10} daño de fuerza."
+          ]
+        },
+        "Se recupera tras un descanso largo."
+      ]
+    }
+  ],
+  "race": [
+    {
+      "name": "Kindred",
+      "source": "AN",
+      "creatureTypes": [
+        "fey"
+      ],
+      "languageProficiencies": [
+        {
+          "sylvan": true,
+          "common": true,
+          "any": 1
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "perception": true
+        }
+      ],
+      "ability": [
+        {
+          "dex": 2,
+          "wis": 1
+        }
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30,
+        "climb": true
+      },
+      "darkvision": 60,
+      "entries": [
+        "As a Kindred, your character has the following traits:",
+        {
+          "name": "Age",
+          "entries": [
+            "Your age is affected by your race of birth, if your race of birth already dictates your age your life expectancy will be that, otherwise your life expectancy will be 1000 years."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alignment",
+          "entries": [
+            "Your alignment is determined by your race of birth, but kinships are by nature neutral."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Size",
+          "entries": [
+            "Your size is determined by your race, but kin are usually medium"
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Speed",
+          "entries": [
+            "30 feet, you can climb at that same speed."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Night Vision",
+          "entries": [
+            "You can see dim light within 60 feet of you as bright light, and in the dark as dim light, your wolf supports you, you can see colors and what you need, time as day, always and when there is dim light."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Death mark.",
+          "entries": [
+            "When starting a fight you can choose a target which will be marked by you, this target will receive an extra point of damage in each of your attacks, if the target dies you gain a stack, every 4 targets increase the range of your weapon by 5 feet and the damage is increased by one more point (for example if you have 16 marks in a combat, your weapon gains 20 more feet of range and 4 more damage to the marked target), this counter is reset at the end of the combat."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Wolf.",
+          "entries": [
+            "The wolf is your guardian spirit, he is the one who advises you, he has been with you all your life and sleeps inside you, this wolf only speaks one language and he is a Sylvan. The wolf can attack a marked target, it has its free action but the range of this attack is 20 feet, the wolf does {@damage 1d4} + your dexterity modifier. After the wolf has downed 4 enemies, you regain {@damage 1d8} + your Constitution modifier in hit points."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Keen Senses",
+          "entries": [
+            "You have proficiency in the {@skill Perception} skill."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "The lamb sighed.",
+          "entries": [
+            "When you are reduced to 0 hit points but not killed outright, you may drop to 1 hit point instead. You can use this ability a number of times equal to your Constitution modifier."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You can read, write, and speak the language of your race of birth, Common and also Sylvan."
+          ],
+          "type": "entries"
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "name": "Kindred",
+            "entries": [
+              "Death is something recurring in the world, most mortal people of innumerable races associate it with what has been death, the so-called soul harvester, a skeletal monster with a large hood that covers its body and a huge scythe, this may be an everyday interpretation, something normal, but not for the true reaper of souls. The kindred are creatures from different places, some associate them with the fey, others with the shadowfell, some others with hell and others with heaven, they are a remarkable race, but no one knows their true nature. The kindred are two creatures that have combined their souls, a wolf and its carrier, whether called a sheep, rabbit or some animal associated with its behavior, the wolf is the guardian spirit of the carrier, it is in charge of protecting it until the day it dies. death where his soul will become a new blinder of souls, becoming a hunter, the wolf can follow him or wait for someone else, but when the kindred die they hunt people by collecting their souls and deciding where they will stop."
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://images4.alphacoders.com/648/648862.jpg"
+            }
+          }
+        ]
+      },
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d8",
+        "baseWeight": 90,
+        "weightMod": "1d4"
+      }
+    },
+    {
+      "name": "Pureblood Vampire",
+      "source": "AN",
+      "ability": [
+        {
+          "con": 1,
+          "cha": 2
+        }
+      ],
+      "size": [
+        "M"
+      ],
+      "resist": [
+        "poison",
+        "necrotic"
+      ],
+      "speed": 30,
+      "darkvision": 120,
+      "entries": [
+        "As a Vampire, your character has the following traits:",
+        {
+          "name": "Age",
+          "entries": [
+            "Vampires are immortal and can be any age. Vampires retain the physical appearance of the age at which they were turned during their mortal lives. They also retain the psychological development associated with that age, therefore vampires who did not reach adulthood in their mortal life may still have the urges of an adolescent in their vampire life."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alignment",
+          "entries": [
+            "Young vampires can maintain the lawful, neutral, or chaotic alignment they had in life, however, older vampires always lean toward lawfulness, often following a code of their own design that they have developed over the centuries to ensure their integrity. survival. The vast majority of vampires are legal evil, and no one except the green ones try to maintain their inner humanity and remain even neutral, let alone good."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Size",
+          "entries": [
+            "Vampires can vary in height and weight as most humanoids would, though they are usually lighter than they appear when looming over others. Your size is Medium."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Speed",
+          "entries": [
+            "35 feet, you can climb at that same speed."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Superior Darkvision",
+          "entries": [
+            "Your blood red eyes pierce the darkness. You can see in dim light 120 feet from you as if it were bright light, and in the dark as if it were dim light. You can't make out color in the dark, only shades of gray."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Blood drinker.",
+          "entries": [
+            "Even though you are undead, you still require sustenance in the form of blood to sustain your unholy existence. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish, although this food is always tasteless and stale to you. If you go more than seven days without drinking at least one serving of blood, at midnight on the seventh day and every midnight thereafter, you suffer a level of exhaustion, which can only be removed by drinking one serving of blood. After consuming a blood ration, you regain all exhaustion levels caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Vampiric Resistance.",
+          "entries": [
+            "You have resistance to necrotic damage, you have advantage on saving throws against poison, and you have resistance against poison damage."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Bite.",
+          "entries": [
+            "All vampires have sharp teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, enchanted, incapacitated, restrained, or grappled creature within 5 feet of you has blood on it, you can use your bonus action to bite it, dealing 1d6 piercing damage and draining its blood, dealing additional necrotic damage. equal to your Constitution modifier. Drinking blood in this way is equivalent to consuming one serving according to your Blood Drinker trait. When you use your Bite, you can choose to deal no damage."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Child of Night",
+          "entries": [
+            "You know the cantrip {@spell minor illusion} and can cast it at will. At 3rd level, you can cast the {@spell charm person} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so after you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You can speak, read and write in common, as well as in another language of your choice."
+          ],
+          "type": "entries"
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "name": "Vampire Pureblood",
+            "entries": [
+              "Vampires are associated with necromancy. Their existence is predicated on draining the life from others to fuel their own existence, and on putting their own lives ahead of all other concerns. Philosophically, they do not constrain themselves with artificial rules of morality, but believe that the strong can and should take what they need from the weak. Due to their longevity most become high society creatures of the night and are even of royal blood by choice.",
+              "When a vampire comes into being they don't behave like the people they were in life. They are inverted, the chaste becoming temptresses, the kind becoming cruel, the once holy now finding glory in perversion. All their once positive qualities are specifically inverted to form a more personalized evil. However, this isn't to say that all who become vampires or are natural-born are completely evil in nature, though many go that path because of what can be gained personally.",
+              "There are two other subspecies of vampires documented by mortals who have encountered one of these night hunters: psychic vampires and dhampir's."
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://eventyrgames.com/wp-content/uploads/2022/05/636988936829621698-768x932.jpeg"
+            }
+          }
+        ]
+      },
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d8",
+        "baseWeight": 90,
+        "weightMod": "1d4"
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": 1
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "1": [
+              "minor illusion#c"
+            ],
+            "3": [
+              "charm person"
+            ],
+            "5": [
+              "alter self"
+            ]
+          },
+          "ability": "cha"
+        }
+      ]
+    },
+    {
+      "name": "Qilin",
+      "source": "AN",
+      "ability": [
+        {
+          "int": 2,
+          "dex": 1
+        }
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 35,
+      "darkvision": 60,
+      "entries": [
+        "As a Qilin, your character has the following traits:",
+        {
+          "name": "Age",
+          "entries": [
+            "Your life expectancy will be 1000 years."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alignment",
+          "entries": [
+            "Qilin are usually good neutrals, however they can be of any alignment except chaotic neutral. Those who choose to be from an Evil alignment are fewer in number than those who choose to be from the Neutral or Good alignments, but there have been such cases in Qilin's history."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Size",
+          "entries": [
+            "Your size is Medium."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Speed",
+          "entries": [
+            "You can move 35 feet, in his dragon form you can fly 60 feet."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Darkvision",
+          "entries": [
+            "You can see dim light within 60 feet of you as bright light, and in the dark as dim light."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Keen Senses",
+          "entries": [
+            "You have proficiency in the {@skill Perception} skill."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Natural Weapon",
+          "entries": [
+            "In your natural form your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          ],
+          "type": "entries"
+        },
+        {
+          "type": "entries",
+          "name": "Breath Weapon",
+          "entries": [
+            "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+            "When you use your breath weapon, each creature in the area of exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} radiant damage on a failed save, and half as much damage on a successful one. The damage increases by an additional {@damage 1d6} at 5th level, 8th level, 11th level, and 17th level.",
+            "After you use your breath weapon, you can't use it again until it's recharged. At the start of each of your turns, provided you already used your breath weapon, you can roll a {@dice d6}. On a 6, you regain the use of your breath weapon. Otherwise, your breath weapon recharges 1 minute after you used it."
+          ]
+        },
+        {
+          "name": "Magical Qilin",
+          "entries": [
+            "You know the cantrip {@spell dancing lights} and can cast it at will. At 3rd level, you can cast the {@spell charm person} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so after you finish a long rest. Intelligence is your spellcasting ability for these spells."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You can speak, read and write in common, as well as in sylvan"
+          ],
+          "type": "entries"
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "name": "Qilin",
+            "entries": [
+              "Like the ancient elves, the Qilin come from the fey, they are creatures that understand humanoid societies because their status in it is more than notorious, the Qilin normally play an important political or economic role in society wherever they step, it is normal for the Qilin They will not have pure blood children, since their genetics are not adapted, but it is a miracle to see when a pure Qilin is born from a mixture.",
+              "They delight in the arts, particularly puzzles and storytelling, and draw on ancestral clans, drawing their intelligence from both the living and spirits. Strategists and scholars, Qilin is an excellent magician and artificer. It is not uncommon for one to seek some important position in society, while the few born with white scales and clear eyes are often defined in oracles."
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://i.imgur.com/MidhYoh.jpg"
+            }
+          }
+        ]
+      },
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d8",
+        "baseWeight": 90,
+        "weightMod": "1d4"
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "sylvan": true
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "1": [
+              "dancing lights#c"
+            ],
+            "3": [
+              "charm person"
+            ],
+            "5": [
+              "alter self"
+            ]
+          },
+          "ability": "int"
+        }
+      ]
+    }
+  ]
 }
