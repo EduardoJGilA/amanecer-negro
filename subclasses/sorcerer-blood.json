@@ -21,7 +21,9 @@
             "classSource": "PHB",
             "subclassFeatures": [
                 "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
+                "Thirst for Blood|Sorcerer||Bloodtouched|SorcererBlood|6",
                 "Tradición Sangrienta Superior|Sorcerer||Bloodtouched|SorcererBlood|6",
+                "Poder derrochador|Sorcerer||Bloodtouched|SorcererBlood|14",
                 "Maestro de la Sangre|Sorcerer||Bloodtouched|SorcererBlood|18"
             ]
         }
@@ -40,6 +42,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tradición Sangrienta|Sorcerer||Bloodtouched|SorcererBlood|1"
                 }
             ]
         },
@@ -53,7 +59,7 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Aprendes conjuros adicionales según tu nivel de hechicero:",
+                "Aprendes conjuros adicionales de manera gratuita según tu nivel de hechicero:",
                 {
                     "type": "list",
                     "items": [
@@ -68,6 +74,31 @@
             ]
         },
         {
+            "name": "Tradición Sangrienta",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 1,
+            "entries": [
+                "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel después de nivel 3."
+            ]
+        },
+        {
+            "name": "Thirst for Blood",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Una vez por turno, cuando matas a una o más criaturas que tienen sangre con un conjuro de 1er nivel o superior, recuperas puntos de golpe equivalentes a tres veces el nivel del conjuro."
+            ]
+        },
+        {
             "name": "Tradición Sangrienta Superior",
             "source": "SorcererBlood",
             "className": "Sorcerer",
@@ -77,8 +108,21 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices.",
-                "Además, una vez por turno, al matar a una criatura con sangre usando un conjuro, recuperas vida igual a 3 veces el nivel del conjuro."
+                "A partir del nivel 6, añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices."
+            ]
+        },
+        {
+            "name": "Poder derrochador",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Tu cuerpo es capaz de alcanzar límites inimaginables. Una vez por turno, si realizaste la Acción de Ataque, puedes infligir {@damage 6} + tu bonificador de competencia + tu modificador de {@b Constitución} como acción adicional y recibir la mitad del daño infligido.",
+                "Si lo haces, puedes realizar una segunda Acción de Ataque este turno. En el nivel 18, puedes usar esta función una vez más (dos veces en total)."
             ]
         },
         {
@@ -91,9 +135,16 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Por 5 puntos de hechicería o la mitad de tu vida actual, controlas a un cadáver o criatura inconsciente a 30 pies.",
-                "La criatura actúa en tu iniciativa, tiene sus propias acciones y recupera vida igual a tu nivel x {@dice 1d4}.",
-                "Mientras esté activa, tienes ventaja en salvaciones de Constitución y recuperas un espacio de conjuro de nivel 4 o inferior."
+                "Por 5 puntos de hechicería o la mitad de tu vida actual (mientras superes los 20 HP), controlas a un cadáver o criatura inconsciente a 30 pies. Esta criatura comparte tu iniciativa y tiene su propia acción, bonificación de acción y reacción.",
+                "La criatura recupera vida igual a tu nivel x {@dice 1d4}. Al morir, su alma no podrá recuperarse. Mientras esté activa, ganas los siguientes beneficios:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Ventaja en tiradas de salvación de {@b Constitución}.",
+                        "Una cuarta parte de los puntos recuperados se convierten en puntos de vida temporales.",
+                        "Recuperas un espacio de conjuro de nivel 4 o inferior."
+                    ]
+                }
             ]
         }
     ]

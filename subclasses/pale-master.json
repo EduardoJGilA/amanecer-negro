@@ -1,0 +1,161 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "PaleMasterHB",
+                "abbreviation": "PM",
+                "full": "Pale Master (Sorcerer)",
+                "authors": [
+                    "User"
+                ],
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Pale Master",
+            "shortName": "Pale Master",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Pale Master|Sorcerer||Pale Master|PaleMasterHB|1",
+                "Emissary of Death|Sorcerer||Pale Master|PaleMasterHB|6",
+                "Spellstitched Cohort|Sorcerer||Pale Master|PaleMasterHB|14",
+                "Overlord|Sorcerer||Pale Master|PaleMasterHB|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Pale Master",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 1,
+            "entries": [
+                "Tus poderes son de origen nigromántico, tu carne está petrificada y corrupta. Eres una mente viva atrapada dentro de un cadáver en descomposición.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Deathsign|Sorcerer||Pale Master|PaleMasterHB|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Undead Cohort|Sorcerer||Pale Master|PaleMasterHB|1"
+                }
+            ]
+        },
+        {
+            "name": "Deathsign",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Estás marcado con la muerte. Cuando normalmente recibirías daño necrótico de un hechizo de nivel 1 o superior, en su lugar recuperas puntos de golpe equivalentes a la mitad del daño necrótico infligido (redondeado hacia abajo).",
+                "Además, aprendes conjuros adicionales de nigromancia que no cuentan contra tu número total de hechizos conocidos:",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b 1º:} {@spell inflict wounds}",
+                        "{@b 3º:} {@spell ray of enfeeblement}",
+                        "{@b 5º:} {@spell animate dead}",
+                        "{@b 7º:} {@spell blight}",
+                        "{@b 9º:} {@spell contagion}",
+                        "{@b 11º:} {@spell create undead}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Undead Cohort",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Puedes controlar criaturas a tu disposición. Puedes tener un número de criaturas igual a tu bonificador de competencia.",
+                "El valor de desafío (CR) máximo no puede superar la mitad de tu nivel de hechicero (redondeado hacia abajo).",
+                "Mantener este control requiere gastar puntos de hechicería cada día según la tabla:",
+                {
+                    "type": "table",
+                    "caption": "Costo de Undead Cohort",
+                    "colLabels": [
+                        "CR",
+                        "Puntos de Hechicería"
+                    ],
+                    "colStyles": [
+                        "col-6",
+                        "col-6"
+                    ],
+                    "rows": [
+                        ["1/8", "1"],
+                        ["1/4", "2"],
+                        ["1/2", "3"],
+                        ["1", "4"],
+                        ["2", "5"],
+                        ["3", "6"],
+                        ["4", "7"],
+                        ["5", "8"],
+                        ["6", "9"],
+                        ["7", "10"],
+                        ["8", "11"],
+                        ["9", "12"],
+                        ["10", "13"]
+                    ]
+                },
+                "Cada día deberás realizar una tirada de {@skill Constitución} CD (10 + CR más alto + modificador de Sabiduría de tu Undead Cohort) para mantener el control."
+            ]
+        },
+        {
+            "name": "Emissary of Death",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Cada vez que infligas daño con un hechizo de nigromancia, puedes añadir tu modificador de {@b Carisma} al resultado del daño.",
+                "Cuando lo hagas, puedes gastar 1 punto de conjuro para obtener {@dice 1d10} puntos de golpe temporales."
+            ]
+        },
+        {
+            "name": "Spellstitched Cohort",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Tu cohorte mejora. Ahora aprende un truco de nigromancia que puede lanzar en su turno utilizando tu nivel de hechicero.",
+                "Además, tu {@i Marca de la Muerte} se extiende a tus cohortes: cuando uno de ellos reciba daño necrótico de una fuente que no sea un truco, en su lugar recupera puntos de golpe igual a la cantidad de daño necrótico."
+            ]
+        },
+        {
+            "name": "Overlord",
+            "source": "PaleMasterHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Pale Master",
+            "subclassSource": "PaleMasterHB",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Al alcanzar el nivel 18, cuando lanzas el hechizo {@spell animate dead} para volver a afirmar el control sobre los no muertos, puedes gastar un número de puntos de conjuro para lanzarlo como si estuvieras utilizando una ranura de hechizo de un nivel más alto por cada punto gastado."
+            ]
+        }
+    ]
+}

@@ -61,6 +61,15 @@
         "version": "1.0.0"
       },
       {
+        "json": "PaleMasterHB",
+        "abbreviation": "PM",
+        "full": "Pale Master (Sorcerer)",
+        "authors": [
+          "User"
+        ],
+        "version": "1.0.0"
+      },
+      {
         "json": "SorcererBlood",
         "abbreviation": "SB",
         "full": "Bloodtouched Sorcerer",
@@ -72,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773782035
+    "dateLastModified": 1773782839
   },
   "subclass": [
     {
@@ -84,6 +93,8 @@
       "subclassFeatures": [
         "Blood Knight|Fighter||Blood Knight|BloodKnightHB|3",
         "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
+        "Body Regeneration|Fighter||Blood Knight|BloodKnightHB|10",
+        "Superior Binding|Fighter||Blood Knight|BloodKnightHB|15",
         "Éxtasis Sangriento|Fighter||Blood Knight|BloodKnightHB|18"
       ]
     },
@@ -161,6 +172,19 @@
       ]
     },
     {
+      "name": "Pale Master",
+      "shortName": "Pale Master",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Pale Master|Sorcerer||Pale Master|PaleMasterHB|1",
+        "Emissary of Death|Sorcerer||Pale Master|PaleMasterHB|6",
+        "Spellstitched Cohort|Sorcerer||Pale Master|PaleMasterHB|14",
+        "Overlord|Sorcerer||Pale Master|PaleMasterHB|18"
+      ]
+    },
+    {
       "name": "Rogue Of Blood",
       "shortName": "Blood",
       "source": "AN",
@@ -181,7 +205,9 @@
       "classSource": "PHB",
       "subclassFeatures": [
         "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
+        "Thirst for Blood|Sorcerer||Bloodtouched|SorcererBlood|6",
         "Tradición Sangrienta Superior|Sorcerer||Bloodtouched|SorcererBlood|6",
+        "Poder derrochador|Sorcerer||Bloodtouched|SorcererBlood|14",
         "Maestro de la Sangre|Sorcerer||Bloodtouched|SorcererBlood|18"
       ]
     },
@@ -217,6 +243,10 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Hemomancy|Fighter||Blood Knight|BloodKnightHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Tecnicas de Fusion|Fighter||Blood Knight|BloodKnightHB|3"
         }
       ]
     },
@@ -230,7 +260,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Ganas competencia en Historia, Religión o Arcanismo. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
+        "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
       ]
     },
     {
@@ -245,7 +275,29 @@
       "entries": [
         "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@b Constitución} como habilidad de lanzamiento.",
         "Tus espacios de conjuro se recuperan tras un descanso largo, pero puedes recuperar uno durante un descanso corto una vez al día.",
-        "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}."
+        "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}.",
+        "Conoces dos hechizos de hemomancia de 1er nivel a tu elección. La tabla muestra cuántos espacios tienes y de qué nivel son."
+      ]
+    },
+    {
+      "name": "Tecnicas de Fusion",
+      "source": "BloodKnightHB",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassShortName": "Blood Knight",
+      "subclassSource": "BloodKnightHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Cuando activas una técnica de fusión al usar {@i Blood Fusion}, esta se mantiene activa. Cambiar de técnica cuesta daño extra. Al nivel 3 ganas:",
+        {
+          "type": "list",
+          "items": [
+            "Aumentas el rango de tus ataques en 5 pies.",
+            "Puedes imbuir tu arma con un elemento: Fuego, Hielo, Veneno, Eléctrico o Necrótico.",
+            "Puedes moverte sin provocar ataques de oportunidad contra alguien que hayas atacado previamente."
+          ]
+        }
       ]
     },
     {
@@ -260,7 +312,71 @@
       "entries": [
         "Al impactar con tu arma fusionada, puedes usar una {@action bonus action} y sufrir {@damage 2d8} de daño propio para maldecir al enemigo.",
         "La criatura no puede alejarse más de 30 pies de ti sin recibir {@damage 2d6} daño psíquico (CD {@dc 8+pb+cha} para reducir a la mitad y romper el vínculo).",
-        "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques."
+        "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques.",
+        "No puede esconderse de ti e incluso si se vuelve invisible siempre sabes su posición.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Blood Track|Fighter||Blood Knight|BloodKnightHB|7"
+        }
+      ]
+    },
+    {
+      "name": "Blood Track",
+      "source": "BloodKnightHB",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassShortName": "Blood Knight",
+      "subclassSource": "BloodKnightHB",
+      "level": 7,
+      "entries": [
+        "Puedes saber la localización exacta de una criatura si tienes una muestra de sangre o ha sido afectada por tu Blood Binding.",
+        "Añades tu modificador de {@b Carisma} a las tiradas de Investigación o Percepción para buscarla. Tienes ventaja si está afectada por el vínculo.",
+        "Recibes {@damage 1d6} de daño por cada milla recorrida manteniendo la conexión."
+      ]
+    },
+    {
+      "name": "Body Regeneration",
+      "source": "BloodKnightHB",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassShortName": "Blood Knight",
+      "subclassSource": "BloodKnightHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Tu cuerpo se ha curtido. Puedes reducir el daño de {@i Blood Fusion}, {@i Blood Binding} o cambio de técnicas en un número igual a tu modificador de {@b Constitución}.",
+        "Puedes usar esta reducción un número de veces igual a tu bonificador de competencia por descanso largo.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Binding Augmented|Fighter||Blood Knight|BloodKnightHB|10"
+        },
+        "A partir de este nivel, puedes aplicar el daño de {@i Blood Fusion} una segunda vez por turno."
+      ]
+    },
+    {
+      "name": "Binding Augmented",
+      "source": "BloodKnightHB",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassShortName": "Blood Knight",
+      "subclassSource": "BloodKnightHB",
+      "level": 10,
+      "entries": [
+        "Añades tu bonificador de {@b Carisma} al daño que provocas contra la criatura conectada por el vínculo."
+      ]
+    },
+    {
+      "name": "Superior Binding",
+      "source": "BloodKnightHB",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassShortName": "Blood Knight",
+      "subclassSource": "BloodKnightHB",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "Puedes realizar un ataque extra como parte de tu acción de ataque contra el enemigo afectado por tu Blood Binding.",
+        "Además, como reacción, puedes aumentar tu CA en un valor igual a la mitad del costo de activar tu fusión actual (mínimo +1)."
       ]
     },
     {
@@ -279,7 +395,8 @@
           "items": [
             "Resistencia a todo daño excepto Radiante y Psíquico.",
             "Puedes usar {@classFeature Action Surge|Fighter||2|PHB} una tercera vez.",
-            "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente."
+            "Ganas 10 pies de movimiento extra.",
+            "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente, perdiendo el estado de éxtasis."
           ]
         }
       ]
@@ -661,6 +778,174 @@
       ]
     },
     {
+      "name": "Pale Master",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 1,
+      "entries": [
+        "Tus poderes son de origen nigromántico, tu carne está petrificada y corrupta. Eres una mente viva atrapada dentro de un cadáver en descomposición.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Deathsign|Sorcerer||Pale Master|PaleMasterHB|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Undead Cohort|Sorcerer||Pale Master|PaleMasterHB|1"
+        }
+      ]
+    },
+    {
+      "name": "Deathsign",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "Estás marcado con la muerte. Cuando normalmente recibirías daño necrótico de un hechizo de nivel 1 o superior, en su lugar recuperas puntos de golpe equivalentes a la mitad del daño necrótico infligido (redondeado hacia abajo).",
+        "Además, aprendes conjuros adicionales de nigromancia que no cuentan contra tu número total de hechizos conocidos:",
+        {
+          "type": "list",
+          "items": [
+            "{@b 1º:} {@spell inflict wounds}",
+            "{@b 3º:} {@spell ray of enfeeblement}",
+            "{@b 5º:} {@spell animate dead}",
+            "{@b 7º:} {@spell blight}",
+            "{@b 9º:} {@spell contagion}",
+            "{@b 11º:} {@spell create undead}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Undead Cohort",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "Puedes controlar criaturas a tu disposición. Puedes tener un número de criaturas igual a tu bonificador de competencia.",
+        "El valor de desafío (CR) máximo no puede superar la mitad de tu nivel de hechicero (redondeado hacia abajo).",
+        "Mantener este control requiere gastar puntos de hechicería cada día según la tabla:",
+        {
+          "type": "table",
+          "caption": "Costo de Undead Cohort",
+          "colLabels": [
+            "CR",
+            "Puntos de Hechicería"
+          ],
+          "colStyles": [
+            "col-6",
+            "col-6"
+          ],
+          "rows": [
+            [
+              "1/8",
+              "1"
+            ],
+            [
+              "1/4",
+              "2"
+            ],
+            [
+              "1/2",
+              "3"
+            ],
+            [
+              "1",
+              "4"
+            ],
+            [
+              "2",
+              "5"
+            ],
+            [
+              "3",
+              "6"
+            ],
+            [
+              "4",
+              "7"
+            ],
+            [
+              "5",
+              "8"
+            ],
+            [
+              "6",
+              "9"
+            ],
+            [
+              "7",
+              "10"
+            ],
+            [
+              "8",
+              "11"
+            ],
+            [
+              "9",
+              "12"
+            ],
+            [
+              "10",
+              "13"
+            ]
+          ]
+        },
+        "Cada día deberás realizar una tirada de {@skill Constitución} CD (10 + CR más alto + modificador de Sabiduría de tu Undead Cohort) para mantener el control."
+      ]
+    },
+    {
+      "name": "Emissary of Death",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Cada vez que infligas daño con un hechizo de nigromancia, puedes añadir tu modificador de {@b Carisma} al resultado del daño.",
+        "Cuando lo hagas, puedes gastar 1 punto de conjuro para obtener {@dice 1d10} puntos de golpe temporales."
+      ]
+    },
+    {
+      "name": "Spellstitched Cohort",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Tu cohorte mejora. Ahora aprende un truco de nigromancia que puede lanzar en su turno utilizando tu nivel de hechicero.",
+        "Además, tu {@i Marca de la Muerte} se extiende a tus cohortes: cuando uno de ellos reciba daño necrótico de una fuente que no sea un truco, en su lugar recupera puntos de golpe igual a la cantidad de daño necrótico."
+      ]
+    },
+    {
+      "name": "Overlord",
+      "source": "PaleMasterHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Pale Master",
+      "subclassSource": "PaleMasterHB",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "Al alcanzar el nivel 18, cuando lanzas el hechizo {@spell animate dead} para volver a afirmar el control sobre los no muertos, puedes gastar un número de puntos de conjuro para lanzarlo como si estuvieras utilizando una ranura de hechizo de un nivel más alto por cada punto gastado."
+      ]
+    },
+    {
       "name": "Rogue Of Blood",
       "source": "AN",
       "className": "Rogue",
@@ -782,6 +1067,10 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Tradición Sangrienta|Sorcerer||Bloodtouched|SorcererBlood|1"
         }
       ]
     },
@@ -795,7 +1084,7 @@
       "level": 1,
       "header": 1,
       "entries": [
-        "Aprendes conjuros adicionales según tu nivel de hechicero:",
+        "Aprendes conjuros adicionales de manera gratuita según tu nivel de hechicero:",
         {
           "type": "list",
           "items": [
@@ -810,6 +1099,31 @@
       ]
     },
     {
+      "name": "Tradición Sangrienta",
+      "source": "SorcererBlood",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Bloodtouched",
+      "subclassSource": "SorcererBlood",
+      "level": 1,
+      "entries": [
+        "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel después de nivel 3."
+      ]
+    },
+    {
+      "name": "Thirst for Blood",
+      "source": "SorcererBlood",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Bloodtouched",
+      "subclassSource": "SorcererBlood",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Una vez por turno, cuando matas a una o más criaturas que tienen sangre con un conjuro de 1er nivel o superior, recuperas puntos de golpe equivalentes a tres veces el nivel del conjuro."
+      ]
+    },
+    {
       "name": "Tradición Sangrienta Superior",
       "source": "SorcererBlood",
       "className": "Sorcerer",
@@ -819,8 +1133,21 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "Añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices.",
-        "Además, una vez por turno, al matar a una criatura con sangre usando un conjuro, recuperas vida igual a 3 veces el nivel del conjuro."
+        "A partir del nivel 6, añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices."
+      ]
+    },
+    {
+      "name": "Poder derrochador",
+      "source": "SorcererBlood",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Bloodtouched",
+      "subclassSource": "SorcererBlood",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Tu cuerpo es capaz de alcanzar límites inimaginables. Una vez por turno, si realizaste la Acción de Ataque, puedes infligir {@damage 6} + tu bonificador de competencia + tu modificador de {@b Constitución} como acción adicional y recibir la mitad del daño infligido.",
+        "Si lo haces, puedes realizar una segunda Acción de Ataque este turno. En el nivel 18, puedes usar esta función una vez más (dos veces en total)."
       ]
     },
     {
@@ -833,9 +1160,16 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "Por 5 puntos de hechicería o la mitad de tu vida actual, controlas a un cadáver o criatura inconsciente a 30 pies.",
-        "La criatura actúa en tu iniciativa, tiene sus propias acciones y recupera vida igual a tu nivel x {@dice 1d4}.",
-        "Mientras esté activa, tienes ventaja en salvaciones de Constitución y recuperas un espacio de conjuro de nivel 4 o inferior."
+        "Por 5 puntos de hechicería o la mitad de tu vida actual (mientras superes los 20 HP), controlas a un cadáver o criatura inconsciente a 30 pies. Esta criatura comparte tu iniciativa y tiene su propia acción, bonificación de acción y reacción.",
+        "La criatura recupera vida igual a tu nivel x {@dice 1d4}. Al morir, su alma no podrá recuperarse. Mientras esté activa, ganas los siguientes beneficios:",
+        {
+          "type": "list",
+          "items": [
+            "Ventaja en tiradas de salvación de {@b Constitución}.",
+            "Una cuarta parte de los puntos recuperados se convierten en puntos de vida temporales.",
+            "Recuperas un espacio de conjuro de nivel 4 o inferior."
+          ]
+        }
       ]
     },
     {

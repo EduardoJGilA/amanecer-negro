@@ -22,6 +22,8 @@
             "subclassFeatures": [
                 "Blood Knight|Fighter||Blood Knight|BloodKnightHB|3",
                 "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
+                "Body Regeneration|Fighter||Blood Knight|BloodKnightHB|10",
+                "Superior Binding|Fighter||Blood Knight|BloodKnightHB|15",
                 "Éxtasis Sangriento|Fighter||Blood Knight|BloodKnightHB|18"
             ]
         }
@@ -44,6 +46,10 @@
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Hemomancy|Fighter||Blood Knight|BloodKnightHB|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tecnicas de Fusion|Fighter||Blood Knight|BloodKnightHB|3"
                 }
             ]
         },
@@ -57,7 +63,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Ganas competencia en Historia, Religión o Arcanismo. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
+                "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
             ]
         },
         {
@@ -72,7 +78,29 @@
             "entries": [
                 "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@b Constitución} como habilidad de lanzamiento.",
                 "Tus espacios de conjuro se recuperan tras un descanso largo, pero puedes recuperar uno durante un descanso corto una vez al día.",
-                "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}."
+                "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}.",
+                "Conoces dos hechizos de hemomancia de 1er nivel a tu elección. La tabla muestra cuántos espacios tienes y de qué nivel son."
+            ]
+        },
+        {
+            "name": "Tecnicas de Fusion",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Cuando activas una técnica de fusión al usar {@i Blood Fusion}, esta se mantiene activa. Cambiar de técnica cuesta daño extra. Al nivel 3 ganas:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Aumentas el rango de tus ataques en 5 pies.",
+                        "Puedes imbuir tu arma con un elemento: Fuego, Hielo, Veneno, Eléctrico o Necrótico.",
+                        "Puedes moverte sin provocar ataques de oportunidad contra alguien que hayas atacado previamente."
+                    ]
+                }
             ]
         },
         {
@@ -87,7 +115,71 @@
             "entries": [
                 "Al impactar con tu arma fusionada, puedes usar una {@action bonus action} y sufrir {@damage 2d8} de daño propio para maldecir al enemigo.",
                 "La criatura no puede alejarse más de 30 pies de ti sin recibir {@damage 2d6} daño psíquico (CD {@dc 8+pb+cha} para reducir a la mitad y romper el vínculo).",
-                "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques."
+                "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques.",
+                "No puede esconderse de ti e incluso si se vuelve invisible siempre sabes su posición.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Blood Track|Fighter||Blood Knight|BloodKnightHB|7"
+                }
+            ]
+        },
+        {
+            "name": "Blood Track",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 7,
+            "entries": [
+                "Puedes saber la localización exacta de una criatura si tienes una muestra de sangre o ha sido afectada por tu Blood Binding.",
+                "Añades tu modificador de {@b Carisma} a las tiradas de Investigación o Percepción para buscarla. Tienes ventaja si está afectada por el vínculo.",
+                "Recibes {@damage 1d6} de daño por cada milla recorrida manteniendo la conexión."
+            ]
+        },
+        {
+            "name": "Body Regeneration",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Tu cuerpo se ha curtido. Puedes reducir el daño de {@i Blood Fusion}, {@i Blood Binding} o cambio de técnicas en un número igual a tu modificador de {@b Constitución}.",
+                "Puedes usar esta reducción un número de veces igual a tu bonificador de competencia por descanso largo.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Binding Augmented|Fighter||Blood Knight|BloodKnightHB|10"
+                },
+                "A partir de este nivel, puedes aplicar el daño de {@i Blood Fusion} una segunda vez por turno."
+            ]
+        },
+        {
+            "name": "Binding Augmented",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 10,
+            "entries": [
+                "Añades tu bonificador de {@b Carisma} al daño que provocas contra la criatura conectada por el vínculo."
+            ]
+        },
+        {
+            "name": "Superior Binding",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Puedes realizar un ataque extra como parte de tu acción de ataque contra el enemigo afectado por tu Blood Binding.",
+                "Además, como reacción, puedes aumentar tu CA en un valor igual a la mitad del costo de activar tu fusión actual (mínimo +1)."
             ]
         },
         {
@@ -106,7 +198,8 @@
                     "items": [
                         "Resistencia a todo daño excepto Radiante y Psíquico.",
                         "Puedes usar {@classFeature Action Surge|Fighter||2|PHB} una tercera vez.",
-                        "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente."
+                        "Ganas 10 pies de movimiento extra.",
+                        "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente, perdiendo el estado de éxtasis."
                     ]
                 }
             ]

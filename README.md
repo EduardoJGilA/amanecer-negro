@@ -6,11 +6,11 @@
 
 ## 🎭 Contenido Incluido
 
-### 🗡️ Subclases (7)
+### 🗡️ Subclases (8)
 Nuevas especializaciones cargadas de sabor y mecánicas únicas:
 *   **Bardo:** [Colegio de Sanación](subclasses/college-of-healing.json) — Maestros de la recuperación rítmica.
 *   **Guerrero:** [Caballero de Sangre (Blood Knight)](subclasses/blood-knight.json) — Marciales que sacrifican vitalidad por poder.
-*   **Hechicero:** [Bloodtouched (Sorcerer)](subclasses/sorcerer-blood.json) — Magia nacida de una esencia vital alterada.
+*   **Hechicero:** [Bloodtouched (Sorcerer)](subclasses/sorcerer-blood.json) y [Pale Master](subclasses/pale-master.json).
 *   **Paladín:** [Oath of the Blood](subclasses/oath-of-blood.json) y [Juramento del Crepúsculo](subclasses/oath-of-twilight.json).
 *   **Pícaro:** [Wild Card](subclasses/wildcard.json) (Revisado) y [Rogue Of Blood](subclasses/rogue-of-blood.json).
 
