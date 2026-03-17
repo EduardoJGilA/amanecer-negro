@@ -1,0 +1,90 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "HomebrewSubclases",
+                "abbreviation": "HBSC",
+                "full": "Compendio de Subclases Homebrew",
+                "authors": [
+                    "User"
+                ],
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Juramento del Crepúsculo",
+            "shortName": "Crepúsculo",
+            "source": "HomebrewSubclases",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Juramento del Crepúsculo|Paladin||Crepúsculo|HomebrewSubclases|3"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Juramento del Crepúsculo",
+            "source": "HomebrewSubclases",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Crepúsculo",
+            "subclassSource": "HomebrewSubclases",
+            "level": 3,
+            "entries": [
+                "Los paladines que hacen el Juramento del Crepúsculo se encuentran en la línea entre la luz y la oscuridad, sirviendo como guardianes en los límites mortales.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Velo de la Oscuridad|Paladin||Crepúsculo|HomebrewSubclases|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Canalizar Divinidad|Paladin||Crepúsculo|HomebrewSubclases|3"
+                }
+            ]
+        },
+        {
+            "name": "Velo de la Oscuridad",
+            "source": "HomebrewSubclases",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Crepúsculo",
+            "subclassSource": "HomebrewSubclases",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Como una {@action action}, invocas el Velo (armadura de ébano).",
+                "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@feature Divine Smite|PHB} inflige daño necrótico en lugar de radiante."
+            ]
+        },
+        {
+            "name": "Canalizar Divinidad",
+            "source": "HomebrewSubclases",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Crepúsculo",
+            "subclassSource": "HomebrewSubclases",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Ganas dos opciones de Canalizar Divinidad:",
+                {
+                    "name": "Baluarte de Luz",
+                    "type": "entries",
+                    "entries": [
+                        "Como acción, criaturas a 30 pies ganan puntos de golpe temporales iguales a {@dice 1d10} + tu modificador de Carisma."
+                    ]
+                },
+                {
+                    "name": "Cadenas de Justicia",
+                    "type": "entries",
+                    "entries": [
+                        "Una criatura a 60 pies hace una salvación de {@savingThrow Dexterity}. Si falla, no puede alejarse de ti."
+                    ]
+                }
+            ]
+        }
+    ]
+}
