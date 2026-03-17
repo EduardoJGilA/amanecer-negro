@@ -1,0 +1,115 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "BloodKnightHB",
+                "abbreviation": "BK",
+                "full": "The Blood Knight",
+                "authors": [
+                    "User"
+                ],
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Blood Knight",
+            "shortName": "Blood Knight",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Blood Knight|Fighter||Blood Knight|BloodKnightHB|3",
+                "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
+                "Éxtasis Sangriento|Fighter||Blood Knight|BloodKnightHB|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Blood Knight",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 3,
+            "entries": [
+                "Los Caballeros de Sangre son guerreros que han aprendido a canalizar su propia esencia vital en combate, mezclando la maestría marcial con artes oscuras de hemomancia.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Blood Tradition|Fighter||Blood Knight|BloodKnightHB|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Hemomancy|Fighter||Blood Knight|BloodKnightHB|3"
+                }
+            ]
+        },
+        {
+            "name": "Blood Tradition",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Ganas competencia en Historia, Religión o Arcanismo. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
+            ]
+        },
+        {
+            "name": "Hemomancy",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@bold Constitución} como habilidad de lanzamiento.",
+                "Tus espacios de conjuro se recuperan tras un {@rest long resta}, pero puedes recuperar uno durante un {@rest short rest} una vez al día.",
+                "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}."
+            ]
+        },
+        {
+            "name": "Blood Binding",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Al impactar con tu arma fusionada, puedes usar una {@action bonus action} y sufrir {@damage 2d8} de daño propio para maldecir al enemigo.",
+                "La criatura no puede alejarse más de 30 pies de ti sin recibir {@damage 2d6} daño psíquico (CD {@dc 8+pb+cha} para reducir a la mitad y romper el vínculo).",
+                "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques."
+            ]
+        },
+        {
+            "name": "Éxtasis Sangriento",
+            "source": "BloodKnightHB",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Blood Knight",
+            "subclassSource": "BloodKnightHB",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Como {@action bonus action}, sufres {@damage 10d6} de daño para entrar en éxtasis por 1 minuto:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Resistencia a todo daño excepto Radiante y Psíquico.",
+                        "Puedes usar {@classFeature Action Surge|Fighter||2|PHB} una tercera vez.",
+                        "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente."
+                    ]
+                }
+            ]
+        }
+    ]
+}

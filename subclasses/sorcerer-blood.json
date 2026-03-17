@@ -1,0 +1,100 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "SorcererBlood",
+                "abbreviation": "SB",
+                "full": "Bloodtouched Sorcerer",
+                "authors": [
+                    "User"
+                ],
+                "version": "1.0.0"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "name": "Bloodtouched",
+            "shortName": "Bloodtouched",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
+                "Tradición Sangrienta Superior|Sorcerer||Bloodtouched|SorcererBlood|6",
+                "Maestro de la Sangre|Sorcerer||Bloodtouched|SorcererBlood|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Bloodtouched",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 1,
+            "entries": [
+                "Tu magia proviene de una línea de sangre maldita o de un ritual prohibido que alteró tu esencia misma.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
+                }
+            ]
+        },
+        {
+            "name": "Bloodsign",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "Aprendes conjuros adicionales según tu nivel de hechicero:",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@b 1º:} {@spell Bloodburn}",
+                        "{@b 3º:} {@spell Vampire's Kiss}",
+                        "{@b 5º:} {@spell Tides of Blood}",
+                        "{@b 7º:} {@spell Draining thread}",
+                        "{@b 9º:} {@spell Bloodcurse}",
+                        "{@b 11º:} {@spell Rain of Blood}"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tradición Sangrienta Superior",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Añades tu modificador de {@bold Constitución} a todas las tiradas de salvación que realices.",
+                "Además, una vez por turno, al matar a una criatura con sangre usando un conjuro, recuperas vida igual a 3 veces el nivel del conjuro."
+            ]
+        },
+        {
+            "name": "Maestro de la Sangre",
+            "source": "SorcererBlood",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Bloodtouched",
+            "subclassSource": "SorcererBlood",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Por 5 puntos de hechicería o la mitad de tu vida actual, controlas a un cadáver o criatura inconsciente a 30 pies.",
+                "La criatura actúa en tu iniciativa, tiene sus propias acciones y recupera vida igual a tu nivel x {@dice 1d4}.",
+                "Mientras esté activa, tienes ventaja en salvaciones de Constitución y recuperas un espacio de conjuro de nivel 4 o inferior."
+            ]
+        }
+    ]
+}
