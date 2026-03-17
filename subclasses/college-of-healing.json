@@ -4,7 +4,7 @@
             {
                 "json": "ColegioSanacion",
                 "abbreviation": "CS",
-                "full": "Colegio de Sanación (Bardo)",
+                "full": "Colegio de Sanacion (Bardo)",
                 "authors": [
                     "User"
                 ],
@@ -18,40 +18,40 @@
     },
     "subclass": [
         {
-            "name": "Colegio de Sanación",
-            "shortName": "Sanación",
+            "name": "Colegio de Sanacion",
+            "shortName": "Sanacion",
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Colegio de Sanación|Bard||Sanación|ColegioSanacion|3",
-                "Primeros Auxilios Arcanos|Bard||Sanación|ColegioSanacion|6",
-                "Ritmo de Recuperación|Bard||Sanación|ColegioSanacion|14"
+                "Colegio de Sanacion|Bard||Sanacion|ColegioSanacion|3",
+                "Primeros Auxilios Arcanos|Bard||Sanacion|ColegioSanacion|6",
+                "Ritmo de Recuperación|Bard||Sanacion|ColegioSanacion|14"
             ]
         }
     ],
     "subclassFeature": [
         {
-            "name": "Colegio de Sanación",
+            "name": "Colegio de Sanacion",
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 3,
             "entries": [
-                "Los bardos del Colegio de Sanación utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
+                "Los bardos del Colegio de Sanacion utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Proficiencias Adicionales|Bard||Sanación|ColegioSanacion|3"
+                    "subclassFeature": "Proficiencias Adicionales|Bard||Sanacion|ColegioSanacion|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Conocimiento de Remedios|Bard||Sanación|ColegioSanacion|3"
+                    "subclassFeature": "Conocimiento de Remedios|Bard||Sanacion|ColegioSanacion|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Trato a la Cabecera|Bard||Sanación|ColegioSanacion|3"
+                    "subclassFeature": "Trato a la Cabecera|Bard||Sanacion|ColegioSanacion|3"
                 }
             ]
         },
@@ -60,7 +60,7 @@
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 3,
             "header": 1,
@@ -73,7 +73,7 @@
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 3,
             "header": 1,
@@ -82,7 +82,7 @@
                 "Además, puedes aprender conjuros de la siguiente lista como conjuros de bardo:",
                 {
                     "type": "table",
-                    "caption": "Conjuros de Sanación",
+                    "caption": "Conjuros de Sanacion",
                     "colLabels": [
                         "Nivel",
                         "Conjuros"
@@ -125,7 +125,7 @@
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 3,
             "header": 1,
@@ -139,7 +139,7 @@
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 6,
             "header": 2,
@@ -153,7 +153,7 @@
             "source": "ColegioSanacion",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanación",
+            "subclassShortName": "Sanacion",
             "subclassSource": "ColegioSanacion",
             "level": 14,
             "header": 2,
