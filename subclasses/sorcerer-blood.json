@@ -77,7 +77,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Añades tu modificador de {@bold Constitución} a todas las tiradas de salvación que realices.",
+                "Añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices.",
                 "Además, una vez por turno, al matar a una criatura con sangre usando un conjuro, recuperas vida igual a 3 veces el nivel del conjuro."
             ]
         },
