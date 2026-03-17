@@ -72,7 +72,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773781751
+    "dateLastModified": 1773781858
   },
   "subclass": [
     {
@@ -243,8 +243,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@bold Constitución} como habilidad de lanzamiento.",
-        "Tus espacios de conjuro se recuperan tras un {@rest long resta}, pero puedes recuperar uno durante un {@rest short rest} una vez al día.",
+        "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@b Constitución} como habilidad de lanzamiento.",
+        "Tus espacios de conjuro se recuperan tras un descanso largo, pero puedes recuperar uno durante un descanso corto una vez al día.",
         "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}."
       ]
     },
