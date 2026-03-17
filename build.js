@@ -46,6 +46,17 @@ directoriesToScan.forEach(({ dir, keys }) => {
             if (!file.endsWith('.json')) continue;
             try {
                 const data = JSON.parse(fs.readFileSync(path.join(fullPath, file), 'utf-8'));
+                
+                // Collect sources
+                if (data._meta && data._meta.sources) {
+                    data._meta.sources.forEach(source => {
+                        const exists = output._meta.sources.find(s => s.json === source.json);
+                        if (!exists) {
+                            output._meta.sources.push(source);
+                        }
+                    });
+                }
+
                 // Append arrays for specific keys
                 keys.forEach(key => {
                     if (data[key] && Array.isArray(data[key])) {
