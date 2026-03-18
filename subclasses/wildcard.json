@@ -210,8 +210,8 @@
             "rarity": "none",
             "weaponCategory": "simple",
             "property": [
-                "f",
-                "thr"
+                "F",
+                "T"
             ],
             "range": "60/120",
             "dmg1": "{@dice 1d6}",
@@ -269,7 +269,7 @@
         {
             "name": "Cards",
             "source": "WildCardHomebrew",
-            "type": "am",
+            "type": "LA",
             "rarity": "none",
             "weight": 0,
             "entries": [
