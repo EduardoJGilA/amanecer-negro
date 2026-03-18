@@ -81,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773806887
+    "dateLastModified": 1773807460
   },
   "subclass": [
     {
@@ -1780,8 +1780,8 @@
       "rarity": "none",
       "weaponCategory": "simple",
       "property": [
-        "F",
-        "THR"
+        "f",
+        "thr"
       ],
       "range": "60/120",
       "dmg1": "{@dice 1d6}",
@@ -1839,7 +1839,7 @@
     {
       "name": "Cards",
       "source": "WildCardHomebrew",
-      "type": "AM",
+      "type": "am",
       "rarity": "none",
       "weight": 0,
       "entries": [
