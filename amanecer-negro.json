@@ -81,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773782839
+    "dateLastModified": 1773806887
   },
   "subclass": [
     {
@@ -1221,7 +1221,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
+        "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Cards|WildCardHomebrew} y su munición {@item Cards|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
         "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
         "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
         {
@@ -1279,7 +1279,7 @@
           "type": "list",
           "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
           "items": [
-            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo sufre daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
+            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo suflex daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
             "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
             "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
             "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
@@ -1769,6 +1769,81 @@
           },
           "ability": "int"
         }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "name": "Cards",
+      "source": "WildCardHomebrew",
+      "type": "R",
+      "rarity": "none",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "THR"
+      ],
+      "range": "60/120",
+      "dmg1": "{@dice 1d6}",
+      "dmgType": "S",
+      "entries": [
+        "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
+        {
+          "type": "table",
+          "caption": "Daño Base y Alcance del Comodín",
+          "colLabels": [
+            "Nivel",
+            "Daño Base",
+            "Alcance"
+          ],
+          "rows": [
+            [
+              "1–2",
+              "{@dice 1d4}",
+              "30/60 pies"
+            ],
+            [
+              "3–4",
+              "{@dice 1d6}",
+              "60/120 pies"
+            ],
+            [
+              "5–6",
+              "{@dice 1d8}",
+              "60/120 pies"
+            ],
+            [
+              "7–8",
+              "{@dice 1d10}",
+              "90/180 pies"
+            ],
+            [
+              "9–12",
+              "{@dice 1d12}",
+              "90/180 pies"
+            ],
+            [
+              "13–16",
+              "{@dice 2d8}",
+              "120/240 pies"
+            ],
+            [
+              "17–20",
+              "{@dice 2d10}",
+              "120/240 pies"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "source": "WildCardHomebrew",
+      "type": "AM",
+      "rarity": "none",
+      "weight": 0,
+      "entries": [
+        "Munición para el arma {@item Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
       ]
     }
   ]
