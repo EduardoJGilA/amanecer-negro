@@ -81,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773808555
+    "dateLastModified": 1773808929
   },
   "subclass": [
     {
@@ -1221,7 +1221,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Cards|WildCardHomebrew} y su munición {@item Cards|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
+        "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
         "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
         "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
         {
@@ -1774,18 +1774,20 @@
   ],
   "item": [
     {
-      "name": "Cards",
+      "name": "Deck of Cards",
       "source": "WildCardHomebrew",
       "type": "R",
       "rarity": "none",
       "weaponCategory": "simple",
       "property": [
         "F",
-        "T"
+        "T",
+        "AMO"
       ],
       "range": "60/120",
       "dmg1": "{@dice 1d6}",
       "dmgType": "S",
+      "ammoType": "{@item Card|WildCardHomebrew}",
       "entries": [
         "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
         {
@@ -1837,13 +1839,13 @@
       ]
     },
     {
-      "name": "Cards",
+      "name": "Card",
       "source": "WildCardHomebrew",
       "type": "A",
       "rarity": "none",
       "weight": 0,
       "entries": [
-        "Munición para el arma {@item Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
+        "Munición para el arma {@item Deck of Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
       ]
     }
   ]
