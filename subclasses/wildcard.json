@@ -206,7 +206,7 @@
         {
             "name": "Cards",
             "source": "WildCardHomebrew",
-            "type": "r",
+            "type": "R",
             "rarity": "none",
             "weaponCategory": "simple",
             "property": [
@@ -215,7 +215,7 @@
             ],
             "range": "60/120",
             "dmg1": "{@dice 1d6}",
-            "dmgType": "s",
+            "dmgType": "S",
             "entries": [
                 "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
                 {
@@ -269,7 +269,7 @@
         {
             "name": "Cards",
             "source": "WildCardHomebrew",
-            "type": "LA",
+            "type": "A",
             "rarity": "none",
             "weight": 0,
             "entries": [
