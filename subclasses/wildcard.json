@@ -23,10 +23,10 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Wild Card|Rogue||Wild Card|WildCardHomebrew|3",
-                "Cambiando las Probabilidades|Rogue||Wild Card|WildCardHomebrew|9",
-                "Giro del Destino|Rogue||Wild Card|WildCardHomebrew|13",
-                "Comodín Definitivo|Rogue||Wild Card|WildCardHomebrew|17"
+                "Wild Card|Rogue|PHB|Wild Card|WildCardHomebrew|3",
+                "Cambiando las Probabilidades|Rogue|PHB|Wild Card|WildCardHomebrew|9",
+                "Giro del Destino|Rogue|PHB|Wild Card|WildCardHomebrew|13",
+                "Comodín Definitivo|Rogue|PHB|Wild Card|WildCardHomebrew|17"
             ]
         }
     ],
@@ -42,11 +42,11 @@
             "entries": [
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Trucos bajo la Manga|Rogue||Wild Card|WildCardHomebrew|3"
+                    "subclassFeature": "Trucos bajo la Manga|Rogue|PHB|Wild Card|WildCardHomebrew|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Gambito del Comodín|Rogue||Wild Card|WildCardHomebrew|3"
+                    "subclassFeature": "Gambito del Comodín|Rogue|PHB|Wild Card|WildCardHomebrew|3"
                 }
             ]
         },
@@ -81,7 +81,7 @@
             "header": 1,
             "entries": [
                 "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
+                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
                 "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
                 {
                     "type": "table",

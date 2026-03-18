@@ -81,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1773810321
+    "dateLastModified": 1773810914
   },
   "subclass": [
     {
@@ -191,10 +191,10 @@
       "className": "Rogue",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Rogue Of Blood|Rogue||Blood|AN|3",
-        "Changing The Odds|Rogue||Blood|AN|9",
-        "Versatile Projectile|Rogue||Blood|AN|13",
-        "Hemorrhage|Rogue||Blood|AN|17"
+        "Rogue Of Blood|Rogue|PHB|Blood|AN|3",
+        "Changing The Odds|Rogue|PHB|Blood|AN|9",
+        "Versatile Projectile|Rogue|PHB|Blood|AN|13",
+        "Hemorrhage|Rogue|PHB|Blood|AN|17"
       ]
     },
     {
@@ -218,10 +218,10 @@
       "className": "Rogue",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Wild Card|Rogue||Wild Card|WildCardHomebrew|3",
-        "Cambiando las Probabilidades|Rogue||Wild Card|WildCardHomebrew|9",
-        "Giro del Destino|Rogue||Wild Card|WildCardHomebrew|13",
-        "Comodín Definitivo|Rogue||Wild Card|WildCardHomebrew|17"
+        "Wild Card|Rogue|PHB|Wild Card|WildCardHomebrew|3",
+        "Cambiando las Probabilidades|Rogue|PHB|Wild Card|WildCardHomebrew|9",
+        "Giro del Destino|Rogue|PHB|Wild Card|WildCardHomebrew|13",
+        "Comodín Definitivo|Rogue|PHB|Wild Card|WildCardHomebrew|17"
       ]
     }
   ],
@@ -958,11 +958,11 @@
         "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Crimson Draft|Rogue||Blood|AN|3"
+          "subclassFeature": "Crimson Draft|Rogue|PHB|Blood|AN|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bloody Tradition|Rogue||Blood|AN|3"
+          "subclassFeature": "Bloody Tradition|Rogue|PHB|Blood|AN|3"
         }
       ]
     },
@@ -1183,11 +1183,11 @@
       "entries": [
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trucos bajo la Manga|Rogue||Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Trucos bajo la Manga|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Gambito del Comodín|Rogue||Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Gambito del Comodín|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         }
       ]
     },
@@ -1222,7 +1222,7 @@
       "header": 1,
       "entries": [
         "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
+        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
         "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
         {
           "type": "table",

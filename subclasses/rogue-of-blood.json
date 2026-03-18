@@ -28,10 +28,10 @@
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue Of Blood|Rogue||Blood|AN|3",
-                "Changing The Odds|Rogue||Blood|AN|9",
-                "Versatile Projectile|Rogue||Blood|AN|13",
-                "Hemorrhage|Rogue||Blood|AN|17"
+                "Rogue Of Blood|Rogue|PHB|Blood|AN|3",
+                "Changing The Odds|Rogue|PHB|Blood|AN|9",
+                "Versatile Projectile|Rogue|PHB|Blood|AN|13",
+                "Hemorrhage|Rogue|PHB|Blood|AN|17"
             ]
         }
     ],
@@ -49,11 +49,11 @@
                 "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Crimson Draft|Rogue||Blood|AN|3"
+                    "subclassFeature": "Crimson Draft|Rogue|PHB|Blood|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bloody Tradition|Rogue||Blood|AN|3"
+                    "subclassFeature": "Bloody Tradition|Rogue|PHB|Blood|AN|3"
                 }
             ]
         },
