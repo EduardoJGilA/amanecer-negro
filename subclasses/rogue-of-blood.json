@@ -66,6 +66,31 @@
             "subclassSource": "AN",
             "level": 3,
             "header": 1,
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "history",
+                            "religion",
+                            "arcana"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "effects": [
+                {
+                    "name": "HP Increase",
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "system.attributes.hp.max",
+                            "mode": "ADD",
+                            "value": "@classes.rogue.levels - 1"
+                        }
+                    ]
+                }
+            ],
             "entries": [
                 "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: {@skill History}, {@skill Religion}, {@skill Arcana}.",
                 "In addition, you gain 2 extra health points and 1 more health point each time you level up after level 3, representing your stamina and adaptability to your innate power."
@@ -80,24 +105,6 @@
             "subclassSource": "AN",
             "level": 3,
             "header": 1,
-            "effects": [
-                {
-                    "name": "HP Increase",
-                    "transfer": true,
-                    "changes": [
-                        {
-                            "key": "system.attributes.hp.max",
-                            "mode": "ADD",
-                            "value": "@classes.rogue.levels"
-                        },
-                        {
-                            "key": "system.attributes.hp.max",
-                            "mode": "ADD",
-                            "value": "5"
-                        }
-                    ]
-                }
-            ],
             "entries": [
                 "At 3rd level, as a bonus action, you can ready a bladed weapon or arrow/bolt/bullet to become jagged for 1 minute, to do this you must spend {@damage 1d6} of your own blood, giving the weapon a jagged-toothed appearance. If the serrated weapon hits a target in melee, the target takes {@damage 1d4} bleed damage at the start of its turn until it attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic benefits A serrated weapon that hits a ranged target has that weapon embedded in it, any attempt to remove the weapon causes massive bleed as its jagged teeth tear through flesh, it takes {@damage 1d6} slashing damage on retreat and bleeds for {@damage 1d6} damage. per turn until he attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage.",
                 "Creatures without blood are not affected by bleeding damage.",
