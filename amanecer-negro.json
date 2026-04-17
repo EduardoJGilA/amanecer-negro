@@ -81,7 +81,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1776449183
+    "dateLastModified": 1776451625
   },
   "subclass": [
     {
@@ -191,10 +191,10 @@
       "className": "Rogue",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Rogue Of Blood|Rogue||Blood|AN|3",
-        "Changing The Odds|Rogue||Blood|AN|9",
-        "Versatile Projectile|Rogue||Blood|AN|13",
-        "Hemorrhage|Rogue||Blood|AN|17"
+        "Rogue Of Blood|Rogue|PHB|Blood|AN|3",
+        "Changing The Odds|Rogue|PHB|Blood|AN|9",
+        "Versatile Projectile|Rogue|PHB|Blood|AN|13",
+        "Hemorrhage|Rogue|PHB|Blood|AN|17"
       ]
     },
     {
@@ -218,10 +218,10 @@
       "className": "Rogue",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Wild Card|Rogue||Wild Card|WildCardHomebrew|3",
-        "Cambiando las Probabilidades|Rogue||Wild Card|WildCardHomebrew|9",
-        "Giro del Destino|Rogue||Wild Card|WildCardHomebrew|13",
-        "Comodín Definitivo|Rogue||Wild Card|WildCardHomebrew|17"
+        "Wild Card|Rogue|PHB|Wild Card|WildCardHomebrew|3",
+        "Cambiando las Probabilidades|Rogue|PHB|Wild Card|WildCardHomebrew|9",
+        "Giro del Destino|Rogue|PHB|Wild Card|WildCardHomebrew|13",
+        "Comodín Definitivo|Rogue|PHB|Wild Card|WildCardHomebrew|17"
       ]
     }
   ],
@@ -958,11 +958,11 @@
         "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Crimson Draft|Rogue||Blood|AN|3"
+          "subclassFeature": "Crimson Draft|Rogue|PHB|Blood|AN|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bloody Tradition|Rogue||Blood|AN|3"
+          "subclassFeature": "Bloody Tradition|Rogue|PHB|Blood|AN|3"
         }
       ]
     },
@@ -1190,11 +1190,11 @@
       "entries": [
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trucos bajo la Manga|Rogue||Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Trucos bajo la Manga|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Gambito del Comodín|Rogue||Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Gambito del Comodín|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         }
       ]
     },
@@ -1228,8 +1228,8 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes proficiencia con el set de naipes. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue||1|PHB}.",
+        "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
+        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
         "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
         {
           "type": "table",
@@ -1286,7 +1286,7 @@
           "type": "list",
           "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
           "items": [
-            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo sufre daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
+            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo suflex daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
             "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
             "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
             "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
@@ -1776,6 +1776,92 @@
           },
           "ability": "int"
         }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "name": "Deck of Cards",
+      "source": "WildCardHomebrew",
+      "type": "R",
+      "rarity": "none",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "T"
+      ],
+      "range": "60/120",
+      "dmg1": "1d6",
+      "dmgType": "S",
+      "ammoType": "{@item Card|WildCardHomebrew}",
+      "foundrySystem": {
+        "damage": {
+          "base": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d(4 + 2 * floor((max(@classes.rogue.levels, 1) + 1) / 4)) + @mod"
+            }
+          }
+        }
+      },
+      "entries": [
+        "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
+        {
+          "type": "table",
+          "caption": "Daño Base y Alcance del Comodín",
+          "colLabels": [
+            "Nivel",
+            "Daño Base",
+            "Alcance"
+          ],
+          "rows": [
+            [
+              "1–2",
+              "{@dice 1d4}",
+              "30/60 pies"
+            ],
+            [
+              "3–4",
+              "{@dice 1d6}",
+              "60/120 pies"
+            ],
+            [
+              "5–6",
+              "{@dice 1d8}",
+              "60/120 pies"
+            ],
+            [
+              "7–8",
+              "{@dice 1d10}",
+              "90/180 pies"
+            ],
+            [
+              "9–12",
+              "{@dice 1d12}",
+              "90/180 pies"
+            ],
+            [
+              "13–16",
+              "{@dice 2d8}",
+              "120/240 pies"
+            ],
+            [
+              "17–20",
+              "{@dice 2d10}",
+              "120/240 pies"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "source": "WildCardHomebrew",
+      "type": "A",
+      "rarity": "none",
+      "weight": 0,
+      "entries": [
+        "Munición para el arma {@item Deck of Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
       ]
     }
   ]

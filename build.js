@@ -29,13 +29,14 @@ const output = {
     },
     "subclass": [],
     "subclassFeature": [],
-    "race": []
+    "race": [],
+    "item": []
 };
 
 // Folders to scan
 const directoriesToScan = [
-    { dir: 'subclasses', keys: ['subclass', 'subclassFeature'] },
-    { dir: 'races', keys: ['race'] }
+    { dir: 'subclasses', keys: ['subclass', 'subclassFeature', 'item'] },
+    { dir: 'races', keys: ['race', 'item'] }
 ];
 
 directoriesToScan.forEach(({ dir, keys }) => {
@@ -71,7 +72,7 @@ directoriesToScan.forEach(({ dir, keys }) => {
 });
 
 // Remove empty arrays to keep JSON clean
-['subclass', 'subclassFeature', 'race'].forEach(key => {
+['subclass', 'subclassFeature', 'race', 'item'].forEach(key => {
     if (output[key].length === 0) delete output[key];
 });
 
