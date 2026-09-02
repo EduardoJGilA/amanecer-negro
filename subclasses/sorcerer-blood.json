@@ -22,9 +22,9 @@
             "subclassFeatures": [
                 "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
                 "Thirst for Blood|Sorcerer||Bloodtouched|SorcererBlood|6",
-                "Tradición Sangrienta Superior|Sorcerer||Bloodtouched|SorcererBlood|6",
-                "Poder derrochador|Sorcerer||Bloodtouched|SorcererBlood|14",
-                "Maestro de la Sangre|Sorcerer||Bloodtouched|SorcererBlood|18"
+                "Superior Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|6",
+                "Overwhelming Power|Sorcerer||Bloodtouched|SorcererBlood|14",
+                "Master of Blood|Sorcerer||Bloodtouched|SorcererBlood|18"
             ]
         }
     ],
@@ -38,14 +38,14 @@
             "subclassSource": "SorcererBlood",
             "level": 1,
             "entries": [
-                "Tu magia proviene de una línea de sangre maldita o de un ritual prohibido que alteró tu esencia misma.",
+                "Your magic stems from a cursed bloodline or a forbidden ritual that altered your very essence.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tradición Sangrienta|Sorcerer||Bloodtouched|SorcererBlood|1"
+                    "subclassFeature": "Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|1"
                 }
             ]
         },
@@ -59,22 +59,22 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Aprendes conjuros adicionales de manera gratuita según tu nivel de hechicero:",
+                "You learn bonus spells automatically based on your sorcerer level:",
                 {
                     "type": "list",
                     "items": [
-                        "{@b 1º:} {@spell Bloodburn}",
-                        "{@b 3º:} {@spell Vampire's Kiss}",
-                        "{@b 5º:} {@spell Tides of Blood}",
-                        "{@b 7º:} {@spell Draining thread}",
-                        "{@b 9º:} {@spell Bloodcurse}",
-                        "{@b 11º:} {@spell Rain of Blood}"
+                        "{@b 1st:} {@spell Bloodburn}",
+                        "{@b 3rd:} {@spell Vampire's Kiss}",
+                        "{@b 5th:} {@spell Tides of Blood}",
+                        "{@b 7th:} {@spell Draining thread}",
+                        "{@b 9th:} {@spell Bloodcurse}",
+                        "{@b 11th:} {@spell Rain of Blood}"
                     ]
                 }
             ]
         },
         {
-            "name": "Tradición Sangrienta",
+            "name": "Blood Tradition",
             "source": "SorcererBlood",
             "className": "Sorcerer",
             "classSource": "PHB",
@@ -82,7 +82,7 @@
             "subclassSource": "SorcererBlood",
             "level": 1,
             "entries": [
-                "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel después de nivel 3."
+                "You gain proficiency in one of the following skills: {@skill History}, {@skill Religion}, or {@skill Arcana}. Additionally, your hit point maximum increases by 3, and increases by 1 whenever you gain a level in this class after level 3."
             ]
         },
         {
@@ -95,11 +95,11 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Una vez por turno, cuando matas a una o más criaturas que tienen sangre con un conjuro de 1er nivel o superior, recuperas puntos de golpe equivalentes a tres veces el nivel del conjuro."
+                "Once per turn, when you kill one or more creatures that possess blood using a spell of 1st level or higher, you regain hit points equal to three times the spell's level."
             ]
         },
         {
-            "name": "Tradición Sangrienta Superior",
+            "name": "Superior Blood Tradition",
             "source": "SorcererBlood",
             "className": "Sorcerer",
             "classSource": "PHB",
@@ -108,11 +108,11 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "A partir del nivel 6, añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices."
+                "Starting at 6th level, you add your {@b Constitution} modifier to all saving throws you make."
             ]
         },
         {
-            "name": "Poder derrochador",
+            "name": "Overwhelming Power",
             "source": "SorcererBlood",
             "className": "Sorcerer",
             "classSource": "PHB",
@@ -121,12 +121,12 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Tu cuerpo es capaz de alcanzar límites inimaginables. Una vez por turno, si realizaste la Acción de Ataque, puedes infligir {@damage 6} + tu bonificador de competencia + tu modificador de {@b Constitución} como acción adicional y recibir la mitad del daño infligido.",
-                "Si lo haces, puedes realizar una segunda Acción de Ataque este turno. En el nivel 18, puedes usar esta función una vez más (dos veces en total)."
+                "Your body can push past mortal limits. Once per turn, if you took the Attack action, you can deal {@damage 6} + your proficiency bonus + your {@b Constitution} modifier as a bonus action and take half of that damage yourself.",
+                "If you do so, you can make a second Attack action this turn. At 18th level, you can use this feature one additional time per turn (two times total)."
             ]
         },
         {
-            "name": "Maestro de la Sangre",
+            "name": "Master of Blood",
             "source": "SorcererBlood",
             "className": "Sorcerer",
             "classSource": "PHB",
@@ -135,14 +135,14 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Por 5 puntos de hechicería o la mitad de tu vida actual (mientras superes los 20 HP), controlas a un cadáver o criatura inconsciente a 30 pies. Esta criatura comparte tu iniciativa y tiene su propia acción, bonificación de acción y reacción.",
-                "La criatura recupera vida igual a tu nivel x {@dice 1d4}. Al morir, su alma no podrá recuperarse. Mientras esté activa, ganas los siguientes beneficios:",
+                "For 5 sorcery points or half your current hit points (as long as you have more than 20 HP), you control a corpse or unconscious creature within 30 feet. This creature shares your initiative and has its own action, bonus action, and reaction.",
+                "The creature regains hit points equal to your level × {@dice 1d4}. Upon death, its soul cannot be restored. While active, you gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "Ventaja en tiradas de salvación de {@b Constitución}.",
-                        "Una cuarta parte de los puntos recuperados se convierten en puntos de vida temporales.",
-                        "Recuperas un espacio de conjuro de nivel 4 o inferior."
+                        "Advantage on {@b Constitution} saving throws.",
+                        "One-quarter of the hit points restored become temporary hit points for you.",
+                        "You regain one spell slot of 4th level or lower."
                     ]
                 }
             ]

@@ -2,9 +2,9 @@
     "_meta": {
         "sources": [
             {
-                "json": "ColegioSanacion",
-                "abbreviation": "CS",
-                "full": "Colegio de Sanacion (Bardo)",
+                "json": "CollegeOfHealing",
+                "abbreviation": "CoH",
+                "full": "College of Healing (Bard)",
                 "authors": [
                     "User"
                 ],
@@ -18,74 +18,74 @@
     },
     "subclass": [
         {
-            "name": "Colegio de Sanacion",
-            "shortName": "Sanacion",
-            "source": "ColegioSanacion",
+            "name": "College of Healing",
+            "shortName": "Healing",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Colegio de Sanacion|Bard||Sanacion|ColegioSanacion|3",
-                "Primeros Auxilios Arcanos|Bard||Sanacion|ColegioSanacion|6",
-                "Ritmo de Recuperación|Bard||Sanacion|ColegioSanacion|14"
+                "College of Healing|Bard||Healing|CollegeOfHealing|3",
+                "Arcane First Aid|Bard||Healing|CollegeOfHealing|6",
+                "Rhythm of Recovery|Bard||Healing|CollegeOfHealing|14"
             ]
         }
     ],
     "subclassFeature": [
         {
-            "name": "Colegio de Sanacion",
-            "source": "ColegioSanacion",
+            "name": "College of Healing",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 3,
             "entries": [
-                "Los bardos del Colegio de Sanacion utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
+                "Bards of the College of Healing weave magic to mend wounds and cure diseases, enhancing the recovery of their allies on the battlefield.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Proficiencias Adicionales|Bard||Sanacion|ColegioSanacion|3"
+                    "subclassFeature": "Bonus Proficiencies|Bard||Healing|CollegeOfHealing|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Conocimiento de Remedios|Bard||Sanacion|ColegioSanacion|3"
+                    "subclassFeature": "Remedy Lore|Bard||Healing|CollegeOfHealing|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Trato a la Cabecera|Bard||Sanacion|ColegioSanacion|3"
+                    "subclassFeature": "Bedside Manner|Bard||Healing|CollegeOfHealing|3"
                 }
             ]
         },
         {
-            "name": "Proficiencias Adicionales",
-            "source": "ColegioSanacion",
+            "name": "Bonus Proficiencies",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 3,
             "header": 1,
             "entries": [
-                "Obtienes competencia con el {@item herbalism kit|PHB|kit de herboristería}, tu {@item poisoner's kit|PHB|kit de envenenador} y en la habilidad de {@skill Medicine|Medicina}. Si ya tienes competencia en alguna de estas, elige otra competencia en habilidad o herramienta."
+                "You gain proficiency with the {@item herbalism kit|PHB}, {@item poisoner's kit|PHB}, and the {@skill Medicine} skill. If you already have proficiency in any of these, choose another skill or tool proficiency instead."
             ]
         },
         {
-            "name": "Conocimiento de Remedios",
-            "source": "ColegioSanacion",
+            "name": "Remedy Lore",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 3,
             "header": 1,
             "entries": [
-                "Puedes estabilizar a una criatura con 0 puntos de vida usando una {@action bonus action} o una {@action action}.",
-                "Además, puedes aprender conjuros de la siguiente lista como conjuros de bardo:",
+                "You can stabilize a creature at 0 hit points using a {@action bonus action} or an {@action action}.",
+                "Additionally, you can learn spells from the following list as bard spells:",
                 {
                     "type": "table",
-                    "caption": "Conjuros de Sanacion",
+                    "caption": "Healing Spells",
                     "colLabels": [
-                        "Nivel",
-                        "Conjuros"
+                        "Level",
+                        "Spells"
                     ],
                     "colStyles": [
                         "col-2 text-center",
@@ -93,27 +93,27 @@
                     ],
                     "rows": [
                         [
-                            "1º",
+                            "1st",
                             "{@spell detect poison and disease}, {@spell purify food and drink}"
                         ],
                         [
-                            "2º",
+                            "2nd",
                             "{@spell aid}"
                         ],
                         [
-                            "3º",
+                            "3rd",
                             "{@spell beacon of hope}, {@spell mass healing word}, {@spell revivify}"
                         ],
                         [
-                            "4º",
+                            "4th",
                             "{@spell death ward}"
                         ],
                         [
-                            "5º",
+                            "5th",
                             "{@spell raise dead}, {@spell mass cure wounds}"
                         ],
                         [
-                            "6º",
+                            "6th",
                             "{@spell heal}"
                         ]
                     ]
@@ -121,46 +121,46 @@
             ]
         },
         {
-            "name": "Trato a la Cabecera",
-            "source": "ColegioSanacion",
+            "name": "Bedside Manner",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 3,
             "header": 1,
             "entries": [
-                "Cada criatura que posea un dado de {@classFeature Bardic Inspiration|Bard|||1|Inspiración Bárdica} otorgado por ti tiene ventaja en las tiradas de salvación contra muerte.",
-                "Cuando una criatura tiene éxito en una tirada de salvación contra muerte, puede lanzar ese dado para recuperar {@dice 1d8} (o el dado actual) puntos de vida, y ganar puntos de golpe temporales iguales al valor máximo del dado menos el resultado lanzado."
+                "Each creature holding a {@classFeature Bardic Inspiration|Bard|||1|Bardic Inspiration} die granted by you has advantage on death saving throws.",
+                "When a creature succeeds on a death saving throw, it can roll that Bardic Inspiration die to regain {@dice 1d8} (or its current die type) hit points, gaining temporary hit points equal to the die's maximum value minus the roll result."
             ]
         },
         {
-            "name": "Primeros Auxilios Arcanos",
-            "source": "ColegioSanacion",
+            "name": "Arcane First Aid",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 6,
             "header": 2,
             "entries": [
-                "Puedes lanzar {@spell lesser restoration} y {@spell cure wounds} (a un nivel igual a la mitad de tu bono de competencia) sin gastar espacios de conjuro.",
-                "Puedes usar esta característica un número de veces igual a tu modificador de Carisma (mínimo 1). Recuperas los usos tras un descanso largo."
+                "You can cast {@spell lesser restoration} and {@spell cure wounds} (at a spell level equal to half your proficiency bonus) without expending a spell slot.",
+                "You can use this feature a number of times equal to your Charisma modifier (minimum of 1). You regain spent uses after a long rest."
             ]
         },
         {
-            "name": "Ritmo de Recuperación",
-            "source": "ColegioSanacion",
+            "name": "Rhythm of Recovery",
+            "source": "CollegeOfHealing",
             "className": "Bard",
             "classSource": "PHB",
-            "subclassShortName": "Sanacion",
-            "subclassSource": "ColegioSanacion",
+            "subclassShortName": "Healing",
+            "subclassSource": "CollegeOfHealing",
             "level": 14,
             "header": 2,
             "entries": [
-                "Al lanzar un conjuro de bardo de nivel 1 o superior que no restaure vida, una criatura que pueda escucharte a 30 pies recupera puntos de vida igual a tu nivel de bardo dividido entre 4.",
-                "Tus rasgos Trato a la Cabecera y {@classFeature Song of Rest|Bard|||2|Canción de Descanso} aumentan la sanación en una cantidad igual a tu modificador de Carisma.",
-                "Cuando lanzas un conjuro que restaure puntos de vida, activas un ritmo de sanación hasta tu siguiente turno; cualquier criatura que sanes durante este tiempo recupera vida adicional igual a tu modificador de Carisma."
+                "When you cast a 1st-level or higher bard spell that does not restore hit points, one creature within 30 feet that can hear you regains hit points equal to your bard level divided by 4.",
+                "Your Bedside Manner and {@classFeature Song of Rest|Bard|||2|Song of Rest} features increase healing by an amount equal to your Charisma modifier.",
+                "When you cast a spell that restores hit points, you trigger a healing rhythm until your next turn; any creature you heal during this time regains additional hit points equal to your Charisma modifier."
             ]
         }
     ]

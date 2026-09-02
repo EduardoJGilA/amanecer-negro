@@ -24,7 +24,7 @@
                 "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
                 "Body Regeneration|Fighter||Blood Knight|BloodKnightHB|10",
                 "Superior Binding|Fighter||Blood Knight|BloodKnightHB|15",
-                "Éxtasis Sangriento|Fighter||Blood Knight|BloodKnightHB|18"
+                "Blood Ecstasy|Fighter||Blood Knight|BloodKnightHB|18"
             ]
         }
     ],
@@ -38,7 +38,7 @@
             "subclassSource": "BloodKnightHB",
             "level": 3,
             "entries": [
-                "Los Caballeros de Sangre son guerreros que han aprendido a canalizar su propia esencia vital en combate, mezclando la maestría marcial con artes oscuras de hemomancia.",
+                "Blood Knights are warriors who have learned to channel their own vital essence in combat, blending martial mastery with dark arts of hemomancy.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blood Tradition|Fighter||Blood Knight|BloodKnightHB|3"
@@ -49,7 +49,7 @@
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tecnicas de Fusion|Fighter||Blood Knight|BloodKnightHB|3"
+                    "subclassFeature": "Fusion Techniques|Fighter||Blood Knight|BloodKnightHB|3"
                 }
             ]
         },
@@ -63,7 +63,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
+                "You gain proficiency in one of the following skills of your choice: {@skill History}, {@skill Religion}, or {@skill Arcana}. Additionally, your hit point maximum increases by 3, and increases by 1 whenever you gain a level in this class."
             ]
         },
         {
@@ -76,14 +76,14 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@b Constitución} como habilidad de lanzamiento.",
-                "Tus espacios de conjuro se recuperan tras un descanso largo, pero puedes recuperar uno durante un descanso corto una vez al día.",
-                "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}.",
-                "Conoces dos hechizos de hemomancia de 1er nivel a tu elección. La tabla muestra cuántos espacios tienes y de qué nivel son."
+                "You gain the ability to cast hemomancy spells using your {@b Constitution} as your spellcasting ability.",
+                "You regain your spell slots after a long rest, but you can regain one spell slot during a short rest once per day.",
+                "Spell save DC = {@dc 8+pb+con}. Spell attack modifier = {@hit pb+con}.",
+                "You know two 1st-level hemomancy spells of your choice. The table shows how many spell slots you have and their level."
             ]
         },
         {
-            "name": "Tecnicas de Fusion",
+            "name": "Fusion Techniques",
             "source": "BloodKnightHB",
             "className": "Fighter",
             "classSource": "PHB",
@@ -92,13 +92,13 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Cuando activas una técnica de fusión al usar {@i Blood Fusion}, esta se mantiene activa. Cambiar de técnica cuesta daño extra. Al nivel 3 ganas:",
+                "When you activate a fusion technique using {@i Blood Fusion}, it remains active. Changing techniques deals extra self-damage. At level 3, you gain:",
                 {
                     "type": "list",
                     "items": [
-                        "Aumentas el rango de tus ataques en 5 pies.",
-                        "Puedes imbuir tu arma con un elemento: Fuego, Hielo, Veneno, Eléctrico o Necrótico.",
-                        "Puedes moverte sin provocar ataques de oportunidad contra alguien que hayas atacado previamente."
+                        "Increase your reach with weapon attacks by 5 feet.",
+                        "You can imbue your weapon with an element: Fire, Cold, Poison, Lightning, or Necrotic.",
+                        "You can move without provoking opportunity attacks from a creature you have attacked this turn."
                     ]
                 }
             ]
@@ -113,10 +113,10 @@
             "level": 7,
             "header": 2,
             "entries": [
-                "Al impactar con tu arma fusionada, puedes usar una {@action bonus action} y sufrir {@damage 2d8} de daño propio para maldecir al enemigo.",
-                "La criatura no puede alejarse más de 30 pies de ti sin recibir {@damage 2d6} daño psíquico (CD {@dc 8+pb+cha} para reducir a la mitad y romper el vínculo).",
-                "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques.",
-                "No puede esconderse de ti e incluso si se vuelve invisible siempre sabes su posición.",
+                "When hitting with your fused weapon, you can use a {@action bonus action} and take {@damage 2d8} self-damage to curse the enemy.",
+                "The creature cannot move more than 30 feet away from you without taking {@damage 2d6} psychic damage (DC {@dc 8+pb+cha} save to halve damage and break the link).",
+                "You can teleport to an unoccupied space adjacent to the target as part of one of your attacks.",
+                "The target cannot hide from you, and even if it becomes invisible, you always know its location.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Blood Track|Fighter||Blood Knight|BloodKnightHB|7"
@@ -132,9 +132,9 @@
             "subclassSource": "BloodKnightHB",
             "level": 7,
             "entries": [
-                "Puedes saber la localización exacta de una criatura si tienes una muestra de sangre o ha sido afectada por tu Blood Binding.",
-                "Añades tu modificador de {@b Carisma} a las tiradas de Investigación o Percepción para buscarla. Tienes ventaja si está afectada por el vínculo.",
-                "Recibes {@damage 1d6} de daño por cada milla recorrida manteniendo la conexión."
+                "You can discern the exact location of a creature if you possess a blood sample or if it is affected by your Blood Binding.",
+                "You add your {@b Charisma} modifier to Investigation or Perception checks to search for it. You have advantage on checks if it is affected by the link.",
+                "You take {@damage 1d6} damage for every mile traveled while maintaining the connection."
             ]
         },
         {
@@ -147,13 +147,13 @@
             "level": 10,
             "header": 2,
             "entries": [
-                "Tu cuerpo se ha curtido. Puedes reducir el daño de {@i Blood Fusion}, {@i Blood Binding} o cambio de técnicas en un número igual a tu modificador de {@b Constitución}.",
-                "Puedes usar esta reducción un número de veces igual a tu bonificador de competencia por descanso largo.",
+                "Your body has hardened. You can reduce self-damage from {@i Blood Fusion}, {@i Blood Binding}, or switching techniques by an amount equal to your {@b Constitution} modifier.",
+                "You can use this reduction a number of times equal to your proficiency bonus per long rest.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Binding Augmented|Fighter||Blood Knight|BloodKnightHB|10"
                 },
-                "A partir de este nivel, puedes aplicar el daño de {@i Blood Fusion} una segunda vez por turno."
+                "Starting at this level, you can apply {@i Blood Fusion} damage a second time per turn."
             ]
         },
         {
@@ -165,7 +165,7 @@
             "subclassSource": "BloodKnightHB",
             "level": 10,
             "entries": [
-                "Añades tu bonificador de {@b Carisma} al daño que provocas contra la criatura conectada por el vínculo."
+                "You add your {@b Charisma} modifier to the damage dealt against the creature affected by your Blood Binding."
             ]
         },
         {
@@ -178,12 +178,12 @@
             "level": 15,
             "header": 2,
             "entries": [
-                "Puedes realizar un ataque extra como parte de tu acción de ataque contra el enemigo afectado por tu Blood Binding.",
-                "Además, como reacción, puedes aumentar tu CA en un valor igual a la mitad del costo de activar tu fusión actual (mínimo +1)."
+                "You can make an extra attack as part of your Attack action against the enemy affected by your Blood Binding.",
+                "Additionally, as a reaction, you can increase your AC by an amount equal to half the cost of activating your current fusion (minimum +1)."
             ]
         },
         {
-            "name": "Éxtasis Sangriento",
+            "name": "Blood Ecstasy",
             "source": "BloodKnightHB",
             "className": "Fighter",
             "classSource": "PHB",
@@ -192,14 +192,14 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Como {@action bonus action}, sufres {@damage 10d6} de daño para entrar en éxtasis por 1 minuto:",
+                "As a {@action bonus action}, you take {@damage 10d6} damage to enter an ecstatic state for 1 minute:",
                 {
                     "type": "list",
                     "items": [
-                        "Resistencia a todo daño excepto Radiante y Psíquico.",
-                        "Puedes usar {@classFeature Action Surge|Fighter||2|PHB} una tercera vez.",
-                        "Ganas 10 pies de movimiento extra.",
-                        "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente, perdiendo el estado de éxtasis."
+                        "Resistance to all damage except Radiant and Psychic.",
+                        "You can use {@classFeature Action Surge|Fighter||2|PHB} a third time.",
+                        "You gain +10 feet of movement speed.",
+                        "If you drop to 0 HP, you regain 1 HP and a full action immediately, ending the ecstatic state."
                     ]
                 }
             ]

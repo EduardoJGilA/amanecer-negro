@@ -24,9 +24,9 @@
             "classSource": "PHB",
             "subclassFeatures": [
                 "Wild Card|Rogue|PHB|Wild Card|WildCardHomebrew|3",
-                "Cambiando las Probabilidades|Rogue|PHB|Wild Card|WildCardHomebrew|9",
-                "Giro del Destino|Rogue|PHB|Wild Card|WildCardHomebrew|13",
-                "Comodín Definitivo|Rogue|PHB|Wild Card|WildCardHomebrew|17"
+                "Shift the Odds|Rogue|PHB|Wild Card|WildCardHomebrew|9",
+                "Twist of Fate|Rogue|PHB|Wild Card|WildCardHomebrew|13",
+                "Joker's Wild|Rogue|PHB|Wild Card|WildCardHomebrew|17"
             ]
         }
     ],
@@ -42,16 +42,16 @@
             "entries": [
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Trucos bajo la Manga|Rogue|PHB|Wild Card|WildCardHomebrew|3"
+                    "subclassFeature": "Tricks Up the Sleeve|Rogue|PHB|Wild Card|WildCardHomebrew|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Gambito del Comodín|Rogue|PHB|Wild Card|WildCardHomebrew|3"
+                    "subclassFeature": "Wildcard's Gambit|Rogue|PHB|Wild Card|WildCardHomebrew|3"
                 }
             ]
         },
         {
-            "name": "Trucos bajo la Manga",
+            "name": "Tricks Up the Sleeve",
             "source": "WildCardHomebrew",
             "className": "Rogue",
             "classSource": "PHB",
@@ -60,18 +60,18 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Aprendes el conjuro {@spell guidance}.",
+                "You learn the {@spell guidance} cantrip.",
                 {
                     "type": "entries",
-                    "name": "Mejora de Nivel 9",
+                    "name": "Level 9 Upgrade",
                     "entries": [
-                        "A partir del nivel 9, este conjuro tiene un alcance de 30 pies y puedes lanzarlo como una acción adicional."
+                        "Starting at 9th level, this spell has a range of 30 feet for you and you can cast it as a bonus action."
                     ]
                 }
             ]
         },
         {
-            "name": "Gambito del Comodín",
+            "name": "Wildcard's Gambit",
             "source": "WildCardHomebrew",
             "className": "Rogue",
             "classSource": "PHB",
@@ -80,16 +80,16 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-                "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
-                "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
+                "You gain proficiency with {@item Gaming Set|PHB|playing cards}. You have access to the {@item Deck of Cards|WildCardHomebrew} weapon and its {@item Card|WildCardHomebrew} ammunition. You can use an enchanted card to make a ranged weapon attack (60 ft range). The attack uses your Dexterity modifier and deals damage based on your level.",
+                "This card counts as a weapon with the Finesse property for applying your {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
+                "You have a number of uses equal to your Charisma modifier (minimum of 1) per long rest.",
                 {
                     "type": "table",
-                    "caption": "Daño Base y Alcance",
+                    "caption": "Base Damage and Range",
                     "colLabels": [
-                        "Nivel",
-                        "Daño Base",
-                        "Alcance"
+                        "Level",
+                        "Base Damage",
+                        "Range"
                     ],
                     "colStyles": [
                         "col-2 text-center",
@@ -100,58 +100,58 @@
                         [
                             "1–2",
                             "{@dice 1d4}",
-                            "30/60 pies"
+                            "30/60 ft."
                         ],
                         [
                             "3–4",
                             "{@dice 1d6}",
-                            "60/120 pies"
+                            "60/120 ft."
                         ],
                         [
                             "5–6",
                             "{@dice 1d8}",
-                            "60/120 pies"
+                            "60/120 ft."
                         ],
                         [
                             "7–8",
                             "{@dice 1d10}",
-                            "90/180 pies"
+                            "90/180 ft."
                         ],
                         [
                             "9–12",
                             "{@dice 1d12}",
-                            "90/180 pies"
+                            "90/180 ft."
                         ],
                         [
                             "13–16",
                             "{@dice 2d8}",
-                            "120/240 pies"
+                            "120/240 ft."
                         ],
                         [
                             "17–20",
                             "{@dice 2d10}",
-                            "120/240 pies"
+                            "120/240 ft."
                         ]
                     ]
                 },
                 {
                     "type": "list",
-                    "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
+                    "name": "Wildcard Effects Table (Save DC = 8 + Proficiency + Charisma Mod)",
                     "items": [
-                        "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo suflex daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
-                        "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
-                        "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
-                        "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
-                        "{@b 5. La Corona (Nivel 6):} El objetivo hace una salvación de {@savingThrow Wisdom} o usa su reacción para atacar a un aliado de tu elección.",
-                        "{@b 7. La Muerte (Nivel 9):} Si tiene 30 HP o menos, debe hacer una salvación de {@savingThrow Constitution} o muere. Si tiene éxito, queda {@condition paralyzed}.",
-                        "{@b 8. La Rueda (Nivel 13):} El objetivo hace una salvación de {@savingThrow Dexterity} o queda {@condition prone}.",
-                        "{@b 10. El Juicio (Nivel 17):} El objetivo hace una salvación de {@savingThrow Wisdom} o queda {@condition paralyzed} y gana vulnerabilidad a todo el daño."
+                        "{@b 1. Dagger (Level 3):} If you apply Sneak Attack, the target takes extra slashing damage equal to half your Sneak Attack damage at the start of its next turn.",
+                        "{@b 2. Chains (Level 3):} Target must make a {@savingThrow Strength} or {@savingThrow Dexterity} save or become {@condition grappled} until your next turn.",
+                        "{@b 3. Heart (Level 3):} Regain HP equal to half Sneak Attack damage (excess becomes temporary HP).",
+                        "{@b 4. Frost (Level 6):} Target has disadvantage on attack rolls during its next turn.",
+                        "{@b 5. The Crown (Level 6):} Target must make a {@savingThrow Wisdom} save or use its reaction to attack an ally of your choice.",
+                        "{@b 7. Death (Level 9):} If target has 30 HP or lower, it must pass a {@savingThrow Constitution} save or die instantly; if successful, it is {@condition paralyzed}.",
+                        "{@b 8. The Wheel (Level 13):} Target must pass a {@savingThrow Dexterity} save or fall {@condition prone}.",
+                        "{@b 10. Judgment (Level 17):} Target must pass a {@savingThrow Wisdom} save or become {@condition paralyzed} and gain vulnerability to all damage."
                     ]
                 }
             ]
         },
         {
-            "name": "Cambiando las Probabilidades",
+            "name": "Shift the Odds",
             "source": "WildCardHomebrew",
             "className": "Rogue",
             "classSource": "PHB",
@@ -160,12 +160,12 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "Como una acción adicional, las criaturas a 10 pies hacen una salvación de {@savingThrow Dexterity} (CD 8 + proficiencia + mod. de Carisma) o reciben {@damage 6d10} daño de fuerza y quedan {@condition prone}. Luego te teletransportas hasta 60 pies.",
-                "Ganas resistencia a todo el daño y ventaja en salvaciones de Destreza hasta tu próximo turno. Se recupera tras un descanso corto o largo."
+                "As a bonus action, creatures within 10 feet make a {@savingThrow Dexterity} save (DC 8 + Proficiency + Charisma Mod) or take {@damage 6d10} force damage and fall {@condition prone}. Then you teleport up to 60 feet.",
+                "You gain resistance to all damage and advantage on Dexterity saves until your next turn. Regained after a short or long rest."
             ]
         },
         {
-            "name": "Giro del Destino",
+            "name": "Twist of Fate",
             "source": "WildCardHomebrew",
             "className": "Rogue",
             "classSource": "PHB",
@@ -174,12 +174,12 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "Puedes intercambiar iniciativa con una criatura que veas. Enemigos deben hacer una salvación de {@savingThrow Wisdom} (CD 8 + proficiencia + mod. de Carisma).",
-                "Tú y un aliado ganan +10 de velocidad y ventaja en la primera tirada de ataque del combate."
+                "You can swap initiative with a creature you can see. Enemies must make a {@savingThrow Wisdom} save (DC 8 + Proficiency + Charisma Mod).",
+                "You and an ally gain +10 ft speed and advantage on the first attack roll of combat."
             ]
         },
         {
-            "name": "Comodín Definitivo",
+            "name": "Joker's Wild",
             "source": "WildCardHomebrew",
             "className": "Rogue",
             "classSource": "PHB",
@@ -188,17 +188,17 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Como una acción adicional, adoptas una forma incorpórea por 1 minuto.",
+                "As a bonus action, you enter an incorporeal form for 1 minute.",
                 {
                     "type": "list",
                     "items": [
-                        "Recuperas usos de Gambito del Comodín.",
-                        "Velocidad duplicada.",
-                        "Resistencia a todo el daño e inmunidad a {@condition grappled}, {@condition paralyzed}, {@condition stunned} y {@condition restrained}.",
-                        "Puedes moverte a través de objetos y criaturas. Si terminas dentro de una criatura, esta sufre {@damage 1d10} daño de fuerza."
+                        "Regain spent uses of Wildcard's Gambit.",
+                        "Doubled speed.",
+                        "Resistance to all damage and immunity to {@condition grappled}, {@condition paralyzed}, {@condition stunned}, and {@condition restrained}.",
+                        "You can move through objects and creatures. If you end inside a creature, it takes {@damage 1d10} force damage."
                     ]
                 },
-                "Se recupera tras un descanso largo."
+                "Regained after a long rest."
             ]
         }
     ],
@@ -228,50 +228,50 @@
                 }
             },
             "entries": [
-                "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
+                "Wildcard's Gambit: These magical playing cards are used as a lethal weapon by the Wild Card. When thrown, they mimic a burst of energy or a razor-sharp blade.",
                 {
                     "type": "table",
-                    "caption": "Daño Base y Alcance del Comodín",
+                    "caption": "Base Damage and Range",
                     "colLabels": [
-                        "Nivel",
-                        "Daño Base",
-                        "Alcance"
+                        "Level",
+                        "Base Damage",
+                        "Range"
                     ],
                     "rows": [
                         [
                             "1–2",
                             "{@dice 1d4}",
-                            "30/60 pies"
+                            "30/60 ft."
                         ],
                         [
                             "3–4",
                             "{@dice 1d6}",
-                            "60/120 pies"
+                            "60/120 ft."
                         ],
                         [
                             "5–6",
                             "{@dice 1d8}",
-                            "60/120 pies"
+                            "60/120 ft."
                         ],
                         [
                             "7–8",
                             "{@dice 1d10}",
-                            "90/180 pies"
+                            "90/180 ft."
                         ],
                         [
                             "9–12",
                             "{@dice 1d12}",
-                            "90/180 pies"
+                            "90/180 ft."
                         ],
                         [
                             "13–16",
                             "{@dice 2d8}",
-                            "120/240 pies"
+                            "120/240 ft."
                         ],
                         [
                             "17–20",
                             "{@dice 2d10}",
-                            "120/240 pies"
+                            "120/240 ft."
                         ]
                     ]
                 }
@@ -284,7 +284,7 @@
             "rarity": "none",
             "weight": 0,
             "entries": [
-                "Munición para el arma {@item Deck of Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
+                "Ammunition for the {@item Deck of Cards|WildCardHomebrew} weapon. These magic cards are created by the Wild Card as part of their Gambit."
             ]
         }
     ]

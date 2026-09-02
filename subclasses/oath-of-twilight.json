@@ -2,9 +2,9 @@
     "_meta": {
         "sources": [
             {
-                "json": "HomebrewSubclases",
+                "json": "HomebrewSubclasses",
                 "abbreviation": "HBSC",
-                "full": "Compendio de Subclases Homebrew",
+                "full": "Compendium of Homebrew Subclasses",
                 "authors": [
                     "User"
                 ],
@@ -14,74 +14,74 @@
     },
     "subclass": [
         {
-            "name": "Juramento del Crepúsculo",
-            "shortName": "Crepúsculo",
-            "source": "HomebrewSubclases",
+            "name": "Oath of Twilight",
+            "shortName": "Twilight",
+            "source": "HomebrewSubclasses",
             "className": "Paladin",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Juramento del Crepúsculo|Paladin||Crepúsculo|HomebrewSubclases|3"
+                "Oath of Twilight|Paladin||Twilight|HomebrewSubclasses|3"
             ]
         }
     ],
     "subclassFeature": [
         {
-            "name": "Juramento del Crepúsculo",
-            "source": "HomebrewSubclases",
+            "name": "Oath of Twilight",
+            "source": "HomebrewSubclasses",
             "className": "Paladin",
             "classSource": "PHB",
-            "subclassShortName": "Crepúsculo",
-            "subclassSource": "HomebrewSubclases",
+            "subclassShortName": "Twilight",
+            "subclassSource": "HomebrewSubclasses",
             "level": 3,
             "entries": [
-                "Los paladines que hacen el Juramento del Crepúsculo se encuentran en la línea entre la luz y la oscuridad, sirviendo como guardianes en los límites mortales.",
+                "Paladins who take the Oath of Twilight stand on the line between light and darkness, serving as guardians on the mortal boundaries.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Velo de la Oscuridad|Paladin||Crepúsculo|HomebrewSubclases|3"
+                    "subclassFeature": "Veil of Darkness|Paladin||Twilight|HomebrewSubclasses|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Canalizar Divinidad|Paladin||Crepúsculo|HomebrewSubclases|3"
+                    "subclassFeature": "Channel Divinity|Paladin||Twilight|HomebrewSubclasses|3"
                 }
             ]
         },
         {
-            "name": "Velo de la Oscuridad",
-            "source": "HomebrewSubclases",
+            "name": "Veil of Darkness",
+            "source": "HomebrewSubclasses",
             "className": "Paladin",
             "classSource": "PHB",
-            "subclassShortName": "Crepúsculo",
-            "subclassSource": "HomebrewSubclases",
+            "subclassShortName": "Twilight",
+            "subclassSource": "HomebrewSubclasses",
             "level": 3,
             "header": 1,
             "entries": [
-                "Como una {@action action}, invocas el Velo (armadura de ébano).",
-                "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@classFeature Divine Smite|Paladin||2|PHB} inflige daño necrótico en lugar de radiante."
+                "As an {@action action}, you summon the Veil (an ebony armor).",
+                "While active: You ignore resistance or immunity to necrotic damage. Your {@classFeature Divine Smite|Paladin||2|PHB} deals necrotic damage instead of radiant damage."
             ]
         },
         {
-            "name": "Canalizar Divinidad",
-            "source": "HomebrewSubclases",
+            "name": "Channel Divinity",
+            "source": "HomebrewSubclasses",
             "className": "Paladin",
             "classSource": "PHB",
-            "subclassShortName": "Crepúsculo",
-            "subclassSource": "HomebrewSubclases",
+            "subclassShortName": "Twilight",
+            "subclassSource": "HomebrewSubclasses",
             "level": 3,
             "header": 1,
             "entries": [
-                "Ganas dos opciones de Canalizar Divinidad:",
+                "You gain the following two Channel Divinity options:",
                 {
-                    "name": "Baluarte de Luz",
+                    "name": "Bulwark of Light",
                     "type": "entries",
                     "entries": [
-                        "Como acción, criaturas a 30 pies ganan puntos de golpe temporales iguales a {@dice 1d10} + tu modificador de Carisma."
+                        "As an action, creatures within 30 feet of you gain temporary hit points equal to {@dice 1d10} + your Charisma modifier."
                     ]
                 },
                 {
-                    "name": "Cadenas de Justicia",
+                    "name": "Chains of Justice",
                     "type": "entries",
                     "entries": [
-                        "Una criatura a 60 pies hace una salvación de {@savingThrow Dexterity}. Si falla, no puede alejarse de ti."
+                        "A creature within 60 feet must make a {@savingThrow Dexterity} save. On a failed save, it cannot move farther away from you."
                     ]
                 }
             ]

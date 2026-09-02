@@ -37,7 +37,7 @@
             "subclassSource": "PaleMasterHB",
             "level": 1,
             "entries": [
-                "Tus poderes son de origen nigromántico, tu carne está petrificada y corrupta. Eres una mente viva atrapada dentro de un cadáver en descomposición.",
+                "Your powers are necromantic in origin, your flesh petrified and corrupted. You are a living mind trapped within a decaying corpse.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Deathsign|Sorcerer||Pale Master|PaleMasterHB|1"
@@ -58,17 +58,17 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Estás marcado con la muerte. Cuando normalmente recibirías daño necrótico de un hechizo de nivel 1 o superior, en su lugar recuperas puntos de golpe equivalentes a la mitad del daño necrótico infligido (redondeado hacia abajo).",
-                "Además, aprendes conjuros adicionales de nigromancia que no cuentan contra tu número total de hechizos conocidos:",
+                "You are marked with death. Whenever you would normally take necrotic damage from a spell of 1st level or higher, you instead regain hit points equal to half the necrotic damage dealt (rounded down).",
+                "Additionally, you learn bonus necromancy spells that do not count against your total number of sorcerer spells known:",
                 {
                     "type": "list",
                     "items": [
-                        "{@b 1º:} {@spell inflict wounds}",
-                        "{@b 3º:} {@spell ray of enfeeblement}",
-                        "{@b 5º:} {@spell animate dead}",
-                        "{@b 7º:} {@spell blight}",
-                        "{@b 9º:} {@spell contagion}",
-                        "{@b 11º:} {@spell create undead}"
+                        "{@b 1st:} {@spell inflict wounds}",
+                        "{@b 3rd:} {@spell ray of enfeeblement}",
+                        "{@b 5th:} {@spell animate dead}",
+                        "{@b 7th:} {@spell blight}",
+                        "{@b 9th:} {@spell contagion}",
+                        "{@b 11th:} {@spell create undead}"
                     ]
                 }
             ]
@@ -83,15 +83,15 @@
             "level": 1,
             "header": 1,
             "entries": [
-                "Puedes controlar criaturas a tu disposición. Puedes tener un número de criaturas igual a tu bonificador de competencia.",
-                "El valor de desafío (CR) máximo no puede superar la mitad de tu nivel de hechicero (redondeado hacia abajo).",
-                "Mantener este control requiere gastar puntos de hechicería cada día según la tabla:",
+                "You can control undead creatures under your command. You can control a maximum number of creatures equal to your proficiency bonus.",
+                "The maximum Challenge Rating (CR) of an undead cohort cannot exceed half your sorcerer level (rounded down).",
+                "Maintaining control requires spending sorcery points each day according to the table:",
                 {
                     "type": "table",
-                    "caption": "Costo de Undead Cohort",
+                    "caption": "Undead Cohort Cost",
                     "colLabels": [
                         "CR",
-                        "Puntos de Hechicería"
+                        "Sorcery Points"
                     ],
                     "colStyles": [
                         "col-6",
@@ -113,7 +113,7 @@
                         ["10", "13"]
                     ]
                 },
-                "Cada día deberás realizar una tirada de {@skill Constitución} CD (10 + CR más alto + modificador de Sabiduría de tu Undead Cohort) para mantener el control."
+                "Each day, you must make a {@skill Constitution} check (DC 10 + highest CR + Wisdom modifier of your Undead Cohort) to maintain control."
             ]
         },
         {
@@ -126,8 +126,8 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Cada vez que infligas daño con un hechizo de nigromancia, puedes añadir tu modificador de {@b Carisma} al resultado del daño.",
-                "Cuando lo hagas, puedes gastar 1 punto de conjuro para obtener {@dice 1d10} puntos de golpe temporales."
+                "Whenever you deal damage with a necromancy spell, you can add your {@b Charisma} modifier to the damage roll.",
+                "When you do so, you can spend 1 sorcery point to gain {@dice 1d10} temporary hit points."
             ]
         },
         {
@@ -140,8 +140,8 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "Tu cohorte mejora. Ahora aprende un truco de nigromancia que puede lanzar en su turno utilizando tu nivel de hechicero.",
-                "Además, tu {@i Marca de la Muerte} se extiende a tus cohortes: cuando uno de ellos reciba daño necrótico de una fuente que no sea un truco, en su lugar recupera puntos de golpe igual a la cantidad de daño necrótico."
+                "Your cohort improves. It learns one necromancy cantrip of your choice which it can cast on its turn using your sorcerer level.",
+                "Additionally, your Deathsign extends to your cohorts: whenever one of them receives necrotic damage from a non-cantrip source, it instead regains hit points equal to the necrotic damage taken."
             ]
         },
         {
@@ -154,7 +154,7 @@
             "level": 18,
             "header": 2,
             "entries": [
-                "Al alcanzar el nivel 18, cuando lanzas el hechizo {@spell animate dead} para volver a afirmar el control sobre los no muertos, puedes gastar un número de puntos de conjuro para lanzarlo como si estuvieras utilizando una ranura de hechizo de un nivel más alto por cada punto gastado."
+                "At 18th level, when you cast {@spell animate dead} to reassert control over undead, you can spend sorcery points to cast it as if using a spell slot one level higher for each point spent."
             ]
         }
     ]

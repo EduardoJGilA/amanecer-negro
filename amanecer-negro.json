@@ -39,9 +39,9 @@
         "version": "1.0.0"
       },
       {
-        "json": "ColegioSanacion",
-        "abbreviation": "CS",
-        "full": "Colegio de Sanacion (Bardo)",
+        "json": "CollegeOfHealing",
+        "abbreviation": "CoH",
+        "full": "College of Healing (Bard)",
         "authors": [
           "User"
         ],
@@ -52,9 +52,9 @@
         "color": "ffffff"
       },
       {
-        "json": "HomebrewSubclases",
+        "json": "HomebrewSubclasses",
         "abbreviation": "HBSC",
-        "full": "Compendio de Subclases Homebrew",
+        "full": "Compendium of Homebrew Subclasses",
         "authors": [
           "User"
         ],
@@ -77,11 +77,23 @@
           "User"
         ],
         "version": "1.0.0"
+      },
+      {
+        "json": "WildCardHomebrew2024",
+        "abbreviation": "WCHB24",
+        "full": "Wild Card Rogue (D&D 2024)",
+        "authors": [
+          "User"
+        ],
+        "convertedBy": [
+          "Gemini"
+        ],
+        "version": "2.4.0"
       }
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1776451625
+    "dateLastModified": 1788367492
   },
   "subclass": [
     {
@@ -95,19 +107,19 @@
         "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
         "Body Regeneration|Fighter||Blood Knight|BloodKnightHB|10",
         "Superior Binding|Fighter||Blood Knight|BloodKnightHB|15",
-        "Éxtasis Sangriento|Fighter||Blood Knight|BloodKnightHB|18"
+        "Blood Ecstasy|Fighter||Blood Knight|BloodKnightHB|18"
       ]
     },
     {
-      "name": "Colegio de Sanacion",
-      "shortName": "Sanacion",
-      "source": "ColegioSanacion",
+      "name": "College of Healing",
+      "shortName": "Healing",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Colegio de Sanacion|Bard||Sanacion|ColegioSanacion|3",
-        "Primeros Auxilios Arcanos|Bard||Sanacion|ColegioSanacion|6",
-        "Ritmo de Recuperación|Bard||Sanacion|ColegioSanacion|14"
+        "College of Healing|Bard||Healing|CollegeOfHealing|3",
+        "Arcane First Aid|Bard||Healing|CollegeOfHealing|6",
+        "Rhythm of Recovery|Bard||Healing|CollegeOfHealing|14"
       ]
     },
     {
@@ -162,13 +174,13 @@
       ]
     },
     {
-      "name": "Juramento del Crepúsculo",
-      "shortName": "Crepúsculo",
-      "source": "HomebrewSubclases",
+      "name": "Oath of Twilight",
+      "shortName": "Twilight",
+      "source": "HomebrewSubclasses",
       "className": "Paladin",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Juramento del Crepúsculo|Paladin||Crepúsculo|HomebrewSubclases|3"
+        "Oath of Twilight|Paladin||Twilight|HomebrewSubclasses|3"
       ]
     },
     {
@@ -206,9 +218,9 @@
       "subclassFeatures": [
         "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
         "Thirst for Blood|Sorcerer||Bloodtouched|SorcererBlood|6",
-        "Tradición Sangrienta Superior|Sorcerer||Bloodtouched|SorcererBlood|6",
-        "Poder derrochador|Sorcerer||Bloodtouched|SorcererBlood|14",
-        "Maestro de la Sangre|Sorcerer||Bloodtouched|SorcererBlood|18"
+        "Superior Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|6",
+        "Overwhelming Power|Sorcerer||Bloodtouched|SorcererBlood|14",
+        "Master of Blood|Sorcerer||Bloodtouched|SorcererBlood|18"
       ]
     },
     {
@@ -219,9 +231,22 @@
       "classSource": "PHB",
       "subclassFeatures": [
         "Wild Card|Rogue|PHB|Wild Card|WildCardHomebrew|3",
-        "Cambiando las Probabilidades|Rogue|PHB|Wild Card|WildCardHomebrew|9",
-        "Giro del Destino|Rogue|PHB|Wild Card|WildCardHomebrew|13",
-        "Comodín Definitivo|Rogue|PHB|Wild Card|WildCardHomebrew|17"
+        "Shift the Odds|Rogue|PHB|Wild Card|WildCardHomebrew|9",
+        "Twist of Fate|Rogue|PHB|Wild Card|WildCardHomebrew|13",
+        "Joker's Wild|Rogue|PHB|Wild Card|WildCardHomebrew|17"
+      ]
+    },
+    {
+      "name": "Wild Card (2024)",
+      "shortName": "Wild Card",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Wild Card (2024)|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3",
+        "Shift the Odds|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|9",
+        "Twist of Fate|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|13",
+        "Joker's Wild|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|17"
       ]
     }
   ],
@@ -235,7 +260,7 @@
       "subclassSource": "BloodKnightHB",
       "level": 3,
       "entries": [
-        "Los Caballeros de Sangre son guerreros que han aprendido a canalizar su propia esencia vital en combate, mezclando la maestría marcial con artes oscuras de hemomancia.",
+        "Blood Knights are warriors who have learned to channel their own vital essence in combat, blending martial mastery with dark arts of hemomancy.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Blood Tradition|Fighter||Blood Knight|BloodKnightHB|3"
@@ -246,7 +271,7 @@
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Tecnicas de Fusion|Fighter||Blood Knight|BloodKnightHB|3"
+          "subclassFeature": "Fusion Techniques|Fighter||Blood Knight|BloodKnightHB|3"
         }
       ]
     },
@@ -260,7 +285,7 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel en esta clase."
+        "You gain proficiency in one of the following skills of your choice: {@skill History}, {@skill Religion}, or {@skill Arcana}. Additionally, your hit point maximum increases by 3, and increases by 1 whenever you gain a level in this class."
       ]
     },
     {
@@ -273,14 +298,14 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes la capacidad de lanzar conjuros de hemomancia usando tu {@b Constitución} como habilidad de lanzamiento.",
-        "Tus espacios de conjuro se recuperan tras un descanso largo, pero puedes recuperar uno durante un descanso corto una vez al día.",
-        "CD de salvación = {@dc 8+pb+con}. Modificador de ataque = {@hit pb+con}.",
-        "Conoces dos hechizos de hemomancia de 1er nivel a tu elección. La tabla muestra cuántos espacios tienes y de qué nivel son."
+        "You gain the ability to cast hemomancy spells using your {@b Constitution} as your spellcasting ability.",
+        "You regain your spell slots after a long rest, but you can regain one spell slot during a short rest once per day.",
+        "Spell save DC = {@dc 8+pb+con}. Spell attack modifier = {@hit pb+con}.",
+        "You know two 1st-level hemomancy spells of your choice. The table shows how many spell slots you have and their level."
       ]
     },
     {
-      "name": "Tecnicas de Fusion",
+      "name": "Fusion Techniques",
       "source": "BloodKnightHB",
       "className": "Fighter",
       "classSource": "PHB",
@@ -289,13 +314,13 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Cuando activas una técnica de fusión al usar {@i Blood Fusion}, esta se mantiene activa. Cambiar de técnica cuesta daño extra. Al nivel 3 ganas:",
+        "When you activate a fusion technique using {@i Blood Fusion}, it remains active. Changing techniques deals extra self-damage. At level 3, you gain:",
         {
           "type": "list",
           "items": [
-            "Aumentas el rango de tus ataques en 5 pies.",
-            "Puedes imbuir tu arma con un elemento: Fuego, Hielo, Veneno, Eléctrico o Necrótico.",
-            "Puedes moverte sin provocar ataques de oportunidad contra alguien que hayas atacado previamente."
+            "Increase your reach with weapon attacks by 5 feet.",
+            "You can imbue your weapon with an element: Fire, Cold, Poison, Lightning, or Necrotic.",
+            "You can move without provoking opportunity attacks from a creature you have attacked this turn."
           ]
         }
       ]
@@ -310,10 +335,10 @@
       "level": 7,
       "header": 2,
       "entries": [
-        "Al impactar con tu arma fusionada, puedes usar una {@action bonus action} y sufrir {@damage 2d8} de daño propio para maldecir al enemigo.",
-        "La criatura no puede alejarse más de 30 pies de ti sin recibir {@damage 2d6} daño psíquico (CD {@dc 8+pb+cha} para reducir a la mitad y romper el vínculo).",
-        "Puedes teletransportarte a un espacio adyacente al objetivo usando uno de tus ataques.",
-        "No puede esconderse de ti e incluso si se vuelve invisible siempre sabes su posición.",
+        "When hitting with your fused weapon, you can use a {@action bonus action} and take {@damage 2d8} self-damage to curse the enemy.",
+        "The creature cannot move more than 30 feet away from you without taking {@damage 2d6} psychic damage (DC {@dc 8+pb+cha} save to halve damage and break the link).",
+        "You can teleport to an unoccupied space adjacent to the target as part of one of your attacks.",
+        "The target cannot hide from you, and even if it becomes invisible, you always know its location.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Blood Track|Fighter||Blood Knight|BloodKnightHB|7"
@@ -329,9 +354,9 @@
       "subclassSource": "BloodKnightHB",
       "level": 7,
       "entries": [
-        "Puedes saber la localización exacta de una criatura si tienes una muestra de sangre o ha sido afectada por tu Blood Binding.",
-        "Añades tu modificador de {@b Carisma} a las tiradas de Investigación o Percepción para buscarla. Tienes ventaja si está afectada por el vínculo.",
-        "Recibes {@damage 1d6} de daño por cada milla recorrida manteniendo la conexión."
+        "You can discern the exact location of a creature if you possess a blood sample or if it is affected by your Blood Binding.",
+        "You add your {@b Charisma} modifier to Investigation or Perception checks to search for it. You have advantage on checks if it is affected by the link.",
+        "You take {@damage 1d6} damage for every mile traveled while maintaining the connection."
       ]
     },
     {
@@ -344,13 +369,13 @@
       "level": 10,
       "header": 2,
       "entries": [
-        "Tu cuerpo se ha curtido. Puedes reducir el daño de {@i Blood Fusion}, {@i Blood Binding} o cambio de técnicas en un número igual a tu modificador de {@b Constitución}.",
-        "Puedes usar esta reducción un número de veces igual a tu bonificador de competencia por descanso largo.",
+        "Your body has hardened. You can reduce self-damage from {@i Blood Fusion}, {@i Blood Binding}, or switching techniques by an amount equal to your {@b Constitution} modifier.",
+        "You can use this reduction a number of times equal to your proficiency bonus per long rest.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Binding Augmented|Fighter||Blood Knight|BloodKnightHB|10"
         },
-        "A partir de este nivel, puedes aplicar el daño de {@i Blood Fusion} una segunda vez por turno."
+        "Starting at this level, you can apply {@i Blood Fusion} damage a second time per turn."
       ]
     },
     {
@@ -362,7 +387,7 @@
       "subclassSource": "BloodKnightHB",
       "level": 10,
       "entries": [
-        "Añades tu bonificador de {@b Carisma} al daño que provocas contra la criatura conectada por el vínculo."
+        "You add your {@b Charisma} modifier to the damage dealt against the creature affected by your Blood Binding."
       ]
     },
     {
@@ -375,12 +400,12 @@
       "level": 15,
       "header": 2,
       "entries": [
-        "Puedes realizar un ataque extra como parte de tu acción de ataque contra el enemigo afectado por tu Blood Binding.",
-        "Además, como reacción, puedes aumentar tu CA en un valor igual a la mitad del costo de activar tu fusión actual (mínimo +1)."
+        "You can make an extra attack as part of your Attack action against the enemy affected by your Blood Binding.",
+        "Additionally, as a reaction, you can increase your AC by an amount equal to half the cost of activating your current fusion (minimum +1)."
       ]
     },
     {
-      "name": "Éxtasis Sangriento",
+      "name": "Blood Ecstasy",
       "source": "BloodKnightHB",
       "className": "Fighter",
       "classSource": "PHB",
@@ -389,73 +414,73 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "Como {@action bonus action}, sufres {@damage 10d6} de daño para entrar en éxtasis por 1 minuto:",
+        "As a {@action bonus action}, you take {@damage 10d6} damage to enter an ecstatic state for 1 minute:",
         {
           "type": "list",
           "items": [
-            "Resistencia a todo daño excepto Radiante y Psíquico.",
-            "Puedes usar {@classFeature Action Surge|Fighter||2|PHB} una tercera vez.",
-            "Ganas 10 pies de movimiento extra.",
-            "Si caes a 0 HP, recuperas 1 HP y una acción completa inmediatamente, perdiendo el estado de éxtasis."
+            "Resistance to all damage except Radiant and Psychic.",
+            "You can use {@classFeature Action Surge|Fighter||2|PHB} a third time.",
+            "You gain +10 feet of movement speed.",
+            "If you drop to 0 HP, you regain 1 HP and a full action immediately, ending the ecstatic state."
           ]
         }
       ]
     },
     {
-      "name": "Colegio de Sanacion",
-      "source": "ColegioSanacion",
+      "name": "College of Healing",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 3,
       "entries": [
-        "Los bardos del Colegio de Sanacion utilizan su magia para sanar las heridas y enfermedades, así como para mejorar la recuperación de sus aliados en el campo de batalla.",
+        "Bards of the College of Healing weave magic to mend wounds and cure diseases, enhancing the recovery of their allies on the battlefield.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Proficiencias Adicionales|Bard||Sanacion|ColegioSanacion|3"
+          "subclassFeature": "Bonus Proficiencies|Bard||Healing|CollegeOfHealing|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Conocimiento de Remedios|Bard||Sanacion|ColegioSanacion|3"
+          "subclassFeature": "Remedy Lore|Bard||Healing|CollegeOfHealing|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trato a la Cabecera|Bard||Sanacion|ColegioSanacion|3"
+          "subclassFeature": "Bedside Manner|Bard||Healing|CollegeOfHealing|3"
         }
       ]
     },
     {
-      "name": "Proficiencias Adicionales",
-      "source": "ColegioSanacion",
+      "name": "Bonus Proficiencies",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes competencia con el {@item herbalism kit|PHB|kit de herboristería}, tu {@item poisoner's kit|PHB|kit de envenenador} y en la habilidad de {@skill Medicine|Medicina}. Si ya tienes competencia en alguna de estas, elige otra competencia en habilidad o herramienta."
+        "You gain proficiency with the {@item herbalism kit|PHB}, {@item poisoner's kit|PHB}, and the {@skill Medicine} skill. If you already have proficiency in any of these, choose another skill or tool proficiency instead."
       ]
     },
     {
-      "name": "Conocimiento de Remedios",
-      "source": "ColegioSanacion",
+      "name": "Remedy Lore",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 3,
       "header": 1,
       "entries": [
-        "Puedes estabilizar a una criatura con 0 puntos de vida usando una {@action bonus action} o una {@action action}.",
-        "Además, puedes aprender conjuros de la siguiente lista como conjuros de bardo:",
+        "You can stabilize a creature at 0 hit points using a {@action bonus action} or an {@action action}.",
+        "Additionally, you can learn spells from the following list as bard spells:",
         {
           "type": "table",
-          "caption": "Conjuros de Sanacion",
+          "caption": "Healing Spells",
           "colLabels": [
-            "Nivel",
-            "Conjuros"
+            "Level",
+            "Spells"
           ],
           "colStyles": [
             "col-2 text-center",
@@ -463,27 +488,27 @@
           ],
           "rows": [
             [
-              "1º",
+              "1st",
               "{@spell detect poison and disease}, {@spell purify food and drink}"
             ],
             [
-              "2º",
+              "2nd",
               "{@spell aid}"
             ],
             [
-              "3º",
+              "3rd",
               "{@spell beacon of hope}, {@spell mass healing word}, {@spell revivify}"
             ],
             [
-              "4º",
+              "4th",
               "{@spell death ward}"
             ],
             [
-              "5º",
+              "5th",
               "{@spell raise dead}, {@spell mass cure wounds}"
             ],
             [
-              "6º",
+              "6th",
               "{@spell heal}"
             ]
           ]
@@ -491,46 +516,46 @@
       ]
     },
     {
-      "name": "Trato a la Cabecera",
-      "source": "ColegioSanacion",
+      "name": "Bedside Manner",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 3,
       "header": 1,
       "entries": [
-        "Cada criatura que posea un dado de {@classFeature Bardic Inspiration|Bard|||1|Inspiración Bárdica} otorgado por ti tiene ventaja en las tiradas de salvación contra muerte.",
-        "Cuando una criatura tiene éxito en una tirada de salvación contra muerte, puede lanzar ese dado para recuperar {@dice 1d8} (o el dado actual) puntos de vida, y ganar puntos de golpe temporales iguales al valor máximo del dado menos el resultado lanzado."
+        "Each creature holding a {@classFeature Bardic Inspiration|Bard|||1|Bardic Inspiration} die granted by you has advantage on death saving throws.",
+        "When a creature succeeds on a death saving throw, it can roll that Bardic Inspiration die to regain {@dice 1d8} (or its current die type) hit points, gaining temporary hit points equal to the die's maximum value minus the roll result."
       ]
     },
     {
-      "name": "Primeros Auxilios Arcanos",
-      "source": "ColegioSanacion",
+      "name": "Arcane First Aid",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 6,
       "header": 2,
       "entries": [
-        "Puedes lanzar {@spell lesser restoration} y {@spell cure wounds} (a un nivel igual a la mitad de tu bono de competencia) sin gastar espacios de conjuro.",
-        "Puedes usar esta característica un número de veces igual a tu modificador de Carisma (mínimo 1). Recuperas los usos tras un descanso largo."
+        "You can cast {@spell lesser restoration} and {@spell cure wounds} (at a spell level equal to half your proficiency bonus) without expending a spell slot.",
+        "You can use this feature a number of times equal to your Charisma modifier (minimum of 1). You regain spent uses after a long rest."
       ]
     },
     {
-      "name": "Ritmo de Recuperación",
-      "source": "ColegioSanacion",
+      "name": "Rhythm of Recovery",
+      "source": "CollegeOfHealing",
       "className": "Bard",
       "classSource": "PHB",
-      "subclassShortName": "Sanacion",
-      "subclassSource": "ColegioSanacion",
+      "subclassShortName": "Healing",
+      "subclassSource": "CollegeOfHealing",
       "level": 14,
       "header": 2,
       "entries": [
-        "Al lanzar un conjuro de bardo de nivel 1 o superior que no restaure vida, una criatura que pueda escucharte a 30 pies recupera puntos de vida igual a tu nivel de bardo dividido entre 4.",
-        "Tus rasgos Trato a la Cabecera y {@classFeature Song of Rest|Bard|||2|Canción de Descanso} aumentan la sanación en una cantidad igual a tu modificador de Carisma.",
-        "Cuando lanzas un conjuro que restaure puntos de vida, activas un ritmo de sanación hasta tu siguiente turno; cualquier criatura que sanes durante este tiempo recupera vida adicional igual a tu modificador de Carisma."
+        "When you cast a 1st-level or higher bard spell that does not restore hit points, one creature within 30 feet that can hear you regains hit points equal to your bard level divided by 4.",
+        "Your Bedside Manner and {@classFeature Song of Rest|Bard|||2|Song of Rest} features increase healing by an amount equal to your Charisma modifier.",
+        "When you cast a spell that restores hit points, you trigger a healing rhythm until your next turn; any creature you heal during this time regains additional hit points equal to your Charisma modifier."
       ]
     },
     {
@@ -717,62 +742,62 @@
       ]
     },
     {
-      "name": "Juramento del Crepúsculo",
-      "source": "HomebrewSubclases",
+      "name": "Oath of Twilight",
+      "source": "HomebrewSubclasses",
       "className": "Paladin",
       "classSource": "PHB",
-      "subclassShortName": "Crepúsculo",
-      "subclassSource": "HomebrewSubclases",
+      "subclassShortName": "Twilight",
+      "subclassSource": "HomebrewSubclasses",
       "level": 3,
       "entries": [
-        "Los paladines que hacen el Juramento del Crepúsculo se encuentran en la línea entre la luz y la oscuridad, sirviendo como guardianes en los límites mortales.",
+        "Paladins who take the Oath of Twilight stand on the line between light and darkness, serving as guardians on the mortal boundaries.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Velo de la Oscuridad|Paladin||Crepúsculo|HomebrewSubclases|3"
+          "subclassFeature": "Veil of Darkness|Paladin||Twilight|HomebrewSubclasses|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Canalizar Divinidad|Paladin||Crepúsculo|HomebrewSubclases|3"
+          "subclassFeature": "Channel Divinity|Paladin||Twilight|HomebrewSubclasses|3"
         }
       ]
     },
     {
-      "name": "Velo de la Oscuridad",
-      "source": "HomebrewSubclases",
+      "name": "Veil of Darkness",
+      "source": "HomebrewSubclasses",
       "className": "Paladin",
       "classSource": "PHB",
-      "subclassShortName": "Crepúsculo",
-      "subclassSource": "HomebrewSubclases",
+      "subclassShortName": "Twilight",
+      "subclassSource": "HomebrewSubclasses",
       "level": 3,
       "header": 1,
       "entries": [
-        "Como una {@action action}, invocas el Velo (armadura de ébano).",
-        "Mientras esté activo: Ignoras resistencia o inmunidad al daño necrótico. Tu {@classFeature Divine Smite|Paladin||2|PHB} inflige daño necrótico en lugar de radiante."
+        "As an {@action action}, you summon the Veil (an ebony armor).",
+        "While active: You ignore resistance or immunity to necrotic damage. Your {@classFeature Divine Smite|Paladin||2|PHB} deals necrotic damage instead of radiant damage."
       ]
     },
     {
-      "name": "Canalizar Divinidad",
-      "source": "HomebrewSubclases",
+      "name": "Channel Divinity",
+      "source": "HomebrewSubclasses",
       "className": "Paladin",
       "classSource": "PHB",
-      "subclassShortName": "Crepúsculo",
-      "subclassSource": "HomebrewSubclases",
+      "subclassShortName": "Twilight",
+      "subclassSource": "HomebrewSubclasses",
       "level": 3,
       "header": 1,
       "entries": [
-        "Ganas dos opciones de Canalizar Divinidad:",
+        "You gain the following two Channel Divinity options:",
         {
-          "name": "Baluarte de Luz",
+          "name": "Bulwark of Light",
           "type": "entries",
           "entries": [
-            "Como acción, criaturas a 30 pies ganan puntos de golpe temporales iguales a {@dice 1d10} + tu modificador de Carisma."
+            "As an action, creatures within 30 feet of you gain temporary hit points equal to {@dice 1d10} + your Charisma modifier."
           ]
         },
         {
-          "name": "Cadenas de Justicia",
+          "name": "Chains of Justice",
           "type": "entries",
           "entries": [
-            "Una criatura a 60 pies hace una salvación de {@savingThrow Dexterity}. Si falla, no puede alejarse de ti."
+            "A creature within 60 feet must make a {@savingThrow Dexterity} save. On a failed save, it cannot move farther away from you."
           ]
         }
       ]
@@ -786,7 +811,7 @@
       "subclassSource": "PaleMasterHB",
       "level": 1,
       "entries": [
-        "Tus poderes son de origen nigromántico, tu carne está petrificada y corrupta. Eres una mente viva atrapada dentro de un cadáver en descomposición.",
+        "Your powers are necromantic in origin, your flesh petrified and corrupted. You are a living mind trapped within a decaying corpse.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Deathsign|Sorcerer||Pale Master|PaleMasterHB|1"
@@ -807,17 +832,17 @@
       "level": 1,
       "header": 1,
       "entries": [
-        "Estás marcado con la muerte. Cuando normalmente recibirías daño necrótico de un hechizo de nivel 1 o superior, en su lugar recuperas puntos de golpe equivalentes a la mitad del daño necrótico infligido (redondeado hacia abajo).",
-        "Además, aprendes conjuros adicionales de nigromancia que no cuentan contra tu número total de hechizos conocidos:",
+        "You are marked with death. Whenever you would normally take necrotic damage from a spell of 1st level or higher, you instead regain hit points equal to half the necrotic damage dealt (rounded down).",
+        "Additionally, you learn bonus necromancy spells that do not count against your total number of sorcerer spells known:",
         {
           "type": "list",
           "items": [
-            "{@b 1º:} {@spell inflict wounds}",
-            "{@b 3º:} {@spell ray of enfeeblement}",
-            "{@b 5º:} {@spell animate dead}",
-            "{@b 7º:} {@spell blight}",
-            "{@b 9º:} {@spell contagion}",
-            "{@b 11º:} {@spell create undead}"
+            "{@b 1st:} {@spell inflict wounds}",
+            "{@b 3rd:} {@spell ray of enfeeblement}",
+            "{@b 5th:} {@spell animate dead}",
+            "{@b 7th:} {@spell blight}",
+            "{@b 9th:} {@spell contagion}",
+            "{@b 11th:} {@spell create undead}"
           ]
         }
       ]
@@ -832,15 +857,15 @@
       "level": 1,
       "header": 1,
       "entries": [
-        "Puedes controlar criaturas a tu disposición. Puedes tener un número de criaturas igual a tu bonificador de competencia.",
-        "El valor de desafío (CR) máximo no puede superar la mitad de tu nivel de hechicero (redondeado hacia abajo).",
-        "Mantener este control requiere gastar puntos de hechicería cada día según la tabla:",
+        "You can control undead creatures under your command. You can control a maximum number of creatures equal to your proficiency bonus.",
+        "The maximum Challenge Rating (CR) of an undead cohort cannot exceed half your sorcerer level (rounded down).",
+        "Maintaining control requires spending sorcery points each day according to the table:",
         {
           "type": "table",
-          "caption": "Costo de Undead Cohort",
+          "caption": "Undead Cohort Cost",
           "colLabels": [
             "CR",
-            "Puntos de Hechicería"
+            "Sorcery Points"
           ],
           "colStyles": [
             "col-6",
@@ -901,7 +926,7 @@
             ]
           ]
         },
-        "Cada día deberás realizar una tirada de {@skill Constitución} CD (10 + CR más alto + modificador de Sabiduría de tu Undead Cohort) para mantener el control."
+        "Each day, you must make a {@skill Constitution} check (DC 10 + highest CR + Wisdom modifier of your Undead Cohort) to maintain control."
       ]
     },
     {
@@ -914,8 +939,8 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "Cada vez que infligas daño con un hechizo de nigromancia, puedes añadir tu modificador de {@b Carisma} al resultado del daño.",
-        "Cuando lo hagas, puedes gastar 1 punto de conjuro para obtener {@dice 1d10} puntos de golpe temporales."
+        "Whenever you deal damage with a necromancy spell, you can add your {@b Charisma} modifier to the damage roll.",
+        "When you do so, you can spend 1 sorcery point to gain {@dice 1d10} temporary hit points."
       ]
     },
     {
@@ -928,8 +953,8 @@
       "level": 14,
       "header": 2,
       "entries": [
-        "Tu cohorte mejora. Ahora aprende un truco de nigromancia que puede lanzar en su turno utilizando tu nivel de hechicero.",
-        "Además, tu {@i Marca de la Muerte} se extiende a tus cohortes: cuando uno de ellos reciba daño necrótico de una fuente que no sea un truco, en su lugar recupera puntos de golpe igual a la cantidad de daño necrótico."
+        "Your cohort improves. It learns one necromancy cantrip of your choice which it can cast on its turn using your sorcerer level.",
+        "Additionally, your Deathsign extends to your cohorts: whenever one of them receives necrotic damage from a non-cantrip source, it instead regains hit points equal to the necrotic damage taken."
       ]
     },
     {
@@ -942,7 +967,7 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "Al alcanzar el nivel 18, cuando lanzas el hechizo {@spell animate dead} para volver a afirmar el control sobre los no muertos, puedes gastar un número de puntos de conjuro para lanzarlo como si estuvieras utilizando una ranura de hechizo de un nivel más alto por cada punto gastado."
+        "At 18th level, when you cast {@spell animate dead} to reassert control over undead, you can spend sorcery points to cast it as if using a spell slot one level higher for each point spent."
       ]
     },
     {
@@ -1070,14 +1095,14 @@
       "subclassSource": "SorcererBlood",
       "level": 1,
       "entries": [
-        "Tu magia proviene de una línea de sangre maldita o de un ritual prohibido que alteró tu esencia misma.",
+        "Your magic stems from a cursed bloodline or a forbidden ritual that altered your very essence.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Tradición Sangrienta|Sorcerer||Bloodtouched|SorcererBlood|1"
+          "subclassFeature": "Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|1"
         }
       ]
     },
@@ -1091,22 +1116,22 @@
       "level": 1,
       "header": 1,
       "entries": [
-        "Aprendes conjuros adicionales de manera gratuita según tu nivel de hechicero:",
+        "You learn bonus spells automatically based on your sorcerer level:",
         {
           "type": "list",
           "items": [
-            "{@b 1º:} {@spell Bloodburn}",
-            "{@b 3º:} {@spell Vampire's Kiss}",
-            "{@b 5º:} {@spell Tides of Blood}",
-            "{@b 7º:} {@spell Draining thread}",
-            "{@b 9º:} {@spell Bloodcurse}",
-            "{@b 11º:} {@spell Rain of Blood}"
+            "{@b 1st:} {@spell Bloodburn}",
+            "{@b 3rd:} {@spell Vampire's Kiss}",
+            "{@b 5th:} {@spell Tides of Blood}",
+            "{@b 7th:} {@spell Draining thread}",
+            "{@b 9th:} {@spell Bloodcurse}",
+            "{@b 11th:} {@spell Rain of Blood}"
           ]
         }
       ]
     },
     {
-      "name": "Tradición Sangrienta",
+      "name": "Blood Tradition",
       "source": "SorcererBlood",
       "className": "Sorcerer",
       "classSource": "PHB",
@@ -1114,7 +1139,7 @@
       "subclassSource": "SorcererBlood",
       "level": 1,
       "entries": [
-        "Ganas competencia en una de estas habilidades: {@skill Historia}, {@skill Religión} o {@skill Arcanismo}. Además, tus puntos de vida máximos aumentan en 3, y vuelven a aumentar en 1 cada vez que subes de nivel después de nivel 3."
+        "You gain proficiency in one of the following skills: {@skill History}, {@skill Religion}, or {@skill Arcana}. Additionally, your hit point maximum increases by 3, and increases by 1 whenever you gain a level in this class after level 3."
       ]
     },
     {
@@ -1127,11 +1152,11 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "Una vez por turno, cuando matas a una o más criaturas que tienen sangre con un conjuro de 1er nivel o superior, recuperas puntos de golpe equivalentes a tres veces el nivel del conjuro."
+        "Once per turn, when you kill one or more creatures that possess blood using a spell of 1st level or higher, you regain hit points equal to three times the spell's level."
       ]
     },
     {
-      "name": "Tradición Sangrienta Superior",
+      "name": "Superior Blood Tradition",
       "source": "SorcererBlood",
       "className": "Sorcerer",
       "classSource": "PHB",
@@ -1140,11 +1165,11 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "A partir del nivel 6, añades tu modificador de {@b Constitución} a todas las tiradas de salvación que realices."
+        "Starting at 6th level, you add your {@b Constitution} modifier to all saving throws you make."
       ]
     },
     {
-      "name": "Poder derrochador",
+      "name": "Overwhelming Power",
       "source": "SorcererBlood",
       "className": "Sorcerer",
       "classSource": "PHB",
@@ -1153,12 +1178,12 @@
       "level": 14,
       "header": 2,
       "entries": [
-        "Tu cuerpo es capaz de alcanzar límites inimaginables. Una vez por turno, si realizaste la Acción de Ataque, puedes infligir {@damage 6} + tu bonificador de competencia + tu modificador de {@b Constitución} como acción adicional y recibir la mitad del daño infligido.",
-        "Si lo haces, puedes realizar una segunda Acción de Ataque este turno. En el nivel 18, puedes usar esta función una vez más (dos veces en total)."
+        "Your body can push past mortal limits. Once per turn, if you took the Attack action, you can deal {@damage 6} + your proficiency bonus + your {@b Constitution} modifier as a bonus action and take half of that damage yourself.",
+        "If you do so, you can make a second Attack action this turn. At 18th level, you can use this feature one additional time per turn (two times total)."
       ]
     },
     {
-      "name": "Maestro de la Sangre",
+      "name": "Master of Blood",
       "source": "SorcererBlood",
       "className": "Sorcerer",
       "classSource": "PHB",
@@ -1167,14 +1192,14 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "Por 5 puntos de hechicería o la mitad de tu vida actual (mientras superes los 20 HP), controlas a un cadáver o criatura inconsciente a 30 pies. Esta criatura comparte tu iniciativa y tiene su propia acción, bonificación de acción y reacción.",
-        "La criatura recupera vida igual a tu nivel x {@dice 1d4}. Al morir, su alma no podrá recuperarse. Mientras esté activa, ganas los siguientes beneficios:",
+        "For 5 sorcery points or half your current hit points (as long as you have more than 20 HP), you control a corpse or unconscious creature within 30 feet. This creature shares your initiative and has its own action, bonus action, and reaction.",
+        "The creature regains hit points equal to your level × {@dice 1d4}. Upon death, its soul cannot be restored. While active, you gain the following benefits:",
         {
           "type": "list",
           "items": [
-            "Ventaja en tiradas de salvación de {@b Constitución}.",
-            "Una cuarta parte de los puntos recuperados se convierten en puntos de vida temporales.",
-            "Recuperas un espacio de conjuro de nivel 4 o inferior."
+            "Advantage on {@b Constitution} saving throws.",
+            "One-quarter of the hit points restored become temporary hit points for you.",
+            "You regain one spell slot of 4th level or lower."
           ]
         }
       ]
@@ -1190,16 +1215,16 @@
       "entries": [
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Trucos bajo la Manga|Rogue|PHB|Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Tricks Up the Sleeve|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Gambito del Comodín|Rogue|PHB|Wild Card|WildCardHomebrew|3"
+          "subclassFeature": "Wildcard's Gambit|Rogue|PHB|Wild Card|WildCardHomebrew|3"
         }
       ]
     },
     {
-      "name": "Trucos bajo la Manga",
+      "name": "Tricks Up the Sleeve",
       "source": "WildCardHomebrew",
       "className": "Rogue",
       "classSource": "PHB",
@@ -1208,18 +1233,18 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Aprendes el conjuro {@spell guidance}.",
+        "You learn the {@spell guidance} cantrip.",
         {
           "type": "entries",
-          "name": "Mejora de Nivel 9",
+          "name": "Level 9 Upgrade",
           "entries": [
-            "A partir del nivel 9, este conjuro tiene un alcance de 30 pies y puedes lanzarlo como una acción adicional."
+            "Starting at 9th level, this spell has a range of 30 feet for you and you can cast it as a bonus action."
           ]
         }
       ]
     },
     {
-      "name": "Gambito del Comodín",
+      "name": "Wildcard's Gambit",
       "source": "WildCardHomebrew",
       "className": "Rogue",
       "classSource": "PHB",
@@ -1228,16 +1253,16 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "Obtienes proficiencia con el set de naipes. Tienes acceso al objeto {@item Deck of Cards|WildCardHomebrew} y su munición {@item Card|WildCardHomebrew} que puedes crear. Puedes usar una carta encantada para realizar un ataque de arma a distancia (60 pies). El ataque usa tu modificador de Destreza e inflige daño según tu nivel.",
-        "Esta carta se considera un arma con la propiedad de sutileza para aplicar tu {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
-        "Tienes un número de usos igual a tu modificador de Carisma (mínimo 1) por descanso largo.",
+        "You gain proficiency with {@item Gaming Set|PHB|playing cards}. You have access to the {@item Deck of Cards|WildCardHomebrew} weapon and its {@item Card|WildCardHomebrew} ammunition. You can use an enchanted card to make a ranged weapon attack (60 ft range). The attack uses your Dexterity modifier and deals damage based on your level.",
+        "This card counts as a weapon with the Finesse property for applying your {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
+        "You have a number of uses equal to your Charisma modifier (minimum of 1) per long rest.",
         {
           "type": "table",
-          "caption": "Daño Base y Alcance",
+          "caption": "Base Damage and Range",
           "colLabels": [
-            "Nivel",
-            "Daño Base",
-            "Alcance"
+            "Level",
+            "Base Damage",
+            "Range"
           ],
           "colStyles": [
             "col-2 text-center",
@@ -1248,58 +1273,58 @@
             [
               "1–2",
               "{@dice 1d4}",
-              "30/60 pies"
+              "30/60 ft."
             ],
             [
               "3–4",
               "{@dice 1d6}",
-              "60/120 pies"
+              "60/120 ft."
             ],
             [
               "5–6",
               "{@dice 1d8}",
-              "60/120 pies"
+              "60/120 ft."
             ],
             [
               "7–8",
               "{@dice 1d10}",
-              "90/180 pies"
+              "90/180 ft."
             ],
             [
               "9–12",
               "{@dice 1d12}",
-              "90/180 pies"
+              "90/180 ft."
             ],
             [
               "13–16",
               "{@dice 2d8}",
-              "120/240 pies"
+              "120/240 ft."
             ],
             [
               "17–20",
               "{@dice 2d10}",
-              "120/240 pies"
+              "120/240 ft."
             ]
           ]
         },
         {
           "type": "list",
-          "name": "Tabla de Efectos del Comodín (CD 8 + tu proficiencia + tu mod. de Carisma)",
+          "name": "Wildcard Effects Table (Save DC = 8 + Proficiency + Charisma Mod)",
           "items": [
-            "{@b 1. Daga (Nivel 3):} Si aplicas Ataque Furtivo, el objetivo suflex daño cortante adicional igual a la mitad del daño de Ataque Furtivo al inicio de su siguiente turno.",
-            "{@b 2. Cadenas (Nivel 3):} El objetivo debe hacer una tirada de salvación de {@savingThrow Strength} o {@savingThrow Dexterity} o quedar {@condition grappled} hasta tu próximo turno.",
-            "{@b 3. Corazón (Nivel 3):} Recuperas vida igual a la mitad del daño de Ataque Furtivo. El exceso se convierte en puntos de golpe temporales.",
-            "{@b 4. Hielo (Nivel 6):} El objetivo tiene desventaja en ataques en su siguiente turno.",
-            "{@b 5. La Corona (Nivel 6):} El objetivo hace una salvación de {@savingThrow Wisdom} o usa su reacción para atacar a un aliado de tu elección.",
-            "{@b 7. La Muerte (Nivel 9):} Si tiene 30 HP o menos, debe hacer una salvación de {@savingThrow Constitution} o muere. Si tiene éxito, queda {@condition paralyzed}.",
-            "{@b 8. La Rueda (Nivel 13):} El objetivo hace una salvación de {@savingThrow Dexterity} o queda {@condition prone}.",
-            "{@b 10. El Juicio (Nivel 17):} El objetivo hace una salvación de {@savingThrow Wisdom} o queda {@condition paralyzed} y gana vulnerabilidad a todo el daño."
+            "{@b 1. Dagger (Level 3):} If you apply Sneak Attack, the target takes extra slashing damage equal to half your Sneak Attack damage at the start of its next turn.",
+            "{@b 2. Chains (Level 3):} Target must make a {@savingThrow Strength} or {@savingThrow Dexterity} save or become {@condition grappled} until your next turn.",
+            "{@b 3. Heart (Level 3):} Regain HP equal to half Sneak Attack damage (excess becomes temporary HP).",
+            "{@b 4. Frost (Level 6):} Target has disadvantage on attack rolls during its next turn.",
+            "{@b 5. The Crown (Level 6):} Target must make a {@savingThrow Wisdom} save or use its reaction to attack an ally of your choice.",
+            "{@b 7. Death (Level 9):} If target has 30 HP or lower, it must pass a {@savingThrow Constitution} save or die instantly; if successful, it is {@condition paralyzed}.",
+            "{@b 8. The Wheel (Level 13):} Target must pass a {@savingThrow Dexterity} save or fall {@condition prone}.",
+            "{@b 10. Judgment (Level 17):} Target must pass a {@savingThrow Wisdom} save or become {@condition paralyzed} and gain vulnerability to all damage."
           ]
         }
       ]
     },
     {
-      "name": "Cambiando las Probabilidades",
+      "name": "Shift the Odds",
       "source": "WildCardHomebrew",
       "className": "Rogue",
       "classSource": "PHB",
@@ -1308,12 +1333,12 @@
       "level": 9,
       "header": 2,
       "entries": [
-        "Como una acción adicional, las criaturas a 10 pies hacen una salvación de {@savingThrow Dexterity} (CD 8 + proficiencia + mod. de Carisma) o reciben {@damage 6d10} daño de fuerza y quedan {@condition prone}. Luego te teletransportas hasta 60 pies.",
-        "Ganas resistencia a todo el daño y ventaja en salvaciones de Destreza hasta tu próximo turno. Se recupera tras un descanso corto o largo."
+        "As a bonus action, creatures within 10 feet make a {@savingThrow Dexterity} save (DC 8 + Proficiency + Charisma Mod) or take {@damage 6d10} force damage and fall {@condition prone}. Then you teleport up to 60 feet.",
+        "You gain resistance to all damage and advantage on Dexterity saves until your next turn. Regained after a short or long rest."
       ]
     },
     {
-      "name": "Giro del Destino",
+      "name": "Twist of Fate",
       "source": "WildCardHomebrew",
       "className": "Rogue",
       "classSource": "PHB",
@@ -1322,12 +1347,12 @@
       "level": 13,
       "header": 2,
       "entries": [
-        "Puedes intercambiar iniciativa con una criatura que veas. Enemigos deben hacer una salvación de {@savingThrow Wisdom} (CD 8 + proficiencia + mod. de Carisma).",
-        "Tú y un aliado ganan +10 de velocidad y ventaja en la primera tirada de ataque del combate."
+        "You can swap initiative with a creature you can see. Enemies must make a {@savingThrow Wisdom} save (DC 8 + Proficiency + Charisma Mod).",
+        "You and an ally gain +10 ft speed and advantage on the first attack roll of combat."
       ]
     },
     {
-      "name": "Comodín Definitivo",
+      "name": "Joker's Wild",
       "source": "WildCardHomebrew",
       "className": "Rogue",
       "classSource": "PHB",
@@ -1336,17 +1361,178 @@
       "level": 17,
       "header": 2,
       "entries": [
-        "Como una acción adicional, adoptas una forma incorpórea por 1 minuto.",
+        "As a bonus action, you enter an incorporeal form for 1 minute.",
         {
           "type": "list",
           "items": [
-            "Recuperas usos de Gambito del Comodín.",
-            "Velocidad duplicada.",
-            "Resistencia a todo el daño e inmunidad a {@condition grappled}, {@condition paralyzed}, {@condition stunned} y {@condition restrained}.",
-            "Puedes moverte a través de objetos y criaturas. Si terminas dentro de una criatura, esta sufre {@damage 1d10} daño de fuerza."
+            "Regain spent uses of Wildcard's Gambit.",
+            "Doubled speed.",
+            "Resistance to all damage and immunity to {@condition grappled}, {@condition paralyzed}, {@condition stunned}, and {@condition restrained}.",
+            "You can move through objects and creatures. If you end inside a creature, it takes {@damage 1d10} force damage."
           ]
         },
-        "Se recupera tras un descanso largo."
+        "Regained after a long rest."
+      ]
+    },
+    {
+      "name": "Wild Card (2024)",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 3,
+      "entries": [
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Tricks Up the Sleeve|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Wildcard's Gambit|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3"
+        }
+      ]
+    },
+    {
+      "name": "Tricks Up the Sleeve",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You learn the {@spell guidance} cantrip (in D&D 2024, cast as a Reaction within 30 feet when a creature fails an ability check). Dexterity or Charisma is your spellcasting ability for it.",
+        "You gain proficiency with {@item Gaming Set|PHB|playing cards}. Additionally, you have advantage on Sleight of Hand and Insight checks made to manipulate or read card games."
+      ]
+    },
+    {
+      "name": "Wildcard's Gambit",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You channel magic into custom enchanted playing cards that you can throw as ranged weapons (Finesse, Light, 30/60 ft range, Slashing or Piercing damage) with the {@b Vex} weapon mastery property. The cards count as magical weapons.",
+        "You must craft your specialized cards using your playing card set during a short or long rest (2 hours of crafting). A pack of 20 cards costs 2 GP at level 3 (weighing 1 lb per 20 cards). You can carry a maximum of 25 prepared cards at a time. After combat, you can recover 50% of thrown cards.",
+        "Your card's base damage die scales with your Rogue level:",
+        {
+          "type": "table",
+          "caption": "Base Damage, Range, and Crafting Cost by Level",
+          "colLabels": [
+            "Rogue Level",
+            "Base Damage",
+            "Range",
+            "Cost per 20 Cards"
+          ],
+          "rows": [
+            [
+              "3rd–4th",
+              "{@dice 1d6}",
+              "30/60 ft.",
+              "2 GP"
+            ],
+            [
+              "5th–8th",
+              "{@dice 1d8}",
+              "60/120 ft.",
+              "4 GP"
+            ],
+            [
+              "9th–12th",
+              "{@dice 1d10}",
+              "60/120 ft.",
+              "8 GP"
+            ],
+            [
+              "13th–16th",
+              "{@dice 1d12}",
+              "90/180 ft.",
+              "15 GP"
+            ],
+            [
+              "17th–20th",
+              "{@dice 2d6}",
+              "90/180 ft.",
+              "30 GP"
+            ]
+          ]
+        },
+        "You can activate an effect from the Cards of Fate Table a number of times equal to your Dexterity or Charisma modifier (minimum of 1) per short or long rest. You regain 1 use whenever you roll initiative.",
+        "The Save DC for your card effects equals 8 + your Proficiency Bonus + your Dexterity or Charisma modifier.",
+        {
+          "type": "list",
+          "name": "Cards of Fate Table (Progressive 1d4 -> 1d10)",
+          "items": [
+            "{@b 1. Shadow Blade (Level 3 - 1d4):} If you apply Sneak Attack, the target takes extra slashing damage equal to half your Sneak Attack damage at the start of its next turn.",
+            "{@b 2. Eclipse Shackles (Level 3 - 1d4):} Target must pass a Strength or Dexterity save or become {@condition grappled} until the start of your next turn.",
+            "{@b 3. Crimson Heart (Level 3 - 1d4):} If you apply Sneak Attack, regain HP equal to half Sneak Attack damage (excess becomes temporary HP).",
+            "{@b 4. Ravenous Frost (Level 6 - 1d6):} Target has disadvantage on attack rolls until the end of its next turn.",
+            "{@b 5. Royal Decree (Level 6 - 1d6):} Target must pass a Wisdom save or use its reaction to make a melee weapon attack against a creature of your choice.",
+            "{@b 6. Echoes of Debt (Level 9 - 1d8):} If the target damages you or an ally on its turn, it automatically takes necrotic damage equal to half your Sneak Attack damage.",
+            "{@b 7. Mark of the Reaper (Level 9 - 1d8):} Target must pass a Constitution save or take 4d8 necrotic damage / become {@condition paralyzed} if at 30 HP or lower.",
+            "{@b 8. Wheel of Fortune (Level 13 - 1d10):} Target must pass a Dexterity save or fall {@condition prone} and lose opportunity attacks until the start of your next turn.",
+            "{@b 9. Shattered Tower (Level 13 - 1d10):} Target cannot benefit from invisibility or cover until the end of its next turn.",
+            "{@b 10. Final Judgment (Level 17 - 1d10):} Target must pass a Wisdom save or become {@condition paralyzed} and gain vulnerability to all damage until the end of your next turn."
+          ]
+        },
+        "{@b Wild Ace:} Whenever you roll the maximum possible number on your card's base damage die (e.g., a 6 on 1d6, 8 on 1d8, 10 on 1d10), you activate a Wild Ace. This allows you to choose any unlocked card effect from the table without rolling or expending a Gambit use."
+      ]
+    },
+    {
+      "name": "Shift the Odds",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "As a Bonus Action, you teleport up to 60 feet to an unoccupied space you can see. Creatures within 10 feet of your origin point must make a Dexterity save, taking {@damage 4d10} force damage and falling {@condition prone} on a failure, or half damage on a success.",
+        "Until the start of your next turn, you gain resistance to all damage and advantage on Dexterity saving throws. Once used, you cannot use this feature again until you complete a short or long rest (or by expending 1 Gambit use)."
+      ]
+    },
+    {
+      "name": "Twist of Fate",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "You add your Charisma or Dexterity modifier (whichever is higher) to your Initiative rolls.",
+        "When rolling initiative at the start of combat, you can swap your initiative count with a willing ally, or force an enemy within 60 feet to make a Wisdom save to swap initiative with them.",
+        "Both you and the selected ally gain +10 ft speed and advantage on your first attack roll of combat."
+      ]
+    },
+    {
+      "name": "Joker's Wild",
+      "source": "WildCardHomebrew2024",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Wild Card",
+      "subclassSource": "WildCardHomebrew2024",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "As a Bonus Action, you assume an incorporeal, probability-warping form for 1 minute.",
+        {
+          "type": "list",
+          "items": [
+            "You regain all spent uses of Wildcard's Gambit.",
+            "Your movement speed is doubled, and you can move through objects and creatures as difficult terrain.",
+            "You gain resistance to all damage and immunity to {@condition grappled}, {@condition paralyzed}, {@condition stunned}, and {@condition restrained}.",
+            "When using Wildcard's Gambit, you can trigger {@b two card effects} simultaneously from the Cards of Fate Table."
+          ]
+        },
+        "Once used, you cannot use this feature again until you complete a long rest."
       ]
     }
   ],
@@ -1805,50 +1991,50 @@
         }
       },
       "entries": [
-        "Gambito del Comodín: Estas cartas mágicas son usadas como arma letal por el Comodín. Al ser lanzadas, imitan la fuerza de una ráfaga de energía o una cuchilla afilada.",
+        "Wildcard's Gambit: These magical playing cards are used as a lethal weapon by the Wild Card. When thrown, they mimic a burst of energy or a razor-sharp blade.",
         {
           "type": "table",
-          "caption": "Daño Base y Alcance del Comodín",
+          "caption": "Base Damage and Range",
           "colLabels": [
-            "Nivel",
-            "Daño Base",
-            "Alcance"
+            "Level",
+            "Base Damage",
+            "Range"
           ],
           "rows": [
             [
               "1–2",
               "{@dice 1d4}",
-              "30/60 pies"
+              "30/60 ft."
             ],
             [
               "3–4",
               "{@dice 1d6}",
-              "60/120 pies"
+              "60/120 ft."
             ],
             [
               "5–6",
               "{@dice 1d8}",
-              "60/120 pies"
+              "60/120 ft."
             ],
             [
               "7–8",
               "{@dice 1d10}",
-              "90/180 pies"
+              "90/180 ft."
             ],
             [
               "9–12",
               "{@dice 1d12}",
-              "90/180 pies"
+              "90/180 ft."
             ],
             [
               "13–16",
               "{@dice 2d8}",
-              "120/240 pies"
+              "120/240 ft."
             ],
             [
               "17–20",
               "{@dice 2d10}",
-              "120/240 pies"
+              "120/240 ft."
             ]
           ]
         }
@@ -1861,7 +2047,26 @@
       "rarity": "none",
       "weight": 0,
       "entries": [
-        "Munición para el arma {@item Deck of Cards|WildCardHomebrew}. Estas cartas mágicas son creadas por el propio Comodín como parte de su Gambito."
+        "Ammunition for the {@item Deck of Cards|WildCardHomebrew} weapon. These magic cards are created by the Wild Card as part of their Gambit."
+      ]
+    },
+    {
+      "name": "Deck of Cards (2024)",
+      "source": "WildCardHomebrew2024",
+      "type": "R",
+      "rarity": "none",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L",
+        "T"
+      ],
+      "mastery": "Vex",
+      "range": "30/60",
+      "dmg1": "1d6",
+      "dmgType": "S",
+      "entries": [
+        "Wildcard Magic Playing Cards (D&D 2024). Simple ranged weapon with Finesse, Light, and Vex Weapon Mastery property."
       ]
     }
   ]
