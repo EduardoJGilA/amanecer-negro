@@ -11,19 +11,36 @@
                 "convertedBy": [
                     "Gemini"
                 ],
-                "version": "2.4.0"
+                "version": "2.5.0"
             }
         ]
     },
     "subclass": [
         {
             "name": "Wild Card (2024)",
-            "shortName": "Wild Card",
+            "shortName": "Wild Card (2024)",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassFeatures": [
+                "Wild Card (2024)|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|3",
+                "Tricks Up the Sleeve|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|3",
+                "Wildcard's Gambit|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|3",
+                "Shift the Odds|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|9",
+                "Twist of Fate|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|13",
+                "Joker's Wild|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|17"
+            ]
+        },
+        {
+            "name": "Wild Card (2024)",
+            "shortName": "Wild Card (2024)",
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
                 "Wild Card (2024)|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3",
+                "Tricks Up the Sleeve|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3",
+                "Wildcard's Gambit|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3",
                 "Shift the Odds|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|9",
                 "Twist of Fate|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|13",
                 "Joker's Wild|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|17"
@@ -35,8 +52,169 @@
             "name": "Wild Card (2024)",
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tricks Up the Sleeve|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Wildcard's Gambit|Rogue|XPHB|Wild Card (2024)|WildCardHomebrew2024|3"
+                }
+            ]
+        },
+        {
+            "name": "Tricks Up the Sleeve",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You learn the {@spell guidance} cantrip (in D&D 2024, cast as a Reaction within 30 feet when a creature fails an ability check). Dexterity or Charisma is your spellcasting ability for it.",
+                "You gain proficiency with {@item Gaming Set|PHB|playing cards}. Additionally, you have advantage on Sleight of Hand and Insight checks made to manipulate or read card games."
+            ]
+        },
+        {
+            "name": "Wildcard's Gambit",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You channel magic into custom enchanted playing cards that you can throw as ranged weapons (Finesse, Light, 20/60 ft range, Slashing or Piercing damage) with the {@b Vex} weapon mastery property. The cards count as magical weapons.",
+                "You must craft your specialized cards using your playing card set during a short or long rest (2 hours of crafting). A pack of 20 cards costs 2 GP at level 3 (weighing 1 lb per 20 cards). You can carry a maximum of 25 prepared cards at a time. After combat, you can recover 50% of thrown cards.",
+                "Your card's base damage die and range scale with your Rogue level:",
+                {
+                    "type": "table",
+                    "caption": "Base Damage, Range, and Crafting Cost by Level",
+                    "colLabels": [
+                        "Rogue Level",
+                        "Base Damage",
+                        "Range",
+                        "Cost per 20 Cards"
+                    ],
+                    "rows": [
+                        [
+                            "3rd–4th",
+                            "{@dice 1d6}",
+                            "20/60 ft.",
+                            "2 GP"
+                        ],
+                        [
+                            "5th–8th",
+                            "{@dice 1d8}",
+                            "30/60 ft.",
+                            "4 GP"
+                        ],
+                        [
+                            "9th–12th",
+                            "{@dice 1d10}",
+                            "30/90 ft.",
+                            "8 GP"
+                        ],
+                        [
+                            "13th–16th",
+                            "{@dice 1d12}",
+                            "45/90 ft.",
+                            "15 GP"
+                        ],
+                        [
+                            "17th–20th",
+                            "{@dice 2d6}",
+                            "60/120 ft.",
+                            "30 GP"
+                        ]
+                    ]
+                },
+                "When you hit a creature with a card attack, you can expend 1 Gambit use to activate an extra effect from the Cards of Fate Table by rolling your Gambit die (1d4 at 3rd level, 1d6 at 6th level, 1d8 at 9th level, 1d10 at 13th level). You have a number of Gambit uses equal to your Dexterity or Charisma modifier (minimum of 1) + 1 per short or long rest. You regain 1 use whenever you roll initiative.",
+                "The Save DC for your card effects equals 8 + your Proficiency Bonus + your Dexterity or Charisma modifier.",
+                {
+                    "type": "list",
+                    "name": "Cards of Fate Table (Progressive 1d4 -> 1d10)",
+                    "items": [
+                        "{@b 1. Shadow Blade (Level 3 - 1d4):} If you apply Sneak Attack, the target takes extra slashing damage equal to half your Sneak Attack damage at the start of its next turn.",
+                        "{@b 2. Eclipse Shackles (Level 3 - 1d4):} Target must pass a Strength or Dexterity save or become {@condition grappled} until the start of your next turn.",
+                        "{@b 3. Crimson Heart (Level 3 - 1d4):} If you apply Sneak Attack, regain HP equal to half Sneak Attack damage (excess becomes temporary HP).",
+                        "{@b 4. Ravenous Frost (Level 6 - 1d6):} Target has disadvantage on attack rolls until the end of its next turn.",
+                        "{@b 5. Royal Decree (Level 6 - 1d6):} Target must pass a Wisdom save or use its reaction to make a melee weapon attack against a creature of your choice.",
+                        "{@b 6. Echoes of Debt (Level 9 - 1d8):} If the target damages you or an ally on its turn, it automatically takes necrotic damage equal to half your Sneak Attack damage.",
+                        "{@b 7. Mark of the Reaper (Level 9 - 1d8):} Target must pass a Constitution save or take 4d8 necrotic damage / become {@condition paralyzed} if at 30 HP or lower.",
+                        "{@b 8. Wheel of Fortune (Level 13 - 1d10):} Target must pass a Dexterity save or fall {@condition prone} and lose opportunity attacks until the start of your next turn.",
+                        "{@b 9. Shattered Tower (Level 13 - 1d10):} Target cannot benefit from invisibility or cover until the end of its next turn.",
+                        "{@b 10. Final Judgment (Level 17 - 1d10):} Target must pass a Wisdom save or become {@condition paralyzed} and gain vulnerability to all damage until the end of your next turn."
+                    ]
+                },
+                "{@b Wild Card (Tirar sin gastar punto):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
+            ]
+        },
+        {
+            "name": "Shift the Odds",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "As a Bonus Action, you teleport up to 60 feet to an unoccupied space you can see. Creatures within 10 feet of your origin point must make a Dexterity save, taking {@damage 4d10} force damage and falling {@condition prone} on a failure, or half damage on a success.",
+                "Until the start of your next turn, you gain resistance to all damage and advantage on Dexterity saving throws. Once used, you cannot use this feature again until you complete a short or long rest (or by expending 1 Gambit use)."
+            ]
+        },
+        {
+            "name": "Twist of Fate",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 13,
+            "header": 2,
+            "entries": [
+                "You add your Charisma or Dexterity modifier (whichever is higher) to your Initiative rolls.",
+                "When rolling initiative at the start of combat, you can swap your initiative count with a willing ally, or force an enemy within 60 feet to make a Wisdom save to swap initiative with them.",
+                "Both you and the selected ally gain +10 ft speed and advantage on your first attack roll of combat."
+            ]
+        },
+        {
+            "name": "Joker's Wild",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
+            "classSource": "XPHB",
+            "subclassShortName": "Wild Card (2024)",
+            "subclassSource": "WildCardHomebrew2024",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "As a Bonus Action, you assume an incorporeal, probability-warping form for 1 minute.",
+                {
+                    "type": "list",
+                    "items": [
+                        "You regain all spent uses of Wildcard's Gambit.",
+                        "Your movement speed is doubled, and you can move through objects and creatures as difficult terrain.",
+                        "You gain resistance to all damage and immunity to {@condition grappled}, {@condition paralyzed}, {@condition stunned}, and {@condition restrained}.",
+                        "When using Wildcard's Gambit, you can trigger {@b two card effects} simultaneously from the Cards of Fate Table."
+                    ]
+                },
+                "Once used, you cannot use this feature again until you complete a long rest."
+            ]
+        },
+        {
+            "name": "Wild Card (2024)",
+            "source": "WildCardHomebrew2024",
+            "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "entries": [
@@ -55,7 +233,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "header": 1,
@@ -69,7 +247,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "header": 1,
@@ -145,7 +323,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 9,
             "header": 2,
@@ -159,7 +337,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 13,
             "header": 2,
@@ -174,7 +352,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card",
+            "subclassShortName": "Wild Card (2024)",
             "subclassSource": "WildCardHomebrew2024",
             "level": 17,
             "header": 2,
@@ -200,20 +378,16 @@
             "type": "R",
             "rarity": "none",
             "weaponCategory": "simple",
-            "property": [
-                "F",
-                "L",
-                "T"
-            ],
+            "property": [],
             "mastery": "Vex",
             "range": "20/60",
             "dmg1": "1d6",
             "dmgType": "S",
-            "ammoType": "{@item Card (2024)|WildCardHomebrew2024}",
+            "ammoType": "Card (2024)",
             "weight": 1,
             "value": 200,
             "entries": [
-                "Custom enchanted playing cards crafted by the Wild Card rogue (D&D 2024). Simple ranged weapon with Finesse, Light, Thrown, and the {@b Vex} Weapon Mastery property. Counts as a magical weapon.",
+                "Custom enchanted playing cards crafted by the Wild Card rogue (D&D 2024). Simple ranged weapon with the {@b Vex} Weapon Mastery property. Counts as a magical weapon.",
                 "{@b Weapon Mastery (Vex):} When you hit a creature with this weapon and deal damage, you have advantage on your next attack roll against that creature before the end of your next turn.",
                 "{@b Crafting & Capacity:} You craft a pack of 20 cards using a playing card set during a short or long rest (2 hours, costs 2 GP). You can carry a maximum of 25 prepared cards at a time. After combat, you can recover 50% of thrown cards.",
                 {
