@@ -6,12 +6,12 @@
                 "abbreviation": "WCHB24",
                 "full": "Wild Card Rogue (D&D 2024)",
                 "authors": [
-                    "User"
+                    "MiGaki"
                 ],
                 "convertedBy": [
-                    "Gemini"
+                    "MiGaki"
                 ],
-                "version": "2.5.0"
+                "version": "2.5.5"
             }
         ]
     },
@@ -222,11 +222,31 @@
                         "Range"
                     ],
                     "rows": [
-                        ["3rd–4th", "1d6", "20/60 ft."],
-                        ["5th–8th", "1d8", "30/60 ft."],
-                        ["9th–12th", "1d10", "30/90 ft."],
-                        ["13th–16th", "1d12", "45/90 ft."],
-                        ["17th–20th", "2d6", "60/120 ft."]
+                        [
+                            "3rd–4th",
+                            "1d6",
+                            "20/60 ft."
+                        ],
+                        [
+                            "5th–8th",
+                            "1d8",
+                            "30/60 ft."
+                        ],
+                        [
+                            "9th–12th",
+                            "1d10",
+                            "30/90 ft."
+                        ],
+                        [
+                            "13th–16th",
+                            "1d12",
+                            "45/90 ft."
+                        ],
+                        [
+                            "17th–20th",
+                            "2d6",
+                            "60/120 ft."
+                        ]
                     ]
                 }
             ]

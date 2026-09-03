@@ -8,8 +8,8 @@ const output = {
                 "json": "AN",
                 "abbreviation": "AN",
                 "full": "Amanecer Negro Expansión",
-                "authors": ["MiGaki", "User"],
-                "convertedBy": ["MiGaki", "Gemini"],
+                "authors": ["MiGaki"],
+                "convertedBy": ["MiGaki"],
                 "version": "0.1",
                 "color": "ffffff",
                 "dateReleased": "2023-04-22"
@@ -18,8 +18,8 @@ const output = {
                 "json": "WildCardHomebrew",
                 "abbreviation": "WCHB",
                 "full": "Wild Card Rogue (Revised)",
-                "authors": ["User"],
-                "convertedBy": ["Gemini"],
+                "authors": ["MiGaki"],
+                "convertedBy": ["MiGaki"],
                 "version": "1.0.0"
             }
         ],
@@ -47,7 +47,7 @@ directoriesToScan.forEach(({ dir, keys }) => {
             if (!file.endsWith('.json')) continue;
             try {
                 const data = JSON.parse(fs.readFileSync(path.join(fullPath, file), 'utf-8'));
-                
+
                 // Collect sources
                 if (data._meta && data._meta.sources) {
                     data._meta.sources.forEach(source => {

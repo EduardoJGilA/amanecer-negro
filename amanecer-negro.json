@@ -6,12 +6,10 @@
         "abbreviation": "AN",
         "full": "Amanecer Negro Expansión",
         "authors": [
-          "MiGaki",
-          "User"
+          "MiGaki"
         ],
         "convertedBy": [
-          "MiGaki",
-          "Gemini"
+          "MiGaki"
         ],
         "version": "0.1",
         "color": "ffffff",
@@ -22,10 +20,10 @@
         "abbreviation": "WCHB",
         "full": "Wild Card Rogue (Revised)",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "convertedBy": [
-          "Gemini"
+          "MiGaki"
         ],
         "version": "1.0.0"
       },
@@ -34,7 +32,7 @@
         "abbreviation": "BK",
         "full": "The Blood Knight",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "version": "1.0.0"
       },
@@ -43,10 +41,10 @@
         "abbreviation": "CoH",
         "full": "College of Healing (Bard)",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "convertedBy": [
-          "Gemini"
+          "MiGaki"
         ],
         "version": "1.0.0",
         "color": "ffffff"
@@ -56,7 +54,7 @@
         "abbreviation": "HBSC",
         "full": "Compendium of Homebrew Subclasses",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "version": "1.0.0"
       },
@@ -65,7 +63,7 @@
         "abbreviation": "PM",
         "full": "Pale Master (Sorcerer)",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "version": "1.0.0"
       },
@@ -74,7 +72,7 @@
         "abbreviation": "SB",
         "full": "Bloodtouched Sorcerer",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "version": "1.0.0"
       },
@@ -83,17 +81,17 @@
         "abbreviation": "WCHB24",
         "full": "Wild Card Rogue (D&D 2024)",
         "authors": [
-          "User"
+          "MiGaki"
         ],
         "convertedBy": [
-          "Gemini"
+          "MiGaki"
         ],
-        "version": "2.5.0"
+        "version": "2.5.5"
       }
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1788464827
+    "dateLastModified": 1788464944
   },
   "subclass": [
     {
