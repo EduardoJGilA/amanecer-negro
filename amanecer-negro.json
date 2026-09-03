@@ -93,7 +93,7 @@
     ],
     "status": "wip",
     "dateAdded": 1682210907,
-    "dateLastModified": 1788367492
+    "dateLastModified": 1788463517
   },
   "subclass": [
     {
@@ -1417,9 +1417,9 @@
       "level": 3,
       "header": 1,
       "entries": [
-        "You channel magic into custom enchanted playing cards that you can throw as ranged weapons (Finesse, Light, 30/60 ft range, Slashing or Piercing damage) with the {@b Vex} weapon mastery property. The cards count as magical weapons.",
+        "You channel magic into custom enchanted playing cards that you can throw as ranged weapons (Finesse, Light, 20/60 ft range, Slashing or Piercing damage) with the {@b Vex} weapon mastery property. The cards count as magical weapons.",
         "You must craft your specialized cards using your playing card set during a short or long rest (2 hours of crafting). A pack of 20 cards costs 2 GP at level 3 (weighing 1 lb per 20 cards). You can carry a maximum of 25 prepared cards at a time. After combat, you can recover 50% of thrown cards.",
-        "Your card's base damage die scales with your Rogue level:",
+        "Your card's base damage die and range scale with your Rogue level:",
         {
           "type": "table",
           "caption": "Base Damage, Range, and Crafting Cost by Level",
@@ -1433,36 +1433,36 @@
             [
               "3rd–4th",
               "{@dice 1d6}",
-              "30/60 ft.",
+              "20/60 ft.",
               "2 GP"
             ],
             [
               "5th–8th",
               "{@dice 1d8}",
-              "60/120 ft.",
+              "30/60 ft.",
               "4 GP"
             ],
             [
               "9th–12th",
               "{@dice 1d10}",
-              "60/120 ft.",
+              "30/90 ft.",
               "8 GP"
             ],
             [
               "13th–16th",
               "{@dice 1d12}",
-              "90/180 ft.",
+              "45/90 ft.",
               "15 GP"
             ],
             [
               "17th–20th",
               "{@dice 2d6}",
-              "90/180 ft.",
+              "60/120 ft.",
               "30 GP"
             ]
           ]
         },
-        "You can activate an effect from the Cards of Fate Table a number of times equal to your Dexterity or Charisma modifier (minimum of 1) per short or long rest. You regain 1 use whenever you roll initiative.",
+        "When you hit a creature with a card attack, you can expend 1 Gambit use to activate an extra effect from the Cards of Fate Table by rolling your Gambit die (1d4 at 3rd level, 1d6 at 6th level, 1d8 at 9th level, 1d10 at 13th level). You have a number of Gambit uses equal to your Dexterity or Charisma modifier (minimum of 1) + 1 per short or long rest. You regain 1 use whenever you roll initiative.",
         "The Save DC for your card effects equals 8 + your Proficiency Bonus + your Dexterity or Charisma modifier.",
         {
           "type": "list",
@@ -1480,7 +1480,7 @@
             "{@b 10. Final Judgment (Level 17 - 1d10):} Target must pass a Wisdom save or become {@condition paralyzed} and gain vulnerability to all damage until the end of your next turn."
           ]
         },
-        "{@b Wild Ace:} Whenever you roll the maximum possible number on your card's base damage die (e.g., a 6 on 1d6, 8 on 1d8, 10 on 1d10), you activate a Wild Ace. This allows you to choose any unlocked card effect from the table without rolling or expending a Gambit use."
+        "{@b Wild Card (Tirar sin gastar punto):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
       ]
     },
     {
@@ -2062,11 +2062,63 @@
         "T"
       ],
       "mastery": "Vex",
-      "range": "30/60",
+      "range": "20/60",
       "dmg1": "1d6",
       "dmgType": "S",
+      "ammoType": "{@item Card (2024)|WildCardHomebrew2024}",
+      "weight": 1,
+      "value": 200,
       "entries": [
-        "Wildcard Magic Playing Cards (D&D 2024). Simple ranged weapon with Finesse, Light, and Vex Weapon Mastery property."
+        "Custom enchanted playing cards crafted by the Wild Card rogue (D&D 2024). Simple ranged weapon with Finesse, Light, Thrown, and the {@b Vex} Weapon Mastery property. Counts as a magical weapon.",
+        "{@b Weapon Mastery (Vex):} When you hit a creature with this weapon and deal damage, you have advantage on your next attack roll against that creature before the end of your next turn.",
+        "{@b Crafting & Capacity:} You craft a pack of 20 cards using a playing card set during a short or long rest (2 hours, costs 2 GP). You can carry a maximum of 25 prepared cards at a time. After combat, you can recover 50% of thrown cards.",
+        {
+          "type": "table",
+          "caption": "Base Damage & Range Scaling by Level",
+          "colLabels": [
+            "Rogue Level",
+            "Damage",
+            "Range"
+          ],
+          "rows": [
+            [
+              "3rd–4th",
+              "1d6",
+              "20/60 ft."
+            ],
+            [
+              "5th–8th",
+              "1d8",
+              "30/60 ft."
+            ],
+            [
+              "9th–12th",
+              "1d10",
+              "30/90 ft."
+            ],
+            [
+              "13th–16th",
+              "1d12",
+              "45/90 ft."
+            ],
+            [
+              "17th–20th",
+              "2d6",
+              "60/120 ft."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Card (2024)",
+      "source": "WildCardHomebrew2024",
+      "type": "A",
+      "rarity": "none",
+      "weight": 0.05,
+      "value": 10,
+      "entries": [
+        "Ammunition for the {@item Deck of Cards (2024)|WildCardHomebrew2024} weapon. A single razor-sharp, magically infused metal playing card."
       ]
     }
   ]
