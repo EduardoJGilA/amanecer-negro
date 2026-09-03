@@ -18,15 +18,15 @@
     "subclass": [
         {
             "name": "Wild Card (2024)",
-            "shortName": "Wild Card (2024)",
+            "shortName": "WildCard2024",
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Wild Card (2024)|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3",
-                "Shift the Odds|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|9",
-                "Twist of Fate|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|13",
-                "Joker's Wild|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|17"
+                "Wild Card (2024)|Rogue||WildCard2024|WildCardHomebrew2024|3",
+                "Shift the Odds|Rogue||WildCard2024|WildCardHomebrew2024|9",
+                "Twist of Fate|Rogue||WildCard2024|WildCardHomebrew2024|13",
+                "Joker's Wild|Rogue||WildCard2024|WildCardHomebrew2024|17"
             ]
         }
     ],
@@ -36,17 +36,18 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "entries": [
+                "At 3rd level, you learn to enchant playing cards with lethal magic and manipulate fortune in battle.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tricks Up the Sleeve|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3"
+                    "subclassFeature": "Tricks Up the Sleeve|Rogue||WildCard2024|WildCardHomebrew2024|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Wildcard's Gambit|Rogue|PHB|Wild Card (2024)|WildCardHomebrew2024|3"
+                    "subclassFeature": "Wildcard's Gambit|Rogue||WildCard2024|WildCardHomebrew2024|3"
                 }
             ]
         },
@@ -55,7 +56,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "header": 1,
@@ -69,7 +70,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 3,
             "header": 1,
@@ -145,7 +146,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 9,
             "header": 2,
@@ -159,7 +160,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 13,
             "header": 2,
@@ -174,7 +175,7 @@
             "source": "WildCardHomebrew2024",
             "className": "Rogue",
             "classSource": "PHB",
-            "subclassShortName": "Wild Card (2024)",
+            "subclassShortName": "WildCard2024",
             "subclassSource": "WildCardHomebrew2024",
             "level": 17,
             "header": 2,
