@@ -2,13 +2,18 @@
     "_meta": {
         "sources": [
             {
-                "json": "BloodKnightHB",
-                "abbreviation": "BK",
-                "full": "The Blood Knight",
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
-                "version": "1.0.0"
+                "convertedBy": [
+                    "MiGaki"
+                ],
+                "version": "1.0.0",
+                "color": "7a0016",
+                "dateReleased": "2023-04-22"
             }
         ]
     },
@@ -16,50 +21,50 @@
         {
             "name": "Blood Knight",
             "shortName": "Blood Knight",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Blood Knight|Fighter||Blood Knight|BloodKnightHB|3",
-                "Blood Binding|Fighter||Blood Knight|BloodKnightHB|7",
-                "Body Regeneration|Fighter||Blood Knight|BloodKnightHB|10",
-                "Superior Binding|Fighter||Blood Knight|BloodKnightHB|15",
-                "Blood Ecstasy|Fighter||Blood Knight|BloodKnightHB|18"
+                "Blood Knight|Fighter|PHB|Blood Knight|AN|3",
+                "Blood Binding|Fighter|PHB|Blood Knight|AN|7",
+                "Body Regeneration|Fighter|PHB|Blood Knight|AN|10",
+                "Superior Binding|Fighter|PHB|Blood Knight|AN|15",
+                "Blood Ecstasy|Fighter|PHB|Blood Knight|AN|18"
             ]
         }
     ],
     "subclassFeature": [
         {
             "name": "Blood Knight",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 3,
             "entries": [
                 "Blood Knights are warriors who have learned to channel their own vital essence in combat, blending martial mastery with dark arts of hemomancy.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blood Tradition|Fighter||Blood Knight|BloodKnightHB|3"
+                    "subclassFeature": "Blood Tradition|Fighter|PHB|Blood Knight|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Hemomancy|Fighter||Blood Knight|BloodKnightHB|3"
+                    "subclassFeature": "Hemomancy|Fighter|PHB|Blood Knight|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Fusion Techniques|Fighter||Blood Knight|BloodKnightHB|3"
+                    "subclassFeature": "Fusion Techniques|Fighter|PHB|Blood Knight|AN|3"
                 }
             ]
         },
         {
             "name": "Blood Tradition",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -68,11 +73,11 @@
         },
         {
             "name": "Hemomancy",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -84,11 +89,11 @@
         },
         {
             "name": "Fusion Techniques",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -105,11 +110,11 @@
         },
         {
             "name": "Blood Binding",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 7,
             "header": 2,
             "entries": [
@@ -119,17 +124,17 @@
                 "The target cannot hide from you, and even if it becomes invisible, you always know its location.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blood Track|Fighter||Blood Knight|BloodKnightHB|7"
+                    "subclassFeature": "Blood Track|Fighter|PHB|Blood Knight|AN|7"
                 }
             ]
         },
         {
             "name": "Blood Track",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 7,
             "entries": [
                 "You can discern the exact location of a creature if you possess a blood sample or if it is affected by your Blood Binding.",
@@ -139,11 +144,11 @@
         },
         {
             "name": "Body Regeneration",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 10,
             "header": 2,
             "entries": [
@@ -151,18 +156,18 @@
                 "You can use this reduction a number of times equal to your proficiency bonus per long rest.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Binding Augmented|Fighter||Blood Knight|BloodKnightHB|10"
+                    "subclassFeature": "Binding Augmented|Fighter|PHB|Blood Knight|AN|10"
                 },
                 "Starting at this level, you can apply {@i Blood Fusion} damage a second time per turn."
             ]
         },
         {
             "name": "Binding Augmented",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 10,
             "entries": [
                 "You add your {@b Charisma} modifier to the damage dealt against the creature affected by your Blood Binding."
@@ -170,11 +175,11 @@
         },
         {
             "name": "Superior Binding",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 15,
             "header": 2,
             "entries": [
@@ -184,11 +189,11 @@
         },
         {
             "name": "Blood Ecstasy",
-            "source": "BloodKnightHB",
+            "source": "AN",
             "className": "Fighter",
             "classSource": "PHB",
             "subclassShortName": "Blood Knight",
-            "subclassSource": "BloodKnightHB",
+            "subclassSource": "AN",
             "level": 18,
             "header": 2,
             "entries": [
@@ -197,7 +202,7 @@
                     "type": "list",
                     "items": [
                         "Resistance to all damage except Radiant and Psychic.",
-                        "You can use {@classFeature Action Surge|Fighter||2|PHB} a third time.",
+                        "You can use {@classFeature Action Surge|Fighter|PHB|2} a third time.",
                         "You gain +10 feet of movement speed.",
                         "If you drop to 0 HP, you regain 1 HP and a full action immediately, ending the ecstatic state."
                     ]

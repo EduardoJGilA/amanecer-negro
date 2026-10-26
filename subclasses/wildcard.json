@@ -81,7 +81,7 @@
             "header": 1,
             "entries": [
                 "You gain proficiency with {@item Gaming Set|PHB|playing cards}. You have access to the {@item Deck of Cards|WildCardHomebrew} weapon and its {@item Card|WildCardHomebrew} ammunition. You can use an enchanted card to make a ranged weapon attack (60 ft range). The attack uses your Dexterity modifier and deals damage based on your level.",
-                "This card counts as a weapon with the Finesse property for applying your {@classFeature Sneak Attack|Rogue|PHB|1|PHB}.",
+                "This card counts as a weapon with the Finesse property for applying your {@classFeature Sneak Attack|Rogue|PHB|1}.",
                 "You have a number of uses equal to your Charisma modifier (minimum of 1) per long rest.",
                 {
                     "type": "table",

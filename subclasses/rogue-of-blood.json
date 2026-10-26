@@ -4,32 +4,32 @@
             {
                 "json": "AN",
                 "abbreviation": "AN",
-                "full": "Amanecer Negro Subclasses",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
                 "convertedBy": [
                     "MiGaki"
                 ],
-                "version": "0.1",
-                "color": "ffffff",
+                "version": "1.0.0",
+                "color": "7a0016",
                 "dateReleased": "2023-04-22"
             }
         ],
-        "status": "wip",
+        "status": "ready",
         "dateAdded": 1682210907,
         "dateLastModified": 1682210907
     },
     "subclass": [
         {
-            "name": "Rogue Of Blood",
+            "name": "Rogue of Blood",
             "shortName": "Blood",
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Rogue Of Blood|Rogue|PHB|Blood|AN|3",
-                "Changing The Odds|Rogue|PHB|Blood|AN|9",
+                "Rogue of Blood|Rogue|PHB|Blood|AN|3",
+                "Changing the Odds|Rogue|PHB|Blood|AN|9",
                 "Versatile Projectile|Rogue|PHB|Blood|AN|13",
                 "Hemorrhage|Rogue|PHB|Blood|AN|17"
             ]
@@ -37,7 +37,7 @@
     ],
     "subclassFeature": [
         {
-            "name": "Rogue Of Blood",
+            "name": "Rogue of Blood",
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
@@ -45,8 +45,8 @@
             "subclassSource": "AN",
             "level": 3,
             "entries": [
-                "Some rogues prefer to hone their skill and precision, others hone their silver tongue, but you... You are special, your blood has been blessed (or cursed) by some kind of force that allows you to use it as you please, or perhaps just maybe, you learned it as if you were a magician, from some book, anyway, you are special.",
-                "Rogues of your style are somewhat strange, mostly because they use their blood to fight, sometimes they get too strong in their form using their blood or they can even curse others' blood, however, you are someone as special as if you were bloody bloody unicorn but be careful you can die by your own gift.",
+                "While other rogues hone their silver tongues or deft pickpocketing, your vital essence has been awakened—blessed or cursed by a mysterious power. By channeling the vitality flowing through your veins, you transform your blood into razor-sharp projectiles and lethal hexes.",
+                "Rogues of this path wield their own life force in battle with terrifying precision, though careless hemomancers risk perishing from their own sacrificial arts.",
                 {
                     "type": "refSubclassFeature",
                     "subclassFeature": "Crimson Draft|Rogue|PHB|Blood|AN|3"
@@ -92,8 +92,8 @@
                 }
             ],
             "entries": [
-                "You gain proficiency in one of three abilities of your choice, it can be connected to the reason for your power and transform: {@skill History}, {@skill Religion}, {@skill Arcana}.",
-                "In addition, you gain 2 extra health points and 1 more health point each time you level up after level 3, representing your stamina and adaptability to your innate power."
+                "You gain proficiency in one of the following skills of your choice, reflecting the origins of your sanguine craft: {@skill History}, {@skill Religion}, or {@skill Arcana}.",
+                "In addition, your hit point maximum increases by 2, and increases by 1 whenever you gain a level in this class after 3rd level, reflecting your enhanced physical resilience."
             ]
         },
         {
@@ -106,13 +106,15 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level, as a bonus action, you can ready a bladed weapon or arrow/bolt/bullet to become jagged for 1 minute, to do this you must spend {@damage 1d6} of your own blood, giving the weapon a jagged-toothed appearance. If the serrated weapon hits a target in melee, the target takes {@damage 1d4} bleed damage at the start of its turn until it attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic benefits A serrated weapon that hits a ranged target has that weapon embedded in it, any attempt to remove the weapon causes massive bleed as its jagged teeth tear through flesh, it takes {@damage 1d6} slashing damage on retreat and bleeds for {@damage 1d6} damage. per turn until he attempts to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage.",
-                "Creatures without blood are not affected by bleeding damage.",
-                "At 9th level, the bleed damage upgrades to {@dice 2d4} for melee attacks (increasing the damage die he takes to {@dice 2d6}). Removing a ranged weapon deals {@dice 2d6} damage and {@dice 2d6} bleed damage."
+                "At 3rd level, as a {@action bonus action}, you can spend {@damage 1d6} of your own hit points to coat a bladed weapon or a piece of ammunition (arrow, bolt, or bullet) in your vital essence for 1 minute, giving it a jagged, crystalline edge.",
+                "When a serrated melee weapon hits a target, the creature takes {@damage 1d4} necrotic bleed damage at the start of each of its turns until a creature uses an action to tend the wound with a {@skill Medicine} check against your spell save DC {@dc 8+pb+cha} and a basic bandage.",
+                "When a serrated ranged projectile hits a target, it embeds deeply in flesh. Any attempt to extract the projectile deals {@damage 1d6} slashing damage to the target as its barbed teeth tear tissue, and causes {@damage 1d6} bleed damage at the start of each of its turns until tended with a {@skill Medicine} check against DC {@dc 8+pb+cha} and a basic bandage.",
+                "Creatures without blood (such as constructs or incorporeal undead) are immune to this bleeding damage.",
+                "At 9th level, the melee bleed damage increases to {@dice 2d4}, and extracting a ranged projectile deals {@dice 2d6} slashing damage plus {@dice 2d6} bleed damage."
             ]
         },
         {
-            "name": "Changing The Odds",
+            "name": "Changing the Odds",
             "source": "AN",
             "className": "Rogue",
             "classSource": "PHB",
@@ -121,8 +123,9 @@
             "level": 9,
             "header": 2,
             "entries": [
-                "Starting at 9th level, you are someone who knows how to escape or enter dangerous situations, you don't want to fall into the clutches of your enemies, it's time to disappear in style. As a bonus action, you can disappear or enter with a dramatic flourish. Each creature within 10 feet of you must make a {@savingThrow Dexterity} save (DC 8 + your proficiency bonus + your Charisma modifier), taking {@dice 4d10} necrotic damage on a failed save, or half as much on a successful one, you must spend {@dice 2d10} Hit Points to deal this damage.",
-                "After or before spawning in an unoccupied space that you can see within 30 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
+                "Starting at 9th level, you can escape or engage danger with sudden, violent redirection. As a {@action bonus action}, you expend {@damage 2d10} hit points to vanish in a burst of sanguine mist, teleporting to an unoccupied space you can see within 30 feet.",
+                "Each creature within 10 feet of your departure point must make a {@savingThrow Dexterity} saving throw against your spell save DC {@dc 8+pb+cha}, taking {@damage 4d10} necrotic damage on a failed save, or half as much on a successful one.",
+                "Once you use this feature, you cannot use it again until you finish a short or long rest."
             ]
         },
         {
@@ -135,7 +138,8 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "At 13th level, your mastery of the blood project has given you control over your opponents, if the target fails a {@savingThrow Constitution} save of DC 8 + your proficiency bonus + your charisma modifier, the target is {@condition stunned}, plus you can change the type of bleed damage to one of the following when you fill the arrow with your blood: psychic, acidic, necrotic"
+                "At 13th level, your control over sanguine ammunition allows you to debilitate your prey. When you hit a creature with a weapon enhanced by Crimson Draft, it must succeed on a {@savingThrow Constitution} saving throw against your spell save DC {@dc 8+pb+cha} or become {@condition stunned} until the end of its next turn.",
+                "Additionally, when you activate Crimson Draft, you can alter the bleed damage type to your choice of psychic, acid, or necrotic damage."
             ]
         },
         {
@@ -148,8 +152,9 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "At 17th level, when you deal more than 50 hit points of damage to a single creature in an attack on your turn and end up at 100 hit points or less after your attack, you can use your bonus action to force that creature to move. make a {@savingThrow Constitution} save against DC 8 + your Charisma modifier + your proficiency bonus. If they fail, they are immediately down to 0 health and knocked {@condition unconscious}.",
-                "You can use this feature 2 times."
+                "At 17th level, when you deal 50 or more damage to a single creature on your turn with a weapon attack and that creature has 100 hit points or fewer remaining, you can use a {@action bonus action} to force that creature to make a {@savingThrow Constitution} saving throw against your spell save DC {@dc 8+pb+cha}.",
+                "On a failed save, the creature's blood turns against it; its hit points immediately drop to 0 and it falls {@condition unconscious}.",
+                "You can use this feature twice, regaining all expended uses after a long rest."
             ]
         }
     ]

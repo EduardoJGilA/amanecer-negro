@@ -124,7 +124,7 @@
                                 "{@b 10. Final Judgment (Level 17 - 1d10):} Target must pass a Wisdom save or become {@condition paralyzed} and gain vulnerability to all damage until the end of your next turn."
                             ]
                         },
-                        "{@b Wild Card (Tirar sin gastar punto):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
+                        "{@b Wild Card (Free Draw):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
                     ]
                 }
             ]
@@ -216,7 +216,7 @@
                         "{@b 10. Final Judgment (Level 17 - 1d10):} Target must pass a Wisdom save or become {@condition paralyzed} and gain vulnerability to all damage until the end of your next turn."
                     ]
                 },
-                "{@b Wild Card (Tirar sin gastar punto):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
+                "{@b Wild Card (Free Draw):} Whenever you roll the maximum possible number on your Gambit die (or the maximum roll on your card's base damage die), you trigger a Wild Card: you apply an unlocked card effect from the table without expending a Gambit use (the use is refunded or granted for free)."
             ]
         },
         {

@@ -4,19 +4,19 @@
             {
                 "json": "AN",
                 "abbreviation": "AN",
-                "full": "Amanecer Negro Subclasses",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
                 "convertedBy": [
                     "MiGaki"
                 ],
-                "version": "0.1",
-                "color": "ffffff",
+                "version": "1.0.0",
+                "color": "7a0016",
                 "dateReleased": "2023-04-22"
             }
         ],
-        "status": "wip",
+        "status": "ready",
         "dateAdded": 1682210907,
         "dateLastModified": 1682210907
     },
@@ -66,10 +66,10 @@
                 }
             ],
             "subclassFeatures": [
-                "Oath of the Blood|Paladin||OathBlood|AN|3",
-                "Aura of Blood|Paladin||OathBlood|AN|7",
-                "Absorb Life|Paladin||OathBlood|AN|15",
-                "Circle of Ichor|Paladin||OathBlood|AN|20"
+                "Oath of the Blood|Paladin|PHB|OathBlood|AN|3",
+                "Aura of Blood|Paladin|PHB|OathBlood|AN|7",
+                "Absorb Life|Paladin|PHB|OathBlood|AN|15",
+                "Circle of Ichor|Paladin|PHB|OathBlood|AN|20"
             ]
         }
     ],
@@ -83,18 +83,18 @@
             "subclassSource": "AN",
             "level": 3,
             "entries": [
-                "Some paladins serve gods or their dogmas, to fulfill the will to save lives, take revenge, protect their kings, destroy their enemies, but this group is only guided by force, it is thought that this group of paladins arose as a result from the discovery of a magic as old as dangerous, hemonancia, few managed to control these dogmas so that they do not consume them as well as the powers that they entail, but others who managed to adopt all this were eliminated in bloodthirsty warriors who used this to achieve their mission.",
+                "While most paladins pledge their swords to righteous deities, honor, or sworn protection, paladins of the Oath of the Blood are guided by raw, primal vitality and martial dominance. Born from ancient, perilous hemomancy, only those with iron discipline can command this blood-fueled power without being consumed by it, transforming themselves into indomitable warriors.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Tenets of the Blood|Paladin||OathBlood|AN|3"
+                    "subclassFeature": "Tenets of the Blood|Paladin|PHB|OathBlood|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Oath Spells|Paladin||OathBlood|AN|3"
+                    "subclassFeature": "Oath Spells|Paladin|PHB|OathBlood|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity|Paladin||OathBlood|AN|3"
+                    "subclassFeature": "Channel Divinity|Paladin|PHB|OathBlood|AN|3"
                 }
             ]
         },
@@ -109,26 +109,26 @@
             "header": 1,
             "entries": [
                 "{@i (3rd-level Oath of the Blood feature)}",
-                "The tenets of the blood are applied very harshly, as many who strive to follow this path are unable to control their minds once exposed to the dark magic they now cast, the principles being the only thing that keeps these paladins going. like heroes.",
+                "The tenets of blood are held with unyielding resolve, as giving in to frenzy leads to mindless destruction:",
                 {
-                    "name": "Bleed and be victorious.",
+                    "name": "Bleed and Triumph",
                     "type": "entries",
                     "entries": [
-                        "No matter how much blood you have to shed, but you must control your impulses, you have great power, use it to help your comrades and lead them to bloody victory."
+                        "No matter how much blood you must shed, you must never lose command of your mind. Channel your vital essence to lead your comrades to victory."
                     ]
                 },
                 {
-                    "name": "No negotiations",
+                    "name": "No Negotiations with Corruption",
                     "type": "entries",
                     "entries": [
-                        "With your mind so close to the brink of corruption, many vile creatures (Evil Entities) will try to take advantage of you. Those creatures must die."
+                        "Dark entities will seek to exploit your blood-bought power. Give them neither quarter nor compromise; destroy them without hesitation."
                     ]
                 },
                 {
-                    "name": "Never forget.",
+                    "name": "Remember Your Humanity",
                     "type": "entries",
                     "entries": [
-                        "By taking this oath, you affirm that you will not give in to your cursed gift. You're not a disgusting vampire; you are a hero of the people, and you will remember it."
+                        "You are not a monstrous predator of the night; you are a champion of the mortal realm, and your strength exists to protect it."
                     ]
                 }
             ]
@@ -192,19 +192,19 @@
             "header": 1,
             "entries": [
                 "{@i (3rd-level Oath of the Blood feature)}",
-                "When you take this oath at 3rd level, you gain the following two Channel Divinity Options.",
+                "When you take this oath at 3rd level, you gain the following two Channel Divinity options:",
                 {
                     "name": "Draining Strike",
                     "type": "entries",
                     "entries": [
-                        "Immediately after you deal damage to a creature with your Divine Smite ability, you can use your Channel Divinity as a bonus action and distribute hit points to creatures of your choice within 30 feet of you, which can include you. The total number of hit points you can distribute is equal to half the total damage dealt by the attack rounded down."
+                        "Immediately after you deal damage to a creature with your {@classFeature Divine Smite|Paladin|PHB|2} feature, you can use your Channel Divinity as a {@action bonus action} to distribute vitality to creatures of your choice within 30 feet of you (including yourself). The total number of hit points you distribute equals half the damage dealt by the smite attack (rounded down)."
                     ]
                 },
                 {
-                    "name": "Bloody weapon.",
+                    "name": "Bloody Weapon",
                     "type": "entries",
                     "entries": [
-                        "As an additional action you can increase the damage of your sword, you spend {@damage 1d8} of life to give this property to your weapon filling it with its blood which increases its damage with the result of the dice, the target receives {@damage 1d4} points of piercing damage (only with the first hit that hits with this property, if you give another target this property also applies) by bleeding at the beginning of its turn until it tries to heal the wound with a medicine check (DC 8 + proficiency + Charisma modifier) and using any basic bandage. The wound is so deep from his weapon that it leaves this sequel, the wound is so deep that it does not stop bleeding, since the edge is so sharp that it can tear the metal itself (if it exceeds the AC), this makes the weapon magical because your blood has that property."
+                        "As a {@action bonus action}, you coat your weapon in empowered vital essence, sacrificing {@damage 1d8} hit points to enhance its edge. For 1 minute, the weapon deals extra damage equal to the sacrificed roll. Additionally, the first target hit takes {@damage 1d4} piercing damage at the start of each of its turns from lingering bleeding, until a creature uses an action to tend the wound with a {@skill Medicine} check against your spell save DC {@dc 8+pb+cha} and a basic bandage. Your weapon counts as magical for the duration."
                     ]
                 }
             ]
@@ -220,7 +220,7 @@
             "header": 2,
             "entries": [
                 "{@i (7th-level Oath of the Blood feature)}",
-                "Your mind is allowing itself to be guided by the pact, your blood boils, your mind is playing tricks on you, you feel how your life begins to become only the desire to murder. As an action, all creatures within 10 feet of you that you don't consider to be allies, because you managed to keep a bit of your mind, must make an {@savingThrow Intelligence} save (DC 8 + Proficiency + Charisma Modifier), if they fail they take {@damage 1d12} psychic damage. Half of the damage you deal to creatures you can take that as temporary points. You cannot use this action until a short rest.",
+                "Starting at 7th level, you can radiate an overwhelming wave of crimson dread. As an {@action action}, each hostile creature within 10 feet of you must make an {@savingThrow Intelligence} saving throw against your spell save DC {@dc 8+pb+cha}. On a failed save, a creature takes {@damage 1d12} psychic damage. You gain temporary hit points equal to half the total damage dealt. Once you use this action, you cannot use it again until you finish a short or long rest.",
                 "At 18th level, the range of this aura increases to 30 feet."
             ]
         },
@@ -235,7 +235,7 @@
             "header": 2,
             "entries": [
                 "{@i (15th-level Oath of the Blood feature)}",
-                "Starting at level 15, whenever you reduce a creature to 0 through a melee weapon attack or melee spell attack, you can use your reaction to gain temporary hit points equal to your Paladin level. These temporary hit points last until you finish a long rest. As long as you have these temporary hit points, you have advantage on Constitution Saving Throws. You can use this ability a number of times equal to your Charisma Modifier (minimum 1) and regain all expended uses after finishing a long rest."
+                "Starting at 15th level, whenever you reduce a creature to 0 hit points with a melee weapon attack or melee spell attack, you can use your {@action reaction} to gain temporary hit points equal to your Paladin level. These temporary hit points last until you finish a long rest. While you have these temporary hit points, you have advantage on Constitution saving throws. You can use this feature a number of times equal to your Charisma modifier (minimum of 1) and regain all expended uses after finishing a long rest."
             ]
         },
         {
@@ -249,11 +249,16 @@
             "header": 2,
             "entries": [
                 "{@i (20th-level Oath of the Blood feature)}",
-                "At 20th level, you gain the ability to perform a ritual to control the life forces of nearby creatures. As an action, you project a pentagram of your blood onto the ground in a 30-foot radius centered on you for 1 minute, spending {@dice 2d12} life for this, granting the following benefits:",
-                "While enemy creatures are within 30 feet of you, they move as if they were in difficult terrain, including flying, swimming, and hovering enemies.",
-                "Bloody wings come out of your back. You can fly even with armor, you use your normal speed for this feature.",
-                "If a creature within 30 feet of you takes damage, you can use your reaction to cause another creature within 30 feet of you to take that damage as necrotic, psychic, or radiant damage.",
-                "Your melee attacks deal an additional {@damage 2d12} necrotic, psychic, or radiant damage.",
+                "At 20th level, you can unleash a terrifying avatar of sanguinary power. As an {@action action}, you expend {@damage 2d12} hit points to project a circle of flowing vital energy in a 30-foot radius centered on you for 1 minute, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Hostile creatures treat the area within 30 feet of you as difficult terrain, regardless of flying, swimming, or hovering.",
+                        "Wings of solid crimson manifest from your back, granting you a flying speed equal to your walking speed.",
+                        "When a creature within 30 feet of you takes damage, you can use your {@action reaction} to cause another creature within 30 feet to take the same amount of necrotic, psychic, or radiant damage (your choice).",
+                        "Your melee attacks deal an extra {@damage 2d12} necrotic, psychic, or radiant damage (your choice)."
+                    ]
+                },
                 "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         }

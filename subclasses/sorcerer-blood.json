@@ -2,13 +2,18 @@
     "_meta": {
         "sources": [
             {
-                "json": "SorcererBlood",
-                "abbreviation": "SB",
-                "full": "Bloodtouched Sorcerer",
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
-                "version": "1.0.0"
+                "convertedBy": [
+                    "MiGaki"
+                ],
+                "version": "1.0.0",
+                "color": "7a0016",
+                "dateReleased": "2023-04-22"
             }
         ]
     },
@@ -16,46 +21,46 @@
         {
             "name": "Bloodtouched",
             "shortName": "Bloodtouched",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassFeatures": [
-                "Bloodtouched|Sorcerer||Bloodtouched|SorcererBlood|1",
-                "Thirst for Blood|Sorcerer||Bloodtouched|SorcererBlood|6",
-                "Superior Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|6",
-                "Overwhelming Power|Sorcerer||Bloodtouched|SorcererBlood|14",
-                "Master of Blood|Sorcerer||Bloodtouched|SorcererBlood|18"
+                "Bloodtouched|Sorcerer|PHB|Bloodtouched|AN|1",
+                "Thirst for Blood|Sorcerer|PHB|Bloodtouched|AN|6",
+                "Superior Blood Tradition|Sorcerer|PHB|Bloodtouched|AN|6",
+                "Overwhelming Power|Sorcerer|PHB|Bloodtouched|AN|14",
+                "Master of Blood|Sorcerer|PHB|Bloodtouched|AN|18"
             ]
         }
     ],
     "subclassFeature": [
         {
             "name": "Bloodtouched",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 1,
             "entries": [
                 "Your magic stems from a cursed bloodline or a forbidden ritual that altered your very essence.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bloodsign|Sorcerer||Bloodtouched|SorcererBlood|1"
+                    "subclassFeature": "Bloodsign|Sorcerer|PHB|Bloodtouched|AN|1"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Blood Tradition|Sorcerer||Bloodtouched|SorcererBlood|1"
+                    "subclassFeature": "Blood Tradition|Sorcerer|PHB|Bloodtouched|AN|1"
                 }
             ]
         },
         {
             "name": "Bloodsign",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 1,
             "header": 1,
             "entries": [
@@ -63,23 +68,23 @@
                 {
                     "type": "list",
                     "items": [
-                        "{@b 1st:} {@spell Bloodburn}",
-                        "{@b 3rd:} {@spell Vampire's Kiss}",
-                        "{@b 5th:} {@spell Tides of Blood}",
-                        "{@b 7th:} {@spell Draining thread}",
-                        "{@b 9th:} {@spell Bloodcurse}",
-                        "{@b 11th:} {@spell Rain of Blood}"
+                        "{@b 1st:} {@spell Bloodburn|dapc}",
+                        "{@b 3rd:} {@spell Vampire's Kiss|dapc}",
+                        "{@b 5th:} {@spell Tides of Blood|dapc}",
+                        "{@b 7th:} {@spell Draining thread|dapc}",
+                        "{@b 9th:} {@spell Bloodcurse|dapc}",
+                        "{@b 11th:} {@spell Rain of Blood|dapc}"
                     ]
                 }
             ]
         },
         {
             "name": "Blood Tradition",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 1,
             "entries": [
                 "You gain proficiency in one of the following skills: {@skill History}, {@skill Religion}, or {@skill Arcana}. Additionally, your hit point maximum increases by 3, and increases by 1 whenever you gain a level in this class after level 3."
@@ -87,11 +92,11 @@
         },
         {
             "name": "Thirst for Blood",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 6,
             "header": 2,
             "entries": [
@@ -100,11 +105,11 @@
         },
         {
             "name": "Superior Blood Tradition",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 6,
             "header": 2,
             "entries": [
@@ -113,11 +118,11 @@
         },
         {
             "name": "Overwhelming Power",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 14,
             "header": 2,
             "entries": [
@@ -127,11 +132,11 @@
         },
         {
             "name": "Master of Blood",
-            "source": "SorcererBlood",
+            "source": "AN",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Bloodtouched",
-            "subclassSource": "SorcererBlood",
+            "subclassSource": "AN",
             "level": 18,
             "header": 2,
             "entries": [

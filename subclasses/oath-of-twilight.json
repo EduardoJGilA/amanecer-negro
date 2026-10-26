@@ -2,13 +2,18 @@
     "_meta": {
         "sources": [
             {
-                "json": "HomebrewSubclasses",
-                "abbreviation": "HBSC",
-                "full": "Compendium of Homebrew Subclasses",
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
-                "version": "1.0.0"
+                "convertedBy": [
+                    "MiGaki"
+                ],
+                "version": "1.0.0",
+                "color": "7a0016",
+                "dateReleased": "2023-04-22"
             }
         ]
     },
@@ -16,56 +21,186 @@
         {
             "name": "Oath of Twilight",
             "shortName": "Twilight",
-            "source": "HomebrewSubclasses",
+            "source": "AN",
             "className": "Paladin",
             "classSource": "PHB",
+            "subclassSpells": [
+                "faerie fire",
+                "sleep",
+                "darkness",
+                "moonbeam",
+                "beacon of hope",
+                "nondetection",
+                "dimension door",
+                "shadow of moil|xge",
+                "circle of power",
+                "mislead"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "faerie fire",
+                            "sleep"
+                        ],
+                        "2": [
+                            "darkness",
+                            "moonbeam"
+                        ],
+                        "3": [
+                            "beacon of hope",
+                            "nondetection"
+                        ],
+                        "4": [
+                            "dimension door",
+                            "shadow of moil|xge"
+                        ],
+                        "5": [
+                            "circle of power",
+                            "mislead"
+                        ]
+                    }
+                }
+            ],
             "subclassFeatures": [
-                "Oath of Twilight|Paladin||Twilight|HomebrewSubclasses|3"
+                "Oath of Twilight|Paladin|PHB|Twilight|AN|3",
+                "Aura of Twilight|Paladin|PHB|Twilight|AN|7",
+                "Twilight Shroud|Paladin|PHB|Twilight|AN|15",
+                "Avatar of Twilight|Paladin|PHB|Twilight|AN|20"
             ]
         }
     ],
     "subclassFeature": [
         {
             "name": "Oath of Twilight",
-            "source": "HomebrewSubclasses",
+            "source": "AN",
             "className": "Paladin",
             "classSource": "PHB",
             "subclassShortName": "Twilight",
-            "subclassSource": "HomebrewSubclasses",
+            "subclassSource": "AN",
             "level": 3,
             "entries": [
-                "Paladins who take the Oath of Twilight stand on the line between light and darkness, serving as guardians on the mortal boundaries.",
+                "Paladins who take the Oath of Twilight walk the fine line between radiant dawn and encroaching shadow, standing as vigilant sentinels on the threshold of mortal life and dark realms.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Veil of Darkness|Paladin||Twilight|HomebrewSubclasses|3"
+                    "subclassFeature": "Tenets of Twilight|Paladin|PHB|Twilight|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Channel Divinity|Paladin||Twilight|HomebrewSubclasses|3"
+                    "subclassFeature": "Oath Spells|Paladin|PHB|Twilight|AN|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Veil of Darkness|Paladin|PHB|Twilight|AN|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity|Paladin|PHB|Twilight|AN|3"
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Twilight",
+            "source": "AN",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Twilight",
+            "subclassSource": "AN",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "The tenets of the Oath of Twilight guide a paladin along the edge of darkness:",
+                {
+                    "name": "Hold the Horizon",
+                    "type": "entries",
+                    "entries": [
+                        "Darkness is inevitable, but so is the dawn. Stand steadfast between them and protect those who cannot protect themselves."
+                    ]
+                },
+                {
+                    "name": "Walk Without Fear",
+                    "type": "entries",
+                    "entries": [
+                        "Enter the deepest shadows without fear, for your presence brings the guiding light of dusk."
+                    ]
+                },
+                {
+                    "name": "Mercy in the Gloom",
+                    "type": "entries",
+                    "entries": [
+                        "Do not blindly strike down those enveloped by despair; offer rest to weary souls and relentless retribution only to true evils."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "AN",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Twilight",
+            "subclassSource": "AN",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain oath spells at the paladin levels listed in the Oath of Twilight Spells table. Once you gain access to an oath spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Twilight Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell faerie fire}, {@spell sleep}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell darkness}, {@spell moonbeam}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell beacon of hope}, {@spell nondetection}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell dimension door}, {@spell shadow of moil|xge}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell circle of power}, {@spell mislead}"
+                        ]
+                    ]
                 }
             ]
         },
         {
             "name": "Veil of Darkness",
-            "source": "HomebrewSubclasses",
+            "source": "AN",
             "className": "Paladin",
             "classSource": "PHB",
             "subclassShortName": "Twilight",
-            "subclassSource": "HomebrewSubclasses",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
-                "As an {@action action}, you summon the Veil (an ebony armor).",
-                "While active: You ignore resistance or immunity to necrotic damage. Your {@classFeature Divine Smite|Paladin||2|PHB} deals necrotic damage instead of radiant damage."
+                "As an {@action action}, you summon the Veil, cloaking yourself in an ebony, translucent mantle of twilight armor.",
+                "While active: You ignore resistance or immunity to necrotic damage. Additionally, you can choose to have your {@classFeature Divine Smite|Paladin|PHB|2} deal necrotic damage instead of radiant damage."
             ]
         },
         {
             "name": "Channel Divinity",
-            "source": "HomebrewSubclasses",
+            "source": "AN",
             "className": "Paladin",
             "classSource": "PHB",
             "subclassShortName": "Twilight",
-            "subclassSource": "HomebrewSubclasses",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -74,16 +209,67 @@
                     "name": "Bulwark of Light",
                     "type": "entries",
                     "entries": [
-                        "As an action, creatures within 30 feet of you gain temporary hit points equal to {@dice 1d10} + your Charisma modifier."
+                        "As an {@action action}, you present your holy symbol and utter a word of tranquil solace. Creatures of your choice within 30 feet of you gain temporary hit points equal to {@dice 1d10} + your Charisma modifier (minimum of 1)."
                     ]
                 },
                 {
                     "name": "Chains of Justice",
                     "type": "entries",
                     "entries": [
-                        "A creature within 60 feet must make a {@savingThrow Dexterity} save. On a failed save, it cannot move farther away from you."
+                        "As an {@action action}, you manifest ethereal chains of twilight energy to bind an enemy. A creature you can see within 60 feet must succeed on a {@savingThrow Dexterity} saving throw against your spell save DC. On a failed save, twilight chains wrap around it; until the start of your next turn, the creature cannot move farther away from you by any means."
                     ]
                 }
+            ]
+        },
+        {
+            "name": "Aura of Twilight",
+            "source": "AN",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Twilight",
+            "subclassSource": "AN",
+            "level": 7,
+            "header": 2,
+            "entries": [
+                "Starting at 7th level, you and friendly creatures within 10 feet of you have resistance to necrotic and radiant damage. In addition, dim light does not impose disadvantage on Wisdom ({@skill Perception}) checks for you and friendly creatures in this aura.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Twilight Shroud",
+            "source": "AN",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Twilight",
+            "subclassSource": "AN",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "Starting at 15th level, you can step freely across thresholds of shadow. When you are in dim light or darkness, you can use a {@action bonus action} to magically teleport up to 30 feet to an unoccupied space you can see that is also in dim light or darkness.",
+                "Additionally, while your Veil of Darkness is active, you gain a +2 bonus to AC and advantage on Dexterity saving throws as shadows obscure your movements."
+            ]
+        },
+        {
+            "name": "Avatar of Twilight",
+            "source": "AN",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Twilight",
+            "subclassSource": "AN",
+            "level": 20,
+            "header": 2,
+            "entries": [
+                "At 20th level, you can take on the mantle of the Twilight Harbinger, an embodiment of the sacred boundary between light and darkness. As an {@action action}, you undergo a transformation for 1 minute, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "A 30-foot radius sphere of soothing twilight emanates from you. Bright light within this sphere becomes dim light, and magical darkness within it is dispelled.",
+                        "You and friendly creatures inside the aura have advantage on saving throws against spells and magical effects.",
+                        "Once on each of your turns when you hit a creature with a weapon attack, you can deal an extra {@damage 2d8} radiant or necrotic damage (your choice).",
+                        "You gain a flying speed of 60 feet and can hover."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         }
     ]

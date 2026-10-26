@@ -2,9 +2,9 @@
     "_meta": {
         "sources": [
             {
-                "json": "CollegeOfHealing",
-                "abbreviation": "CoH",
-                "full": "College of Healing (Bard)",
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
@@ -12,7 +12,8 @@
                     "MiGaki"
                 ],
                 "version": "1.0.0",
-                "color": "ffffff"
+                "color": "7a0016",
+                "dateReleased": "2023-04-22"
             }
         ]
     },
@@ -20,48 +21,48 @@
         {
             "name": "College of Healing",
             "shortName": "Healing",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassFeatures": [
-                "College of Healing|Bard||Healing|CollegeOfHealing|3",
-                "Arcane First Aid|Bard||Healing|CollegeOfHealing|6",
-                "Rhythm of Recovery|Bard||Healing|CollegeOfHealing|14"
+                "College of Healing|Bard|PHB|Healing|AN|3",
+                "Arcane First Aid|Bard|PHB|Healing|AN|6",
+                "Rhythm of Recovery|Bard|PHB|Healing|AN|14"
             ]
         }
     ],
     "subclassFeature": [
         {
             "name": "College of Healing",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 3,
             "entries": [
                 "Bards of the College of Healing weave magic to mend wounds and cure diseases, enhancing the recovery of their allies on the battlefield.",
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bonus Proficiencies|Bard||Healing|CollegeOfHealing|3"
+                    "subclassFeature": "Bonus Proficiencies|Bard|PHB|Healing|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Remedy Lore|Bard||Healing|CollegeOfHealing|3"
+                    "subclassFeature": "Remedy Lore|Bard|PHB|Healing|AN|3"
                 },
                 {
                     "type": "refSubclassFeature",
-                    "subclassFeature": "Bedside Manner|Bard||Healing|CollegeOfHealing|3"
+                    "subclassFeature": "Bedside Manner|Bard|PHB|Healing|AN|3"
                 }
             ]
         },
         {
             "name": "Bonus Proficiencies",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -70,11 +71,11 @@
         },
         {
             "name": "Remedy Lore",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
@@ -122,25 +123,25 @@
         },
         {
             "name": "Bedside Manner",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 3,
             "header": 1,
             "entries": [
-                "Each creature holding a {@classFeature Bardic Inspiration|Bard|||1|Bardic Inspiration} die granted by you has advantage on death saving throws.",
+                "Each creature holding a {@classFeature Bardic Inspiration|Bard|PHB|1} die granted by you has advantage on death saving throws.",
                 "When a creature succeeds on a death saving throw, it can roll that Bardic Inspiration die to regain {@dice 1d8} (or its current die type) hit points, gaining temporary hit points equal to the die's maximum value minus the roll result."
             ]
         },
         {
             "name": "Arcane First Aid",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 6,
             "header": 2,
             "entries": [
@@ -150,16 +151,16 @@
         },
         {
             "name": "Rhythm of Recovery",
-            "source": "CollegeOfHealing",
+            "source": "AN",
             "className": "Bard",
             "classSource": "PHB",
             "subclassShortName": "Healing",
-            "subclassSource": "CollegeOfHealing",
+            "subclassSource": "AN",
             "level": 14,
             "header": 2,
             "entries": [
                 "When you cast a 1st-level or higher bard spell that does not restore hit points, one creature within 30 feet that can hear you regains hit points equal to your bard level divided by 4.",
-                "Your Bedside Manner and {@classFeature Song of Rest|Bard|||2|Song of Rest} features increase healing by an amount equal to your Charisma modifier.",
+                "Your Bedside Manner and {@classFeature Song of Rest|Bard|PHB|2} features increase healing by an amount equal to your Charisma modifier.",
                 "When you cast a spell that restores hit points, you trigger a healing rhythm until your next turn; any creature you heal during this time regains additional hit points equal to your Charisma modifier."
             ]
         }

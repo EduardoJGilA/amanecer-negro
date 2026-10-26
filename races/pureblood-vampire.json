@@ -4,19 +4,19 @@
             {
                 "json": "AN",
                 "abbreviation": "AN",
-                "full": "Amanecer Negro Races",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
                 "convertedBy": [
                     "MiGaki"
                 ],
-                "version": "0.1",
-                "color": "ffffff",
+                "version": "1.0.0",
+                "color": "7a0016",
                 "dateReleased": "2023-04-22"
             }
         ],
-        "status": "wip",
+        "status": "ready",
         "dateAdded": 1682204659,
         "dateLastModified": 1682204659
     },
@@ -44,70 +44,70 @@
                 {
                     "name": "Age",
                     "entries": [
-                        "Vampires are immortal and can be any age. Vampires retain the physical appearance of the age at which they were turned during their mortal lives. They also retain the psychological development associated with that age, therefore vampires who did not reach adulthood in their mortal life may still have the urges of an adolescent in their vampire life."
+                        "Vampires are immortal and do not age naturally. Vampires retain the physical appearance and biological maturity of the age at which they were turned."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Alignment",
                     "entries": [
-                        "Young vampires can maintain the lawful, neutral, or chaotic alignment they had in life, however, older vampires always lean toward lawfulness, often following a code of their own design that they have developed over the centuries to ensure their integrity. survival. The vast majority of vampires are legal evil, and no one except the green ones try to maintain their inner humanity and remain even neutral, let alone good."
+                        "Young vampires may struggle to maintain the moral convictions they had in life, but older vampires almost always gravitate toward Lawful Evil, abiding by centuries-old codes of aristocratic dominion and self-preservation."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Size",
                     "entries": [
-                        "Vampires can vary in height and weight as most humanoids would, though they are usually lighter than they appear when looming over others. Your size is Medium."
+                        "Vampires vary in height and build just as mortals do. Your size is Medium."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Speed",
                     "entries": [
-                        "35 feet, you can climb at that same speed."
+                        "Your base walking speed is 35 feet, and you have a climbing speed of 35 feet."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Superior Darkvision",
                     "entries": [
-                        "Your blood red eyes pierce the darkness. You can see in dim light 120 feet from you as if it were bright light, and in the dark as if it were dim light. You can't make out color in the dark, only shades of gray."
+                        "Your crimson eyes pierce the thickest gloom. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Blood drinker.",
+                    "name": "Blood Drinker",
                     "entries": [
-                        "Even though you are undead, you still require sustenance in the form of blood to sustain your unholy existence. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish, although this food is always tasteless and stale to you. If you go more than seven days without drinking at least one serving of blood, at midnight on the seventh day and every midnight thereafter, you suffer a level of exhaustion, which can only be removed by drinking one serving of blood. After consuming a blood ration, you regain all exhaustion levels caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed."
+                        "Even though you are undead, you still require vital essence in the form of fresh blood to sustain your nocturnal existence. You are immune to disease, and you do not need to eat or breathe (though you can ingest food and drink, which tastes ash-like to you). If you go more than seven days without drinking at least one ration of blood, you suffer one level of exhaustion at midnight on the seventh day and each subsequent midnight. This exhaustion can only be removed by consuming blood. If you reach six levels of exhaustion due to this trait, you are destroyed."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Vampiric Resistance.",
+                    "name": "Vampiric Resistance",
                     "entries": [
-                        "You have resistance to necrotic damage, you have advantage on saving throws against poison, and you have resistance against poison damage."
+                        "You have resistance to necrotic and poison damage, and you have advantage on saving throws against being {@condition poisoned}."
                     ],
                     "type": "entries"
                 },
                 {
-                    "name": "Bite.",
+                    "name": "Bite",
                     "entries": [
-                        "All vampires have sharp teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, enchanted, incapacitated, restrained, or grappled creature within 5 feet of you has blood on it, you can use your bonus action to bite it, dealing 1d6 piercing damage and draining its blood, dealing additional necrotic damage. equal to your Constitution modifier. Drinking blood in this way is equivalent to consuming one serving according to your Blood Drinker trait. When you use your Bite, you can choose to deal no damage."
+                        "All vampires possess elongated fangs capable of puncturing flesh. If a willing creature, or a creature that is {@condition charmed}, {@condition grappled}, {@condition incapacitated}, {@condition paralyzed}, or {@condition restrained} within 5 feet of you has blood, you can use a {@action bonus action} to bite it. The bite deals {@damage 1d6} piercing damage plus necrotic damage equal to your Constitution modifier. Sating your hunger this way satisfies your Blood Drinker trait. When you use your Bite, you can choose to deal no damage."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Child of Night",
                     "entries": [
-                        "You know the cantrip {@spell minor illusion} and can cast it at will. At 3rd level, you can cast the {@spell charm person} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so after you finish a long rest. Charisma is your spellcasting ability for these spells."
+                        "You know the {@spell minor illusion} cantrip and can cast it at will. At 3rd level, you can cast {@spell charm person} once with this trait, regaining the ability to do so after a long rest. At 5th level, you can cast {@spell alter self} once with this trait, regaining the ability to do so after a long rest. Charisma is your spellcasting ability for these spells."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Languages",
                     "entries": [
-                        "You can speak, read and write in common, as well as in another language of your choice."
+                        "You can speak, read, and write Common and one additional language of your choice."
                     ],
                     "type": "entries"
                 }
@@ -118,9 +118,7 @@
                         "type": "entries",
                         "name": "Vampire Pureblood",
                         "entries": [
-                            "Vampires are associated with necromancy. Their existence is predicated on draining the life from others to fuel their own existence, and on putting their own lives ahead of all other concerns. Philosophically, they do not constrain themselves with artificial rules of morality, but believe that the strong can and should take what they need from the weak. Due to their longevity most become high society creatures of the night and are even of royal blood by choice.",
-                            "When a vampire comes into being they don't behave like the people they were in life. They are inverted, the chaste becoming temptresses, the kind becoming cruel, the once holy now finding glory in perversion. All their once positive qualities are specifically inverted to form a more personalized evil. However, this isn't to say that all who become vampires or are natural-born are completely evil in nature, though many go that path because of what can be gained personally.",
-                            "There are two other subspecies of vampires documented by mortals who have encountered one of these night hunters: psychic vampires and dhampir's."
+                            "Pureblood vampires consider themselves the true aristocrats of the night. Predicated on harvesting vitality from mortal populations to fuel unnatural longevity, they weave intricate webs of political influence and forbidden occult mastery."
                         ]
                     }
                 ],

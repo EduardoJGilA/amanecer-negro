@@ -4,19 +4,19 @@
             {
                 "json": "AN",
                 "abbreviation": "AN",
-                "full": "Amanecer Negro Races",
+                "full": "Amanecer Negro Expansion",
                 "authors": [
                     "MiGaki"
                 ],
                 "convertedBy": [
                     "MiGaki"
                 ],
-                "version": "0.1",
-                "color": "ffffff",
+                "version": "1.0.0",
+                "color": "7a0016",
                 "dateReleased": "2023-04-22"
             }
         ],
-        "status": "wip",
+        "status": "ready",
         "dateAdded": 1682204659,
         "dateLastModified": 1682204659
     },
@@ -40,14 +40,14 @@
                 {
                     "name": "Age",
                     "entries": [
-                        "Your life expectancy will be 1000 years."
+                        "Qilin mature at the same rate as humans but can live for up to 1,000 years, retaining their vitality and sharp intellect throughout their lifespan."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Alignment",
                     "entries": [
-                        "Qilin are usually good neutrals, however they can be of any alignment except chaotic neutral. Those who choose to be from an Evil alignment are fewer in number than those who choose to be from the Neutral or Good alignments, but there have been such cases in Qilin's history."
+                        "Qilin revere harmony, truth, and scholarship, tending strongly toward Neutral Good. Evil Qilin are exceptionally rare."
                     ],
                     "type": "entries"
                 },
@@ -61,14 +61,14 @@
                 {
                     "name": "Speed",
                     "entries": [
-                        "You can move 35 feet, in his dragon form you can fly 60 feet."
+                        "Your base walking speed is 35 feet."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Darkvision",
                     "entries": [
-                        "You can see dim light within 60 feet of you as bright light, and in the dark as dim light."
+                        "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light."
                     ],
                     "type": "entries"
                 },
@@ -89,7 +89,7 @@
                 {
                     "name": "Natural Weapon",
                     "entries": [
-                        "In your natural form your bite is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike."
+                        "In your natural form, your bite is a natural weapon that you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to {@damage 1d4} + your Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike."
                     ],
                     "type": "entries"
                 },
@@ -97,22 +97,21 @@
                     "type": "entries",
                     "name": "Breath Weapon",
                     "entries": [
-                        "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-                        "When you use your breath weapon, each creature in the area of exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@damage 2d6} radiant damage on a failed save, and half as much damage on a successful one. The damage increases by an additional {@damage 1d6} at 5th level, 8th level, 11th level, and 17th level.",
-                        "After you use your breath weapon, you can't use it again until it's recharged. At the start of each of your turns, provided you already used your breath weapon, you can roll a {@dice d6}. On a 6, you regain the use of your breath weapon. Otherwise, your breath weapon recharges 1 minute after you used it."
+                        "You can use an {@action action} to exhale radiant cosmic energy in a 15-foot cone. Each creature in that area must make a {@savingThrow Dexterity} saving throw (DC = {@dc 8+pb+con}). A creature takes {@damage 2d6} radiant damage on a failed save, and half as much damage on a successful one. The damage increases by {@damage 1d6} at 5th level, 11th level, and 17th level.",
+                        "After you use your breath weapon, you can't use it again until it recharges. At the start of each of your turns after using it, you can roll a {@dice d6}. On a 6, you regain the use of your breath weapon. Alternatively, it recharges automatically after 1 minute out of combat."
                     ]
                 },
                 {
                     "name": "Magical Qilin",
                     "entries": [
-                        "You know the cantrip {@spell dancing lights} and can cast it at will. At 3rd level, you can cast the {@spell charm person} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell alter self} spell once with this trait and regain the ability to do so after you finish a long rest. Intelligence is your spellcasting ability for these spells."
+                        "You know the {@spell dancing lights} cantrip and can cast it at will. At 3rd level, you can cast {@spell charm person} once with this trait, regaining the ability to do so after a long rest. At 5th level, you can cast {@spell alter self} once with this trait, regaining the ability to do so after a long rest. Intelligence is your spellcasting ability for these spells."
                     ],
                     "type": "entries"
                 },
                 {
                     "name": "Languages",
                     "entries": [
-                        "You can speak, read and write in common, as well as in sylvan"
+                        "You can speak, read, and write Common and Sylvan."
                     ],
                     "type": "entries"
                 }
@@ -123,8 +122,7 @@
                         "type": "entries",
                         "name": "Qilin",
                         "entries": [
-                            "Like the ancient elves, the Qilin come from the fey, they are creatures that understand humanoid societies because their status in it is more than notorious, the Qilin normally play an important political or economic role in society wherever they step, it is normal for the Qilin They will not have pure blood children, since their genetics are not adapted, but it is a miracle to see when a pure Qilin is born from a mixture.",
-                            "They delight in the arts, particularly puzzles and storytelling, and draw on ancestral clans, drawing their intelligence from both the living and spirits. Strategists and scholars, Qilin is an excellent magician and artificer. It is not uncommon for one to seek some important position in society, while the few born with white scales and clear eyes are often defined in oracles."
+                            "Like ancient celestial and fey beings, the Qilin are revered for their profound wisdom, benevolence, and serene presence. Often acting as counselors, diplomats, and sages in mortal courts, their rare appearance is considered a harbinger of prosperity and epochal change."
                         ]
                     }
                 ],

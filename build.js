@@ -7,11 +7,11 @@ const output = {
             {
                 "json": "AN",
                 "abbreviation": "AN",
-                "full": "Amanecer Negro Expansión",
+                "full": "Amanecer Negro Expansion",
                 "authors": ["MiGaki"],
                 "convertedBy": ["MiGaki"],
-                "version": "0.1",
-                "color": "ffffff",
+                "version": "1.0.0",
+                "color": "7a0016",
                 "dateReleased": "2023-04-22"
             },
             {
@@ -21,9 +21,17 @@ const output = {
                 "authors": ["MiGaki"],
                 "convertedBy": ["MiGaki"],
                 "version": "1.0.0"
+            },
+            {
+                "json": "WildCardHomebrew2024",
+                "abbreviation": "WCHB24",
+                "full": "Wild Card Rogue (D&D 2024)",
+                "authors": ["MiGaki"],
+                "convertedBy": ["MiGaki"],
+                "version": "2.5.5"
             }
         ],
-        "status": "wip",
+        "status": "ready",
         "dateAdded": 1682210907,
         "dateLastModified": Math.round(Date.now() / 1000)
     },
