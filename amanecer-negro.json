@@ -42,7 +42,7 @@
     ],
     "status": "ready",
     "dateAdded": 1682210907,
-    "dateLastModified": 1792994017
+    "dateLastModified": 1793122436
   },
   "subclass": [
     {
@@ -184,6 +184,58 @@
         "Emissary of Death|Sorcerer|PHB|Pale Master|AN|6",
         "Spellstitched Cohort|Sorcerer|PHB|Pale Master|AN|14",
         "Overlord|Sorcerer|PHB|Pale Master|AN|18"
+      ]
+    },
+    {
+      "name": "Phoenix Sorcery",
+      "shortName": "Phoenix",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassSpells": [
+        "absorb elements|xge",
+        "burning hands",
+        "flame blade",
+        "scorching ray",
+        "fireball",
+        "revivify",
+        "death ward",
+        "fire shield",
+        "flame strike",
+        "reincarnate"
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "absorb elements|xge",
+              "burning hands"
+            ],
+            "3": [
+              "flame blade",
+              "scorching ray"
+            ],
+            "5": [
+              "fireball",
+              "revivify"
+            ],
+            "7": [
+              "death ward",
+              "fire shield"
+            ],
+            "9": [
+              "flame strike",
+              "reincarnate"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Phoenix Sorcery|Sorcerer|PHB|Phoenix|AN|1",
+        "Phoenix Spark|Sorcerer|PHB|Phoenix|AN|6",
+        "Cinder Soul|Sorcerer|PHB|Phoenix|AN|6",
+        "Nourishing Fire|Sorcerer|PHB|Phoenix|AN|14",
+        "Form of the Phoenix|Sorcerer|PHB|Phoenix|AN|18"
       ]
     },
     {
@@ -1103,6 +1155,180 @@
       "header": 2,
       "entries": [
         "At 18th level, when you cast {@spell animate dead} to reassert control over undead, you can spend sorcery points to cast it as if using a spell slot one level higher for each point spent."
+      ]
+    },
+    {
+      "name": "Phoenix Sorcery",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 1,
+      "entries": [
+        "In a world shrouded by the encroaching shadows of the Black Dawn, true light has withered and ancient flames have grown cold. Yet beneath mountains of ash, the primordial spark of the Phoenix refuses to die. Your innate power derives from this undying flame—an eternal fire that hungers to be rekindled through destruction and miraculous rebirth. While others fear the dark, you carry within your veins the fierce, burning heart of a dying sun.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Phoenix Magic|Sorcerer|PHB|Phoenix|AN|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Ignite|Sorcerer|PHB|Phoenix|AN|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Mantle of Flame|Sorcerer|PHB|Phoenix|AN|1"
+        }
+      ]
+    },
+    {
+      "name": "Phoenix Magic",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "You learn additional spells when you reach certain levels in this class, as shown on the Phoenix Spells table. Each spell counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+        {
+          "type": "table",
+          "caption": "Phoenix Spells",
+          "colLabels": [
+            "Sorcerer Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-3 text-center",
+            "col-9"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell absorb elements|xge}, {@spell burning hands}"
+            ],
+            [
+              "3rd",
+              "{@spell flame blade}, {@spell scorching ray}"
+            ],
+            [
+              "5th",
+              "{@spell fireball}, {@spell revivify}"
+            ],
+            [
+              "7th",
+              "{@spell death ward}, {@spell fire shield}"
+            ],
+            [
+              "9th",
+              "{@spell flame strike}, {@spell reincarnate}"
+            ]
+          ]
+        },
+        "Additionally, you learn the {@spell control flames|xge} cantrip. It counts as a sorcerer cantrip for you, but it doesn't count against your number of cantrips known."
+      ]
+    },
+    {
+      "name": "Ignite",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "At 1st level, you gain the ability to start fires with a touch. As a bonus action or an action, you can magically ignite an unattended flammable object you touch with your hand—such as a torch, a piece of tinder, a campfire, or the hem of drapes."
+      ]
+    },
+    {
+      "name": "Mantle of Flame",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "Starting at 1st level, you can awaken the dormant ember of the phoenix burning within your soul.",
+        "As a bonus action, you magically wreathe yourself in swirling fire, soot, and incandescent embers. For 1 minute, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
+            "Any creature takes fire damage equal to your Charisma modifier (minimum of 1) if it hits you with a melee attack from within 5 feet of you or if it touches you.",
+            "Once per turn, when you roll fire damage for a sorcerer spell or feature, you can add your Charisma modifier to one damage roll of that spell.",
+            "You have resistance to fire damage."
+          ]
+        },
+        "You can use this feature once, and you regain the ability to do so when you finish a long rest. You can also expend 2 sorcery points to use this feature again."
+      ]
+    },
+    {
+      "name": "Phoenix Spark",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, the fiery energy within you surges outward to preserve your life in the face of defeat.",
+        "If you are reduced to 0 hit points, you can use your reaction to draw upon the spark of the phoenix. You are instead reduced to 1 hit point, and each creature within 10 feet of you takes fire damage equal to your sorcerer level + your Charisma modifier.",
+        "If you use this feature while under the effects of your Mantle of Flame, each creature instead takes fire damage equal to twice your sorcerer level + your Charisma modifier, and your Mantle of Flame immediately ends.",
+        "Once you use this feature, you can't use it again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Cinder Soul",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Also starting at 6th level, the eternal fire permanently fuses with your physical form and spirit. You gain permanent resistance to fire damage.",
+        "In addition, spells you cast ignore resistance to fire damage."
+      ]
+    },
+    {
+      "name": "Nourishing Fire",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Starting at 14th level, your destructive fire feeds and sustains your mortal frame. When you expend a spell slot or sorcery points to cast a spell of 1st level or higher that deals fire damage, you regain hit points equal to the slot's level (or sorcery points expended) + your Charisma modifier (minimum of 1).",
+        "Additionally, you can choose one friendly creature you can see within 30 feet of you; that creature regains hit points equal to your Charisma modifier."
+      ]
+    },
+    {
+      "name": "Form of the Phoenix",
+      "source": "AN",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassShortName": "Phoenix",
+      "subclassSource": "AN",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "At 18th level, you master the primordial avatar of the phoenix. While your Mantle of Flame feature is active, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Blazing wings of incandescent flame and dark ash sprout from your back, granting you a flying speed of 40 feet and the ability to hover.",
+            "You gain resistance to bludgeoning, piercing, and slashing damage, and immunity to fire damage.",
+            "If you use your Phoenix Spark feature, that feature deals an extra 20 fire damage to each affected creature, and you regain hit points equal to half your hit point maximum."
+          ]
+        }
       ]
     },
     {
@@ -2178,6 +2404,167 @@
           "ability": "int"
         }
       ]
+    },
+    {
+      "name": "Siren",
+      "source": "AN",
+      "creatureTypes": [
+        "fey"
+      ],
+      "languageProficiencies": [
+        {
+          "sylvan": true,
+          "common": true,
+          "aquan": true
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "deception",
+              "performance",
+              "persuasion"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "ability": [
+        {
+          "cha": 2,
+          "dex": 1
+        }
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "darkvision": 60,
+      "entries": [
+        "As a Siren, your character has the following traits:",
+        {
+          "name": "Age",
+          "entries": [
+            "Sirens reach physical maturity around the age of 18. As fey beings bound to primordial magical waters, they do not suffer physical frailty from old age and can live up to 600 years."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alignment",
+          "entries": [
+            "Sirens embody the untamed, shifting nature of oceanic currents and the freedom of the Fey. Most lean toward Chaotic alignments, ranging from protective guides and reclusive reef-dwellers (Chaotic Good) to mercurial tricksters (Chaotic Neutral) or predatory temptresses of the dark abyss (Chaotic Evil)."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Creature Type",
+          "entries": [
+            "Your creature type is Fey, rather than Humanoid."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Size",
+          "entries": [
+            "Your size is Medium."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Speed",
+          "entries": [
+            "Your base walking speed is 30 feet, and you have a swimming speed of 30 feet."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Darkvision",
+          "entries": [
+            "Accustomed to twilight mists and sunless oceanic trenches, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can discern colors in dim light."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Amphibious",
+          "entries": [
+            "You can breathe both air and water."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Twofold Form (Shapechanger)",
+          "entries": [
+            "As a {@action bonus action}, or automatically when you submerge yourself in water or dry off on land, you can shift your lower body between a pair of humanoid legs and a sleek, scaled aquatic tail:",
+            {
+              "type": "list",
+              "items": [
+                "{@b Tail Form:} While in your tail form, your swimming speed increases to 40 feet, and you have advantage on {@skill Dexterity} ({@skill Acrobatics}) and {@skill Strength} ({@skill Athletics}) checks made to swim or maneuver underwater. On land, your walking speed is reduced to 5 feet.",
+                "{@b Legged Form:} While in your legged form, your walking speed is 30 feet, and your swimming speed is 30 feet."
+              ]
+            },
+            "Any clothing or armor you wear magically adapts to your form or safely unfastens itself without being damaged (your choice)."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Alluring Grace",
+          "entries": [
+            "You have proficiency in one of the following skills of your choice: {@skill Deception}, {@skill Performance}, or {@skill Persuasion}."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Siren's Magic",
+          "entries": [
+            "You know the {@spell shape water|xge} cantrip. Starting at 3rd level, you can cast {@spell charm person} once with this trait, and you regain the ability to cast it when you finish a long rest. Starting at 5th level, you can cast {@spell enthrall} once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Siren's Call",
+          "entries": [
+            "As an {@action action}, you can project a captivating vocal melody toward a humanoid or beast you can see within 30 feet of you that can hear you. The target must succeed on a {@savingThrow Wisdom} saving throw (DC = {@dc 8+pb+cha}) or become {@condition charmed} by you until the end of your next turn.",
+            "While {@condition charmed} in this way, the target's speed is halved, and on its turn it can only use its movement to move toward you by the safest available route. The effect ends early if the target takes any damage.",
+            "You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          ],
+          "type": "entries"
+        },
+        {
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common, Sylvan, and Aquan."
+          ],
+          "type": "entries"
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "name": "Siren",
+            "entries": [
+              "In the world of the Black Dawn, where sunlight has been blotted out and the skies hang heavy with gloom, the misty seas, cenotes, and subterranean grottoes belong to the Sirens. These aquatic fey beings are both enchanting and perilous, their haunting songs echoing across the water to bewitch travelers, protect sacred springs, or lure treacherous predators to the deep."
+            ]
+          }
+        ]
+      },
+      "heightAndWeight": {
+        "baseHeight": 58,
+        "heightMod": "2d8",
+        "baseWeight": 100,
+        "weightMod": "1d4"
+      }
     }
   ],
   "item": [

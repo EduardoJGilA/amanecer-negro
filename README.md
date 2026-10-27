@@ -12,7 +12,7 @@ Todos los archivos han sido estandarizados en inglés y validados con el formato
 Especializaciones que se vinculan directamente a las clases base de la 5ª Edición (`PHB`):
 *   **Bard:** [College of Healing](subclasses/college-of-healing.json) — Maestros de la recuperación rítmica y primeros auxilios arcanos.
 *   **Fighter:** [Blood Knight](subclasses/blood-knight.json) — Marciales que sacrifican vitalidad para fusionar y potenciar sus armas.
-*   **Sorcerer:** [Bloodtouched](subclasses/sorcerer-blood.json) y [Pale Master](subclasses/pale-master.json) — Manipuladores de sangre y nigromantes con cohortes no-muertas.
+*   **Sorcerer:** [Bloodtouched](subclasses/sorcerer-blood.json), [Pale Master](subclasses/pale-master.json) y [Phoenix Sorcery](subclasses/phoenix-sorcery.json) — Manipuladores de sangre, nigromantes con cohortes no-muertas y avatares de la pira eterna renacidos de las cenizas.
 *   **Paladin:** [Oath of the Blood](subclasses/oath-of-blood.json) y [Oath of Twilight](subclasses/oath-of-twilight.json) — Paladines de sangre primordial y guardianes del umbral entre luz y sombra (niveles 3 a 20 completos con hechizos de juramento).
 *   **Rogue:** [Wild Card](subclasses/wildcard.json) (Revisado 2014), [Wild Card 2024](subclasses/wildcard_2024.json) y [Rogue of Blood](subclasses/rogue-of-blood.json) — Maestros de la cartomancia y proyectiles serrados de sangre.
 
@@ -21,6 +21,7 @@ Opciones de linaje para personajes con trasfondos oscuros o míticos:
 *   **Kindred:** La dualidad entre el Lobo y la Oveja, espíritus de la muerte con Marca de Muerte.
 *   **Pureblood Vampire:** Sangre pura de la noche con sed de vitalidad y encantos hipnóticos.
 *   **Qilin:** Sabios celestiales con magia arcana y aliento radiante.
+*   **Siren:** [Siren](races/siren.json) — Hadas acuáticas con forma dual (piernas para caminar o cola para nadar velozmente), hechicería marina y canto seductor.
 
 ---
 

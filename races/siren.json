@@ -1,0 +1,186 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "AN",
+                "abbreviation": "AN",
+                "full": "Amanecer Negro Expansion",
+                "authors": [
+                    "MiGaki"
+                ],
+                "convertedBy": [
+                    "MiGaki"
+                ],
+                "version": "1.0.0",
+                "color": "7a0016",
+                "dateReleased": "2023-04-22"
+            }
+        ],
+        "status": "ready",
+        "dateAdded": 1682204659,
+        "dateLastModified": 1682204659
+    },
+    "race": [
+        {
+            "name": "Siren",
+            "source": "AN",
+            "creatureTypes": [
+                "fey"
+            ],
+            "languageProficiencies": [
+                {
+                    "sylvan": true,
+                    "common": true,
+                    "aquan": true
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "choose": {
+                        "from": [
+                            "deception",
+                            "performance",
+                            "persuasion"
+                        ],
+                        "count": 1
+                    }
+                }
+            ],
+            "ability": [
+                {
+                    "cha": 2,
+                    "dex": 1
+                }
+            ],
+            "size": [
+                "M"
+            ],
+            "speed": {
+                "walk": 30,
+                "swim": 30
+            },
+            "darkvision": 60,
+            "entries": [
+                "As a Siren, your character has the following traits:",
+                {
+                    "name": "Age",
+                    "entries": [
+                        "Sirens reach physical maturity around the age of 18. As fey beings bound to primordial magical waters, they do not suffer physical frailty from old age and can live up to 600 years."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Alignment",
+                    "entries": [
+                        "Sirens embody the untamed, shifting nature of oceanic currents and the freedom of the Fey. Most lean toward Chaotic alignments, ranging from protective guides and reclusive reef-dwellers (Chaotic Good) to mercurial tricksters (Chaotic Neutral) or predatory temptresses of the dark abyss (Chaotic Evil)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Creature Type",
+                    "entries": [
+                        "Your creature type is Fey, rather than Humanoid."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Size",
+                    "entries": [
+                        "Your size is Medium."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Speed",
+                    "entries": [
+                        "Your base walking speed is 30 feet, and you have a swimming speed of 30 feet."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Darkvision",
+                    "entries": [
+                        "Accustomed to twilight mists and sunless oceanic trenches, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can discern colors in dim light."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Amphibious",
+                    "entries": [
+                        "You can breathe both air and water."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Twofold Form (Shapechanger)",
+                    "entries": [
+                        "As a {@action bonus action}, or automatically when you submerge yourself in water or dry off on land, you can shift your lower body between a pair of humanoid legs and a sleek, scaled aquatic tail:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "{@b Tail Form:} While in your tail form, your swimming speed increases to 40 feet, and you have advantage on {@skill Dexterity} ({@skill Acrobatics}) and {@skill Strength} ({@skill Athletics}) checks made to swim or maneuver underwater. On land, your walking speed is reduced to 5 feet.",
+                                "{@b Legged Form:} While in your legged form, your walking speed is 30 feet, and your swimming speed is 30 feet."
+                            ]
+                        },
+                        "Any clothing or armor you wear magically adapts to your form or safely unfastens itself without being damaged (your choice)."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Fey Ancestry",
+                    "entries": [
+                        "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Alluring Grace",
+                    "entries": [
+                        "You have proficiency in one of the following skills of your choice: {@skill Deception}, {@skill Performance}, or {@skill Persuasion}."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Siren's Magic",
+                    "entries": [
+                        "You know the {@spell shape water|xge} cantrip. Starting at 3rd level, you can cast {@spell charm person} once with this trait, and you regain the ability to cast it when you finish a long rest. Starting at 5th level, you can cast {@spell enthrall} once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Siren's Call",
+                    "entries": [
+                        "As an {@action action}, you can project a captivating vocal melody toward a humanoid or beast you can see within 30 feet of you that can hear you. The target must succeed on a {@savingThrow Wisdom} saving throw (DC = {@dc 8+pb+cha}) or become {@condition charmed} by you until the end of your next turn.",
+                        "While {@condition charmed} in this way, the target's speed is halved, and on its turn it can only use its movement to move toward you by the safest available route. The effect ends early if the target takes any damage.",
+                        "You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Languages",
+                    "entries": [
+                        "You can speak, read, and write Common, Sylvan, and Aquan."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "entries",
+                        "name": "Siren",
+                        "entries": [
+                            "In the world of the Black Dawn, where sunlight has been blotted out and the skies hang heavy with gloom, the misty seas, cenotes, and subterranean grottoes belong to the Sirens. These aquatic fey beings are both enchanting and perilous, their haunting songs echoing across the water to bewitch travelers, protect sacred springs, or lure treacherous predators to the deep."
+                        ]
+                    }
+                ]
+            },
+            "heightAndWeight": {
+                "baseHeight": 58,
+                "heightMod": "2d8",
+                "baseWeight": 100,
+                "weightMod": "1d4"
+            }
+        }
+    ]
+}
