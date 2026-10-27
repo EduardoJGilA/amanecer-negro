@@ -42,7 +42,7 @@
     ],
     "status": "ready",
     "dateAdded": 1682210907,
-    "dateLastModified": 1793122436
+    "dateLastModified": 1793135440
   },
   "subclass": [
     {
@@ -2717,6 +2717,1301 @@
       "value": 10,
       "entries": [
         "Ammunition for the {@item Deck of Cards (2024)|WildCardHomebrew2024} weapon. A single razor-sharp, magically infused metal playing card."
+      ]
+    }
+  ],
+  "monster": [
+    {
+      "_comment": "=== DRAGÓN SOLAR ===",
+      "name": "Solar Dragon Wyrmling",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 52,
+        "formula": "8d8 + 16"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 50
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 14,
+      "int": 10,
+      "wis": 11,
+      "cha": 14,
+      "skill": {
+        "perception": "+4",
+        "stealth": "+3"
+      },
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 14,
+      "immune": [
+        "fire",
+        "radiant"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "cr": "3",
+      "trait": [
+        {
+          "name": "Camouflage, Sunlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in bright light."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 2 ({@damage 1d4}) radiant damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Radiant Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a burst of solar fire in a 15-foot cone. Each creature in the cone must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage plus 14 ({@damage 4d6}) radiant damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "dragonAge": "wyrmling",
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "damageTags": [
+        "P",
+        "R",
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Young Solar Dragon",
+      "source": "AN",
+      "size": [
+        "L"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 157,
+        "formula": "15d10 + 75"
+      },
+      "speed": {
+        "walk": 35,
+        "fly": 80
+      },
+      "str": 20,
+      "dex": 12,
+      "con": 20,
+      "int": 13,
+      "wis": 13,
+      "cha": 16,
+      "save": {
+        "dex": "+4",
+        "con": "+8",
+        "wis": "+5"
+      },
+      "skill": {
+        "perception": "+9",
+        "stealth": "+4"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 19,
+      "immune": [
+        "fire",
+        "radiant"
+      ],
+      "conditionImmune": [
+        "blinded"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "cr": "9",
+      "trait": [
+        {
+          "name": "Camouflage, Sunlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in bright light."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (1/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack and two Claw attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage plus 7 ({@damage 2d6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+          ]
+        },
+        {
+          "name": "Radiant Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a burst of solar fire in a 40-foot cone. Each creature in the cone must make a {@dc 16} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage plus 28 ({@damage 8d6}) radiant damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "dragonAge": "young",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "R",
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "savingThrowForced": [
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Adult Solar Dragon",
+      "source": "AN",
+      "size": [
+        "H"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 218,
+        "formula": "19d12 + 95"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 90
+      },
+      "str": 25,
+      "dex": 12,
+      "con": 21,
+      "int": 16,
+      "wis": 15,
+      "cha": 18,
+      "save": {
+        "dex": "+6",
+        "con": "+10",
+        "wis": "+8",
+        "cha": "+9"
+      },
+      "skill": {
+        "perception": "+13",
+        "stealth": "+6"
+      },
+      "senses": [
+        "darkvision 180 ft."
+      ],
+      "passive": 23,
+      "immune": [
+        "fire",
+        "radiant"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "frightened"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "cr": "14",
+      "trait": [
+        {
+          "name": "Camouflage, Sunlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in bright light."
+          ]
+        },
+        {
+          "name": "Ancient Blood",
+          "entries": [
+            "The dragon cannot be charmed or frightened by creatures that are not also dragons."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack, two Claw attacks, and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage plus 10 ({@damage 3d6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Radiant Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a burst of solar fire in a 60-foot cone. Each creature in the cone must make a {@dc 22} Dexterity saving throw, taking 35 ({@damage 10d6}) fire damage plus 35 ({@damage 10d6}) radiant damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "legendaryActions": 3,
+      "legendary": [
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes one Tail attack."
+          ]
+        },
+        {
+          "name": "Solar Flash (Costs 2 Actions)",
+          "entries": [
+            "Blinding light erupts from the dragon in a 30-foot-radius sphere. Each creature in the area must succeed on a {@dc 19} Wisdom saving throw or be {@condition blinded} until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Solar Fury (Costs 3 Actions)",
+          "entries": [
+            "The dragon casts {@spell sunbeam} (DC 22) without components."
+          ]
+        }
+      ],
+      "dragonAge": "adult",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "S",
+        "R",
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrowForced": [
+        "dexterity",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Ancient Solar Dragon",
+      "source": "AN",
+      "size": [
+        "G"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 325,
+        "formula": "26d20 + 156"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 120
+      },
+      "str": 30,
+      "dex": 12,
+      "con": 23,
+      "int": 19,
+      "wis": 18,
+      "cha": 22,
+      "save": {
+        "dex": "+7",
+        "con": "+12",
+        "wis": "+10",
+        "cha": "+12"
+      },
+      "skill": {
+        "perception": "+16",
+        "stealth": "+7"
+      },
+      "senses": [
+        "darkvision 240 ft."
+      ],
+      "passive": 26,
+      "immune": [
+        "fire",
+        "radiant"
+      ],
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "frightened"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Primordial"
+      ],
+      "cr": "20",
+      "trait": [
+        {
+          "name": "Camouflage, Sunlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in bright light."
+          ]
+        },
+        {
+          "name": "Ancient Blood",
+          "entries": [
+            "The dragon cannot be charmed or frightened by creatures that are not also dragons."
+          ]
+        },
+        {
+          "name": "Divine Presence",
+          "entries": [
+            "Any hostile creature that starts its turn within 120 feet of the dragon must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} of the dragon until the start of its next turn."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack, two Claw attacks, and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage plus 14 ({@damage 4d6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}17 ({@damage 2d6 + 10}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 16} to hit, reach 25 ft., one target. {@h}19 ({@damage 2d8 + 10}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Radiant Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a blast of solar fire in a 90-foot cone. Each creature in the cone must make a {@dc 24} Dexterity saving throw, taking 45 ({@damage 13d6}) fire damage plus 45 ({@damage 13d6}) radiant damage on a failed save, or half as much on a successful one."
+          ]
+        }
+      ],
+      "legendaryActions": 3,
+      "legendary": [
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes one Tail attack."
+          ]
+        },
+        {
+          "name": "Solar Flash (Costs 2 Actions)",
+          "entries": [
+            "Blinding light erupts from the dragon in a 30-foot-radius sphere. Each creature in the area must succeed on a {@dc 21} Wisdom saving throw or be {@condition blinded} until the end of its next turn."
+          ]
+        },
+        {
+          "name": "Solar Wrath (Costs 3 Actions)",
+          "entries": [
+            "The dragon casts {@spell sunbeam} (DC 24) or {@spell sunburst} (DC 24) without components, its choice."
+          ]
+        }
+      ],
+      "dragonAge": "ancient",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "S",
+        "R",
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "frightened"
+      ],
+      "savingThrowForced": [
+        "dexterity",
+        "wisdom"
+      ]
+    },
+    {
+      "_comment": "=== DRAGÓN LUNAR ===",
+      "name": "Lunar Dragon Wyrmling",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 37,
+        "formula": "5d8 + 15"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 40,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 16,
+      "int": 10,
+      "wis": 11,
+      "cha": 13,
+      "skill": {
+        "perception": "+3",
+        "stealth": "+5"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 13,
+      "immune": [
+        "cold"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "cr": "2",
+      "trait": [
+        {
+          "name": "Camouflage, Moonlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in dim light or darkness."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage plus 2 ({@damage 1d4}) cold damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Moonbeam Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a pulse of freezing moonlight in a 15-foot cone. Each creature in the cone must make a {@dc 11} Constitution saving throw. On a failed save, the creature takes 10 ({@damage 3d6}) cold damage and is {@condition blinded} until the end of its next turn. On a successful save, the creature takes half the cold damage and is not blinded."
+          ]
+        }
+      ],
+      "dragonAge": "wyrmling",
+      "actionTags": [
+        "Breath Weapon"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "C"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Young Lunar Dragon",
+      "source": "AN",
+      "size": [
+        "L"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 123,
+        "formula": "13d10 + 52"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": {
+          "number": 80,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 19,
+      "dex": 12,
+      "con": 18,
+      "int": 12,
+      "wis": 13,
+      "cha": 15,
+      "save": {
+        "con": "+7",
+        "wis": "+4"
+      },
+      "skill": {
+        "perception": "+7",
+        "stealth": "+7"
+      },
+      "senses": [
+        "darkvision 180 ft."
+      ],
+      "passive": 17,
+      "immune": [
+        "cold"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "cr": "7",
+      "trait": [
+        {
+          "name": "Camouflage, Moonlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in dim light or darkness."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (1/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack and two Claw attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage plus 7 ({@damage 2d6}) cold damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Moonbeam Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a pulse of freezing moonlight in a 40-foot cone. Each creature in the cone must make a {@dc 15} Constitution saving throw. On a failed save, the creature takes 28 ({@damage 8d6}) cold damage and is {@condition blinded} until the end of its next turn. On a successful save, the creature takes half the cold damage and is not blinded."
+          ]
+        }
+      ],
+      "dragonAge": "young",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P",
+        "S",
+        "C"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Adult Lunar Dragon",
+      "source": "AN",
+      "size": [
+        "H"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 172,
+        "formula": "15d12 + 75"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": {
+          "number": 80,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 23,
+      "dex": 12,
+      "con": 20,
+      "int": 14,
+      "wis": 15,
+      "cha": 17,
+      "save": {
+        "con": "+10",
+        "wis": "+9"
+      },
+      "skill": {
+        "perception": "+11",
+        "stealth": "+11"
+      },
+      "senses": [
+        "darkvision 240 ft."
+      ],
+      "passive": 21,
+      "immune": [
+        "cold"
+      ],
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "cr": "13",
+      "trait": [
+        {
+          "name": "Camouflage, Moonlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in dim light or darkness."
+          ]
+        },
+        {
+          "name": "Veiled Mind",
+          "entries": [
+            "Magical attempts to read the dragon's mind or detect its thoughts fail automatically."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (2/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack, two Claw attacks, and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 10 ({@damage 3d6}) cold damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Moonbeam Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a pulse of freezing moonlight in a 60-foot cone. Each creature in the cone must make a {@dc 18} Constitution saving throw. On a failed save, the creature takes 35 ({@damage 10d6}) cold damage and is {@condition blinded} until the end of its next turn. On a successful save, the creature takes half the cold damage and is not blinded."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Phase (3/Day)",
+          "entries": [
+            "The dragon becomes partially incorporeal for as long as it maintains {@status concentration} on the effect (as if {@status concentration||concentrating} on a spell). While partially incorporeal, the dragon has resistance to bludgeoning, piercing, and slashing damage."
+          ]
+        }
+      ],
+      "legendaryActions": 2,
+      "legendary": [
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes one Tail attack."
+          ]
+        },
+        {
+          "name": "Treacherous Ice",
+          "entries": [
+            "Magical ice covers the ground in a 20-foot radius centered on a point the dragon can see within 120 feet of itself. The ice, which is difficult terrain for all creatures except lunar dragons, lasts for 10 minutes or until the dragon uses this legendary action again."
+          ]
+        }
+      ],
+      "dragonAge": "adult",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "S",
+        "C"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ]
+    },
+    {
+      "name": "Ancient Lunar Dragon",
+      "source": "AN",
+      "size": [
+        "G"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "N"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 297,
+        "formula": "22d20 + 132"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": {
+          "number": 80,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 27,
+      "dex": 12,
+      "con": 23,
+      "int": 18,
+      "wis": 17,
+      "cha": 20,
+      "save": {
+        "con": "+12",
+        "wis": "+9"
+      },
+      "skill": {
+        "perception": "+15",
+        "stealth": "+13"
+      },
+      "senses": [
+        "darkvision 240 ft."
+      ],
+      "passive": 25,
+      "immune": [
+        "cold"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Primordial"
+      ],
+      "cr": "19",
+      "trait": [
+        {
+          "name": "Camouflage, Moonlight",
+          "entries": [
+            "The dragon has advantage on Dexterity ({@skill Stealth}) checks made to hide in dim light or darkness."
+          ]
+        },
+        {
+          "name": "Veiled Mind",
+          "entries": [
+            "Magical attempts to read the dragon's mind or detect its thoughts fail automatically."
+          ]
+        },
+        {
+          "name": "Ancient Blood",
+          "entries": [
+            "The dragon cannot be charmed or frightened by creatures that are not also dragons."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon makes one Bite attack, two Claw attacks, and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d10 + 8}) piercing damage plus 14 ({@damage 4d6}) cold damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d6 + 8}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}17 ({@damage 2d8 + 8}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Moonbeam Breath {@recharge 5}",
+          "entries": [
+            "The dragon exhales a pulse of freezing moonlight in a 90-foot cone. Each creature in the cone must make a {@dc 21} Constitution saving throw. On a failed save, the creature takes 42 ({@damage 12d6}) cold damage and is {@condition blinded} for 1 minute (the creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success). On a successful save, the creature takes half the cold damage and is not blinded."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Phase (3/Day)",
+          "entries": [
+            "The dragon becomes partially incorporeal for as long as it maintains {@status concentration} on the effect (as if {@status concentration||concentrating} on a spell). While partially incorporeal, the dragon has resistance to bludgeoning, piercing, and slashing damage."
+          ]
+        }
+      ],
+      "legendaryActions": 3,
+      "legendary": [
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dragon makes one Tail attack."
+          ]
+        },
+        {
+          "name": "Treacherous Ice",
+          "entries": [
+            "Magical ice covers the ground in a 20-foot radius centered on a point the dragon can see within 120 feet of itself. The ice, which is difficult terrain for all creatures except lunar dragons, lasts for 10 minutes or until the dragon uses this legendary action again."
+          ]
+        },
+        {
+          "name": "Full Moon (Costs 2 Actions)",
+          "entries": [
+            "The dragon casts {@spell moonbeam} (DC 21, +13 to hit) without components, targeting a point it can see within 120 feet."
+          ]
+        }
+      ],
+      "dragonAge": "ancient",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "S",
+        "C"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "savingThrowForced": [
+        "constitution"
+      ]
+    },
+    {
+      "_comment": "=== DRAGÓN DEL BOSQUE (ÚNICO) ===",
+      "name": "Sylveth, el Primordial",
+      "source": "AN",
+      "size": [
+        "G"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 407,
+        "formula": "22d20 + 176"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 80,
+        "swim": 40,
+        "climb": 40
+      },
+      "str": 30,
+      "dex": 10,
+      "con": 27,
+      "int": 22,
+      "wis": 20,
+      "cha": 18,
+      "save": {
+        "str": "+17",
+        "con": "+15",
+        "wis": "+12"
+      },
+      "skill": {
+        "nature": "+13",
+        "perception": "+12",
+        "stealth": "+7"
+      },
+      "senses": [
+        "tremorsense 120 ft.",
+        "darkvision 120 ft."
+      ],
+      "passive": 22,
+      "immune": [
+        "poison"
+      ],
+      "resist": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "poisoned",
+        "prone"
+      ],
+      "languages": [
+        "Common",
+        "Draconic",
+        "Druidic",
+        "Primordial",
+        "Sylvan"
+      ],
+      "cr": "23",
+      "trait": [
+        {
+          "name": "One With the Forest",
+          "entries": [
+            "While in forest terrain, difficult terrain does not slow Sylveth's movement. Plants within 120 feet of Sylveth obey its will; it can use a bonus action to cause any nonmagical plant in this area to create difficult terrain, or to clear it."
+          ]
+        },
+        {
+          "name": "Camouflage, Forest",
+          "entries": [
+            "Sylveth has advantage on Dexterity ({@skill Stealth}) checks made to hide in forested or heavily vegetated terrain."
+          ]
+        },
+        {
+          "name": "Primordial Blood",
+          "entries": [
+            "Sylveth cannot be surprised, charmed, or frightened. It has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If Sylveth fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "Sylveth deals double damage to objects and structures."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Sylveth makes one Bite attack, two Claw attacks, and one Tail attack."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}21 ({@damage 2d10 + 10}) piercing damage plus 14 ({@damage 4d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}19 ({@damage 2d8 + 10}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 25 ft., one target. {@h}17 ({@damage 2d6 + 10}) bludgeoning damage and the target must succeed on a {@dc 22} Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "name": "Thorn Burst {@recharge 5}",
+          "entries": [
+            "Sylveth releases a burst of magical thorns and toxic spores in a 90-foot cone. Each creature in the cone must make a {@dc 22} Dexterity saving throw. On a failed save, the creature takes 49 ({@damage 14d6}) piercing damage plus 49 ({@damage 14d6}) poison damage and is {@condition restrained} by thorny vines until the end of its next turn. On a successful save, the creature takes half the damage and is not restrained."
+          ]
+        },
+        {
+          "name": "Summon Vines (Recharge 6)",
+          "entries": [
+            "Sylveth calls upon the forest itself. Grasping roots and vines erupt in a 30-foot-radius area centered on a point Sylveth can see within 120 feet. Each creature in the area must succeed on a {@dc 22} Strength saving throw or become {@condition restrained}. A restrained creature can repeat the saving throw at the end of each of its turns, freeing itself on a success. The area becomes difficult terrain for 1 minute."
+          ]
+        }
+      ],
+      "legendaryActions": 3,
+      "legendary": [
+        {
+          "name": "Tail Strike",
+          "entries": [
+            "Sylveth makes one Tail attack."
+          ]
+        },
+        {
+          "name": "Entangle (Costs 2 Actions)",
+          "entries": [
+            "Sylveth casts {@spell entangle} (DC 22) without components, centered on a point it can see within 120 feet."
+          ]
+        },
+        {
+          "name": "Primordial Roar (Costs 3 Actions)",
+          "entries": [
+            "Sylveth releases a roar that predates civilization. Each hostile creature within 90 feet that can hear Sylveth must succeed on a {@dc 22} Wisdom saving throw or become {@condition frightened} for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on this saving throw is immune to Sylveth's Primordial Roar for 24 hours."
+          ]
+        }
+      ],
+      "dragonAge": "ancient",
+      "traitTags": [
+        "Legendary Resistances",
+        "Siege Monster"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "S",
+        "I"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "prone",
+        "restrained"
+      ],
+      "savingThrowForced": [
+        "dexterity",
+        "strength",
+        "wisdom"
       ]
     }
   ]
