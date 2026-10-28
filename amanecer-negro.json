@@ -42,7 +42,7 @@
     ],
     "status": "ready",
     "dateAdded": 1682210907,
-    "dateLastModified": 1793135440
+    "dateLastModified": 1793138768
   },
   "subclass": [
     {
@@ -4012,6 +4012,1179 @@
         "dexterity",
         "strength",
         "wisdom"
+      ]
+    },
+    {
+      "name": "Osvin Draeg",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "plate armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 136,
+        "formula": "16d8 + 64"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 11,
+      "con": 18,
+      "int": 12,
+      "wis": 16,
+      "cha": 14,
+      "save": {
+        "con": "+7",
+        "wis": "+6",
+        "cha": "+5"
+      },
+      "skill": {
+        "athletics": "+7",
+        "intimidation": "+5",
+        "medicine": "+6",
+        "perception": "+6"
+      },
+      "resist": [
+        "necrotic"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 16,
+      "languages": [
+        "Common"
+      ],
+      "cr": "8",
+      "trait": [
+        {
+          "name": "Aura de Vida Marchita",
+          "entries": [
+            "Las criaturas hostiles a 15 pies de Osvin no pueden recuperar puntos de golpe por ninguna vía.",
+            "Si una criatura intenta conjurar un hechizo de curación dentro del aura, la curación falla y el lanzador recibe {@damage 1d8} de daño necrótico por cada nivel del hechizo intentado."
+          ]
+        },
+        {
+          "name": "Carcelero Implacable",
+          "entries": [
+            "Osvin tiene ventaja en las tiradas de salvación contra ser asustado, paralizado o apresado."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Osvin realiza dos ataques con su Mandoble del Carcelero o dos ataques con las Cadenas del Cepo."
+          ]
+        },
+        {
+          "name": "Mandoble del Carcelero",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 13 ({@damage 3d8}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Cadenas del Cepo",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage y el objetivo queda {@condition grappled} (escape {@dc 15}).",
+            "Mientras esté apresado, el objetivo sufre 9 ({@damage 2d8}) de daño necrótico al inicio de cada uno de sus turnos. Osvin puede tener hasta dos criaturas apresadas simultáneamente."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Bofetada de Culpa",
+          "entries": [
+            "Osvin señala a una criatura a 30 pies y se burla de sus pérdidas. El objetivo debe superar una tirada de salvación de Sabiduría {@dc 14} o sufrir desventaja en su siguiente tirada de ataque y recibir 7 ({@damage 2d6}) de daño psíquico."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Escudo del Recluso",
+          "entries": [
+            "Cuando una criatura golpea a Osvin con un ataque y Osvin tiene al menos una criatura apresada con sus cadenas, transfiere la mitad del daño recibido a la criatura apresada."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vesna Kell",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "Unarmored Defense (DEX + WIS)"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 115,
+        "formula": "18d8 + 36"
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 12,
+      "dex": 20,
+      "con": 14,
+      "int": 11,
+      "wis": 16,
+      "cha": 10,
+      "save": {
+        "str": "+5",
+        "dex": "+9",
+        "con": "+6",
+        "wis": "+7"
+      },
+      "skill": {
+        "acrobatics": "+9",
+        "athletics": "+5",
+        "deception": "+4",
+        "perception": "+7",
+        "stealth": "+9"
+      },
+      "resist": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "poisoned"
+      ],
+      "passive": 17,
+      "languages": [
+        "Common"
+      ],
+      "cr": "10",
+      "trait": [
+        {
+          "name": "Evasion",
+          "entries": [
+            "Si Vesna es sometida a un efecto que le permite realizar una tirada de salvación de Destreza para recibir la mitad del daño, en su lugar no recibe ningún daño si supera la tirada, y solo la mitad si falla."
+          ]
+        },
+        {
+          "name": "Paso de la Muerte Larga",
+          "entries": [
+            "El movimiento de Vesna no provoca ataques de oportunidad, y puede moverse a través del espacio de cualquier criatura enemiga."
+          ]
+        },
+        {
+          "name": "Toque Macabro",
+          "entries": [
+            "Cuando Vesna reduce a una criatura a 0 puntos de golpe con un ataque cuerpo a cuerpo, gana 15 puntos de golpe temporales."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Vesna realiza cuatro ataques con su Puño Silencioso, o dos ataques de Puño Silencioso y un Quiebre de Vástago si está disponible."
+          ]
+        },
+        {
+          "name": "Puño Silencioso",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d10 + 5}) bludgeoning damage plus 7 ({@damage 2d6}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Quiebre de Vástago (Recarga 5–6)",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}28 ({@damage 8d6}) necrotic damage y el objetivo debe realizar una tirada de salvación de Constitución {@dc 17}. Si falla, queda {@condition paralyzed} hasta el final de su siguiente turno. Si supera la salvación, recibe la mitad del daño y no queda paralizado."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Desvío de Golpes",
+          "entries": [
+            "Vesna reduce el daño de un ataque de arma cuerpo a cuerpo o a distancia que la impacte en 1d10 + 15. Si el daño se reduce a 0, Vesna puede teletransportarse instantáneamente hasta 15 pies a un espacio desocupado que pueda ver."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ser Brannoch Lyss",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "blackened plate armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 135,
+        "formula": "18d8 + 54"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 14,
+      "con": 16,
+      "int": 12,
+      "wis": 13,
+      "cha": 16,
+      "save": {
+        "str": "+7",
+        "con": "+6",
+        "wis": "+4",
+        "cha": "+6"
+      },
+      "skill": {
+        "athletics": "+7",
+        "history": "+4",
+        "intimidation": "+6",
+        "perception": "+4"
+      },
+      "resist": [
+        "necrotic",
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 14,
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "cr": "8",
+      "trait": [
+        {
+          "name": "Comandante de Elyria Caída",
+          "entries": [
+            "Los no-muertos aliados a 30 pies de Brannoch tienen ventaja en las tiradas de ataque contra cualquier criatura que se encuentre a 5 pies de Brannoch."
+          ]
+        },
+        {
+          "name": "Sol Calcinado",
+          "entries": [
+            "Los ataques con armas de Brannoch están imbuidos de magia sacrílega, infligiendo 9 ({@damage 2d8}) de daño necrótico adicional en cada golpe (incluido en el ataque)."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Brannoch realiza dos ataques con su Espada Larga Ducal y utiliza Mandato de Combate."
+          ]
+        },
+        {
+          "name": "Espada Larga Ducal de Elyria",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage plus 9 ({@damage 2d8}) necrotic damage.",
+            "Si el objetivo es un elfo, dhampir o un paladín (como Nyx), el objetivo debe superar una tirada de salvación de Sabiduría {@dc 14} o sufrir desventaja en sus tiradas de ataque hasta el final de su siguiente turno por el peso espectral de sus recuerdos."
+          ]
+        },
+        {
+          "name": "Mandato de Combate",
+          "entries": [
+            "Brannoch elige a un aliado no-muerto a 30 pies que pueda verlo u oírlo. Ese aliado puede usar inmediatamente su reacción para realizar un ataque con arma con ventaja."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Parada del Mentor",
+          "entries": [
+            "Brannoch añade +3 a su CA contra un ataque cuerpo a cuerpo que lo impactaría. Si el ataque falla, Brannoch puede realizar inmediatamente un ataque con su Espada Larga Ducal contra el atacante."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ulric Penhallow",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "living parchment armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 98,
+        "formula": "15d8 + 30"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 14,
+      "int": 18,
+      "wis": 14,
+      "cha": 12,
+      "save": {
+        "con": "+5",
+        "int": "+7",
+        "wis": "+5"
+      },
+      "skill": {
+        "arcana": "+7",
+        "history": "+7",
+        "perception": "+5"
+      },
+      "resist": [
+        "necrotic",
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 15,
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "cr": "8",
+      "trait": [
+        {
+          "name": "Piel de Grimorio",
+          "entries": [
+            "Ulric tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos.",
+            "Cuando recibe daño de un conjuro de mago, absorbe parte de la fórmula arcana: su siguiente ataque causa 7 ({@damage 2d6}) de daño de fuerza adicional."
+          ]
+        },
+        {
+          "name": "Lazo Visual con Graznagrís",
+          "entries": [
+            "Mientras Graznagrís esté a menos de 100 pies de Ulric, Ulric no puede ser sorprendido ni flanqueado, y comparte los sentidos del cuervo."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Lanzamiento de Conjuros (Mago 9º Nivel)",
+          "headerEntries": [
+            "Ulric es un lanzador de conjuros de nivel 9. Su característica para el lanzamiento de conjuros es Inteligencia (salvación {@dc 15}, {@hit 7} al impacto de conjuros). Tiene preparados los siguientes conjuros de mago:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "chill touch",
+                "ray of frost",
+                "mage hand",
+                "toll the dead"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "shield",
+                "magic missile",
+                "ray of sickness"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "hold person",
+                "misty step",
+                "ray of enfeeblement"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "counterspell",
+                "animate dead",
+                "lightning bolt"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "blight",
+                "dimension door"
+              ]
+            },
+            "5": {
+              "slots": 1,
+              "spells": [
+                "cone of cold"
+              ]
+            }
+          }
+        }
+      ],
+      "action": [
+        {
+          "name": "Pluma de Médula",
+          "entries": [
+            "{@atk rs} {@hit 7} to hit, range 60 ft., one target. {@h}18 ({@damage 4d8}) necrotic damage y el objetivo queda {@condition blinded} por tinta arcana hasta el final de su siguiente turno a menos que supere una tirada de salvación de Constitución {@dc 15}."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Graznagrís",
+      "source": "AN",
+      "size": [
+        "L"
+      ],
+      "type": "undead",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "hardened feathers"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 102,
+        "formula": "12d10 + 36"
+      },
+      "speed": {
+        "walk": 20,
+        "fly": 70
+      },
+      "str": 18,
+      "dex": 16,
+      "con": 16,
+      "int": 6,
+      "wis": 13,
+      "cha": 7,
+      "skill": {
+        "perception": "+4"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 14,
+      "languages": [
+        "understands Common and Draconic but can't speak"
+      ],
+      "cr": "6",
+      "trait": [
+        {
+          "name": "Vuelo Rápido",
+          "entries": [
+            "Graznagrís puede realizar la acción de Destrabarse (Disengage) como acción adicional en cada uno de sus turnos."
+          ]
+        },
+        {
+          "name": "Mirada Carroñera",
+          "entries": [
+            "Graznagrís tiene ventaja en las pruebas de Sabiduría (Percepción) que dependan de la vista."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Graznagrís realiza un ataque de Picotazo Podrido y un ataque de Garras Desgarradoras."
+          ]
+        },
+        {
+          "name": "Picotazo Podrido",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage plus 9 ({@damage 2d8}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Garras Desgarradoras",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage.",
+            "Si el objetivo es de tamaño Mediano o inferior, queda {@condition grappled} (escape {@dc 14}). Hasta que este agarre termine, el objetivo queda inmovilizado y Graznagrís puede volar cargando con él."
+          ]
+        },
+        {
+          "name": "Chillido de la Agonía (Recarga 5–6)",
+          "entries": [
+            "Graznagrís emite un chillido estridente de muerte. Cada criatura en un cono de 30 pies debe realizar una tirada de salvación de Constitución {@dc 14}. Si falla, recibe 21 ({@damage 6d6}) de daño psíquico y queda {@condition deafened} por 1 minuto. Si supera la salvación, recibe la mitad del daño y no queda ensordecida."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hermana Ilse Morrow",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "scale mail",
+            "shield with spikes"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 120,
+        "formula": "16d8 + 48"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 10,
+      "con": 16,
+      "int": 11,
+      "wis": 18,
+      "cha": 16,
+      "save": {
+        "con": "+7",
+        "wis": "+8",
+        "cha": "+7"
+      },
+      "skill": {
+        "insight": "+8",
+        "intimidation": "+7",
+        "perception": "+8",
+        "religion": "+4"
+      },
+      "passive": 18,
+      "languages": [
+        "Common"
+      ],
+      "cr": "9",
+      "spellcasting": [
+        {
+          "name": "Lanzamiento de Conjuros Divinos (Clériga Nivel 11)",
+          "headerEntries": [
+            "Ilse es una lanzadora de conjuros de nivel 11. Su característica para conjuros es Sabiduría (salvación {@dc 16}, {@hit 8} al impacto de conjuros). Tiene preparados los siguientes conjuros de clérigo:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "guidance",
+                "sacred flame",
+                "thaumaturgy",
+                "toll the dead"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "bane",
+                "command",
+                "inflict wounds",
+                "shield of faith"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "blindness/deafness",
+                "hold person",
+                "spiritual weapon"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "bestow curse",
+                "dispel magic",
+                "spirit guardians"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "banishment",
+                "guardian of faith"
+              ]
+            },
+            "5": {
+              "slots": 2,
+              "spells": [
+                "flame strike",
+                "insect plague"
+              ]
+            },
+            "6": {
+              "slots": 1,
+              "spells": [
+                "harm"
+              ]
+            }
+          }
+        }
+      ],
+      "action": [
+        {
+          "name": "Maza de la Traición",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage plus 13 ({@damage 3d8}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Semilla de la Discordia (Recarga 5–6)",
+          "entries": [
+            "Ilse susurra palabras de rencor dirigida a dos criaturas que sean aliadas entre sí a menos de 60 pies de ella. Cada objetivo debe superar una tirada de salvación de Sabiduría {@dc 16} o usar inmediatamente su reacción para realizar un ataque cuerpo a cuerpo o a distancia contra su compañero con su arma más poderosa."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grushnak Dientequebrado",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "orc"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "Aspos reinforced plate"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 195,
+        "formula": "20d8 + 100"
+      },
+      "speed": {
+        "walk": 35
+      },
+      "str": 22,
+      "dex": 12,
+      "con": 20,
+      "int": 12,
+      "wis": 13,
+      "cha": 15,
+      "save": {
+        "str": "+10",
+        "con": "+9",
+        "wis": "+5"
+      },
+      "skill": {
+        "athletics": "+10",
+        "intimidation": "+6",
+        "perception": "+5"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "conditionImmune": [
+        "frightened"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 15,
+      "languages": [
+        "Common",
+        "Orc"
+      ],
+      "cr": "12",
+      "trait": [
+        {
+          "name": "Agresivo",
+          "entries": [
+            "Como acción adicional, Grushnak puede moverse hasta su velocidad hacia una criatura hostil que pueda ver."
+          ]
+        },
+        {
+          "name": "Verdugo Implacable",
+          "entries": [
+            "Los ataques con arma de Grushnak tienen ventaja contra cualquier criatura que tenga menos de la mitad de sus puntos de golpe máximos, e infligen 6 ({@damage 1d12}) de daño adicional a esos objetivos."
+          ]
+        },
+        {
+          "name": "Resistencia Legendaria (2/Día)",
+          "entries": [
+            "Si Grushnak falla una tirada de salvación, puede elegir tener éxito en su lugar."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Grushnak realiza tres ataques con su Hacha Decapitadora, o dos con el Hacha y uno con el Gancho de Tortura."
+          ]
+        },
+        {
+          "name": "Hacha Decapitadora de Aspos",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) slashing damage. Este ataque consigue un impacto crítico con una tirada de 19 o 20 en el d20."
+          ]
+        },
+        {
+          "name": "Gancho de Carne y Tortura",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d6 + 6}) piercing damage. El objetivo es arrastrado 10 pies hacia Grushnak y derribado al suelo ({@condition prone})."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Ataque de Gancho",
+          "entries": [
+            "Grushnak realiza un ataque con su Gancho de Carne y Tortura."
+          ]
+        },
+        {
+          "name": "Rugido Tiránico (Cuesta 2 Acciones)",
+          "entries": [
+            "Grushnak ruge con ferocidad aterradora. Cada criatura a 30 pies debe superar una tirada de salvación de Sabiduría {@dc 16} o quedar {@condition frightened} hasta el final de su siguiente turno."
+          ]
+        },
+        {
+          "name": "Comandar Tropas",
+          "entries": [
+            "Un aliado de Grushnak a 30 pies puede usar su reacción para moverse hasta la mitad de su velocidad y realizar un ataque con arma."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Morvaine Grell",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "mage armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 110,
+        "formula": "16d8 + 32"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 15,
+      "int": 18,
+      "wis": 14,
+      "cha": 16,
+      "save": {
+        "con": "+6",
+        "int": "+8",
+        "wis": "+6"
+      },
+      "skill": {
+        "arcana": "+8",
+        "history": "+8",
+        "intimidation": "+7",
+        "perception": "+6"
+      },
+      "resist": [
+        "necrotic"
+      ],
+      "passive": 16,
+      "languages": [
+        "Common",
+        "Abyssal"
+      ],
+      "cr": "9",
+      "trait": [
+        {
+          "name": "Cosecha Severa",
+          "entries": [
+            "Cuando Morvaine mata a una criatura con un hechizo de nigromancia, recupera puntos de golpe iguales a tres veces el nivel del hechizo."
+          ]
+        },
+        {
+          "name": "Comandante de No-Muertos",
+          "entries": [
+            "Los no-muertos bajo el control de Morvaine añaden +4 a sus tiradas de daño con armas y tienen 18 puntos de golpe adicionales."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Lanzamiento de Conjuros (Maga 11º Nivel)",
+          "headerEntries": [
+            "Morvaine es una lanzadora de conjuros de nivel 11 (salvación {@dc 16}, {@hit 8} al impacto de conjuros):"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "chill touch",
+                "ray of frost",
+                "mage hand",
+                "toll the dead"
+              ]
+            },
+            "1": {
+              "slots": 4,
+              "spells": [
+                "mage armor",
+                "magic missile",
+                "ray of sickness",
+                "shield"
+              ]
+            },
+            "2": {
+              "slots": 3,
+              "spells": [
+                "blindness/deafness",
+                "hold person",
+                "misty step",
+                "ray of enfeeblement"
+              ]
+            },
+            "3": {
+              "slots": 3,
+              "spells": [
+                "animate dead",
+                "counterspell",
+                "vampiric touch"
+              ]
+            },
+            "4": {
+              "slots": 3,
+              "spells": [
+                "blight",
+                "dimension door"
+              ]
+            },
+            "5": {
+              "slots": 2,
+              "spells": [
+                "cloudkill",
+                "danse macabre"
+              ]
+            },
+            "6": {
+              "slots": 1,
+              "spells": [
+                "circle of death"
+              ]
+            }
+          }
+        }
+      ],
+      "action": [
+        {
+          "name": "Daga de Hueso Hendido",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 14 ({@damage 4d6}) necrotic damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sskarith",
+      "source": "AN",
+      "size": [
+        "L"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 127,
+        "formula": "15d10 + 45"
+      },
+      "speed": {
+        "walk": 40,
+        "swim": 40
+      },
+      "str": 19,
+      "dex": 14,
+      "con": 17,
+      "int": 14,
+      "wis": 15,
+      "cha": 16,
+      "save": {
+        "con": "+6",
+        "wis": "+5",
+        "cha": "+6"
+      },
+      "skill": {
+        "perception": "+5",
+        "stealth": "+5"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 15,
+      "languages": [
+        "Abyssal",
+        "Common",
+        "Draconic"
+      ],
+      "cr": "7",
+      "trait": [
+        {
+          "name": "Resistencia Mágica",
+          "entries": [
+            "Sskarith tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Sskarith realiza dos ataques con su Cimitarra Pesada y un ataque con su Mordisco de Serpiente, o un ataque de Constricción."
+          ]
+        },
+        {
+          "name": "Cimitarra Pesada",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage plus 7 ({@damage 2d6}) poison damage."
+          ]
+        },
+        {
+          "name": "Mordisco de Serpiente",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage más 10 ({@damage 3d6}) poison damage. El objetivo debe superar una salvación de Constitución {@dc 14} o quedar {@condition poisoned} por 1 minuto."
+          ]
+        },
+        {
+          "name": "Constricción",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one creature. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage y el objetivo queda {@condition grappled} (escape {@dc 15}) y {@condition restrained}."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hollis Crane",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "human"
+        ]
+      },
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "studded leather"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 84,
+        "formula": "13d8 + 26"
+      },
+      "speed": {
+        "walk": 35
+      },
+      "str": 11,
+      "dex": 18,
+      "con": 14,
+      "int": 13,
+      "wis": 12,
+      "cha": 14,
+      "save": {
+        "dex": "+7",
+        "int": "+4"
+      },
+      "skill": {
+        "acrobatics": "+7",
+        "deception": "+8",
+        "perception": "+4",
+        "sleight of hand": "+7",
+        "stealth": "+10"
+      },
+      "passive": 14,
+      "languages": [
+        "Common",
+        "Thieves' cant"
+      ],
+      "cr": "5",
+      "trait": [
+        {
+          "name": "Acción Astuta",
+          "entries": [
+            "En cada uno de sus turnos, Hollis puede usar una acción adicional para Correr, Destrabarse o Esconderse."
+          ]
+        },
+        {
+          "name": "Ataque Furtivo (1/Turno)",
+          "entries": [
+            "Hollis causa 14 ({@damage 4d6}) de daño adicional cuando impacta a un objetivo con un ataque de arma y tiene ventaja, o cuando el objetivo está a 5 pies de un aliado."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "Hollis realiza tres ataques con sus dagas envenenadas."
+          ]
+        },
+        {
+          "name": "Daga Envenenada",
+          "entries": [
+            "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Esquiva Asombrosa",
+          "entries": [
+            "Hollis reduce a la mitad el daño que recibe de un ataque que pueda ver."
+          ]
+        }
       ]
     }
   ]
