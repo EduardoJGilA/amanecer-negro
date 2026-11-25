@@ -1,0 +1,331 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansion",
+        "authors": [
+          "MiGaki"
+        ],
+        "convertedBy": [
+          "MiGaki"
+        ],
+        "version": "1.0.0",
+        "color": "7a0016",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "ready",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "subrace": [
+    {
+      "name": "Lucifer",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB"
+    },
+    {
+      "name": "Belcebú",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "ray of sickness#2"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "crown of madness"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "thaumaturgy#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Belcebú",
+          "entries": [
+            "You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell ray of sickness} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell crown of madness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sitri",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "dex": 1,
+          "cha": 2
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "disguise self"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "invisibility"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "minor illusion#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Sitri",
+          "entries": [
+            "You know the {@spell minor illusion} cantrip. When you reach 3rd level, you can cast the {@spell disguise self} spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell invisibility} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ],
+      "overwrite": {
+        "ability": true
+      }
+    },
+    {
+      "name": "Amon",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "str": 1,
+          "cha": 2
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "searing smite#2"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "branding smite"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "thaumaturgy#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Amon",
+          "entries": [
+            "You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell searing smite} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell branding smite} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ],
+      "overwrite": {
+        "ability": true
+      }
+    },
+    {
+      "name": "Leviatán",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "con": 1,
+          "cha": 2
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "armor of agathys#2"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "darkness"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "ray of frost#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Leviatán",
+          "entries": [
+            "You know the {@spell ray of frost} cantrip. When you reach 3rd level, you can cast the {@spell armor of Agathys} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell darkness} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ],
+      "overwrite": {
+        "ability": true
+      }
+    },
+    {
+      "name": "Mammón",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "tenser's floating disk"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "arcane lock"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "mage hand#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Mammón",
+          "entries": [
+            "You know the {@spell mage hand} cantrip. When you reach 3rd level, you can cast the {@spell Tenser's floating disk} spell once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 5th level, you can cast the {@spell arcane lock} spell once with this trait, requiring no material component, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Belfegor",
+      "source": "AN",
+      "raceName": "Tiefling",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "wis": 1,
+          "cha": 2
+        }
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "charm person#2"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "suggestion"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "friends#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Legacy of Belfegor",
+          "entries": [
+            "You know the {@spell friends} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the {@spell suggestion} spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ],
+          "data": {
+            "overwrite": "Infernal Legacy"
+          }
+        }
+      ],
+      "overwrite": {
+        "ability": true
+      }
+    }
+  ]
+}

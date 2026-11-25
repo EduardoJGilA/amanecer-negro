@@ -1,0 +1,473 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansion",
+        "authors": [
+          "MiGaki"
+        ],
+        "convertedBy": [
+          "MiGaki"
+        ],
+        "version": "1.0.0",
+        "color": "7a0016",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "ready",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "race": [
+    {
+      "name": "Estuardo",
+      "source": "AN",
+      "lineage": true,
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                2,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "languageProficiencies": [
+        {
+          "common": true,
+          "anyStandard": 1
+        }
+      ],
+      "entries": [
+        "Instead of choosing a race for your character at 1st level, you can be a Stuart (Estuardo), a bloodline blessed in an unknown age. Your biological race becomes part of your history.",
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a humanoid."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You keep the vision of your original biological race: if it had {@sense darkvision}, you keep it with a range of 60 feet; otherwise you have normal vision. If you are blessed by an ancestral animal (see Ancestral Creature Gift), you have darkvision with a range of 60 feet (it does not stack with the vision of your biological race)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "Your blessing does not change the lifespan of your biological race."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Guarded Mind",
+          "entries": [
+            "You have advantage on saving throws against effects that read your thoughts or control your mind."
+          ],
+          "foundryImg": "icons/magic/holy/barrier-shield-winged-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Spiritual Bond",
+          "entries": [
+            "As an action, you can establish telepathic contact with one creature you can see within 30 feet of you that knows at least one language. The communication is two-way, but you cannot read its thoughts. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+          ],
+          "foundryImg": "icons/magic/control/silhouette-hold-beam-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Blessed Dreams",
+          "entries": [
+            "When you finish a rest, you may receive a symbolic or fragmentary message related to your bloodline. It is narrative and up to the DM."
+          ],
+          "foundryImg": "icons/commodities/treasure/dreamcatcher-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Ancestral Creature Gift",
+          "entries": [
+            "Extremely rare. Only the DM can grant it; you can receive only one in your life, and the creature chooses you, not the other way around. It adds about 50 years to your lifespan, grants darkvision to 60 feet when the creature is an animal, and does not make you immortal or let you return from death. Choose the gift with your DM as your subrace. Spells from the gift are cast without a spell slot, and you choose Intelligence, Wisdom or Charisma as their spellcasting ability when you gain the gift."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp"
+        }
+      ],
+      "foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
+      "heightAndWeight": {
+        "baseHeight": 56,
+        "heightMod": "2d10",
+        "baseWeight": 110,
+        "weightMod": "2d4"
+      }
+    }
+  ],
+  "subrace": [
+    {
+      "name": "Phoenix Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "resist": [
+        "fire"
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "control flames#c"
+            ]
+          },
+          "innate": {
+            "1": {
+              "daily": {
+                "1": [
+                  "cure wounds"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Phoenix Gift",
+          "entries": [
+            "You have resistance to fire damage. You know the {@spell control flames} cantrip. You can cast {@spell cure wounds} once with this trait and regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for these spells."
+          ],
+          "foundryImg": "icons/magic/fire/explosion-fireball-large-red-orange.webp"
+        }
+      ],
+      "foundryImg": "icons/magic/fire/explosion-fireball-large-red-orange.webp",
+      "darkvision": 60
+    },
+    {
+      "name": "Lunar Dragon Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "resist": [
+        "necrotic"
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "light#c"
+            ]
+          },
+          "innate": {
+            "5": {
+              "daily": {
+                "1": [
+                  "moonbeam"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Lunar Dragon Gift",
+          "entries": [
+            "You have resistance to necrotic damage. You know the {@spell light} cantrip. When you reach 5th level, you can cast {@spell moonbeam} once with this trait and regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for these spells."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        }
+      ],
+      "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp",
+      "darkvision": 60
+    },
+    {
+      "name": "Qilin Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "skillProficiencies": [
+        {
+          "insight": true
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "spare the dying#c"
+            ]
+          },
+          "innate": {
+            "1": {
+              "daily": {
+                "1": [
+                  "sanctuary"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Qilin Gift",
+          "entries": [
+            "You have proficiency in the Insight skill. You know the {@spell spare the dying} cantrip. You can cast {@spell sanctuary} once with this trait and regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for these spells."
+          ],
+          "foundryImg": "icons/magic/holy/yin-yang-balance-symbol.webp"
+        }
+      ],
+      "foundryImg": "icons/magic/holy/yin-yang-balance-symbol.webp",
+      "darkvision": 60
+    },
+    {
+      "name": "Unicorn Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "spare the dying#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Unicorn Gift",
+          "entries": [
+            "You have resistance to poison damage and advantage on saving throws against poison and disease. You know the {@spell spare the dying} cantrip. You can touch a creature and restore a number of hit points equal to your level; you regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for the cantrip."
+          ],
+          "foundryImg": "icons/creatures/mammals/unicorn-horned-white.webp"
+        }
+      ],
+      "resist": [
+        "poison"
+      ],
+      "foundryImg": "icons/creatures/mammals/unicorn-horned-white.webp",
+      "darkvision": 60
+    },
+    {
+      "name": "Celestial Fox Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "insight",
+              "stealth"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "minor illusion#c"
+            ]
+          },
+          "innate": {
+            "1": {
+              "daily": {
+                "1": [
+                  "disguise self"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Celestial Fox Gift",
+          "entries": [
+            "You have proficiency in your choice of the Insight or Stealth skill. You know the {@spell minor illusion} cantrip. You can cast {@spell disguise self} once with this trait and regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for these spells."
+          ],
+          "foundryImg": "icons/creatures/mammals/humanoid-fox-cat-archer.webp"
+        }
+      ],
+      "foundryImg": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+      "darkvision": 60
+    },
+    {
+      "name": "Kindred Gift",
+      "source": "AN",
+      "raceName": "Estuardo",
+      "raceSource": "AN",
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "innate": {
+            "1": {
+              "daily": {
+                "1": [
+                  "speak with animals"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "The gift of your ancestral creature adds about 50 years to the maximum lifespan of your biological race (for example, 150 years for a human or 230 for a half-elf)."
+          ],
+          "foundryImg": "icons/magic/holy/angel-wings-gray.webp",
+          "data": {
+            "overwrite": "Age"
+          }
+        },
+        {
+          "type": "entries",
+          "name": "Kindred Gift",
+          "entries": [
+            "Keen Hearing and Smell. You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell.",
+            "Pack Tactics. You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "You can cast {@spell speak with animals} once with this trait and regain the ability to do so when you finish a long rest. You choose Intelligence, Wisdom or Charisma as your spellcasting ability for it."
+          ],
+          "foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp"
+        }
+      ],
+      "foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+      "darkvision": 60
+    }
+  ]
+}

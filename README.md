@@ -21,6 +21,7 @@ Opciones de linaje para personajes con trasfondos oscuros o míticos:
 *   **Kindred:** La dualidad entre el Lobo y la Oveja, espíritus de la muerte con Marca de Muerte.
 *   **Pureblood Vampire:** Sangre pura de la noche con sed de vitalidad y encantos hipnóticos.
 *   **Qilin:** Sabios celestiales con magia arcana y aliento radiante.
+*   **Estuardo:** [Estuardo](races/estuardo.json) — Linaje bendecido de origen desconocido (sustituye a la raza biológica), con mente protegida, vínculo telepático y, muy raramente, el don de una criatura ancestral (Fénix, Dragón lunar, Qilin, Unicornio, Zorro celestial o Kindred). Ver [info/estuardo.md](info/estuardo.md).
 *   **Siren:** [Siren](races/siren.json) — Hadas acuáticas con forma dual (piernas para caminar o cola para nadar velozmente), hechicería marina y canto seductor.
 
 ---
