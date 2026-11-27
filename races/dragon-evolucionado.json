@@ -1,0 +1,287 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansion",
+        "authors": [
+          "MiGaki"
+        ],
+        "convertedBy": [
+          "MiGaki"
+        ],
+        "version": "1.0.0",
+        "color": "7a0016",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "ready",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "race": [
+    {
+      "name": "Evolved Dragon",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "foundryImg": "icons/creatures/abilities/dragon-breath-purple.webp",
+      "ability": [
+        {
+          "wis": 2,
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "cha"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "draconic": true
+        }
+      ],
+      "age": {
+        "mature": 50,
+        "max": 1200
+      },
+      "heightAndWeight": {
+        "baseHeight": 72,
+        "heightMod": "2d6",
+        "baseWeight": 180,
+        "weightMod": "2d10"
+      },
+      "resist": [
+        "force"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "You reach maturity at 50 years of age and can live up to 1200 years in your humanoid form."
+          ],
+          "foundryImg": "icons/magic/control/energy-stream-link-spiral-teal.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Alignment",
+          "entries": [
+            "Evolved dragons tend toward order, devoutly protecting the secret of their continent."
+          ],
+          "foundryImg": "icons/magic/control/energy-stream-link-spiral-teal.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "You are Medium, standing around 6 feet tall."
+          ],
+          "foundryImg": "icons/magic/control/energy-stream-link-spiral-teal.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Draconic Vision",
+          "entries": [
+            "You have {@sense darkvision} out to a range of 60 feet."
+          ],
+          "foundryImg": "icons/magic/perception/eye-slit-orange.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Humanoid Form",
+          "entries": [
+            "Your true essence is that of a dragon, but you live in a humanoid form. You keep a discreet tail, vertical pupils and small scales on your neck and limbs."
+          ],
+          "foundryImg": "icons/magic/control/energy-stream-link-spiral-teal.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Pure Mana Breath",
+          "entries": [
+            "As an action, you exhale a 15-foot cone of pure mana energy. Each creature in the area must make a Dexterity saving throw (DC 8 + your Constitution modifier + your proficiency bonus), taking 2d6 force damage on a failed save, or half as much on a success. The damage increases to 3d6 at 6th level, 4d6 at 11th level and 5d6 at 16th level. You can use this trait once, and regain the ability to do so when you finish a short or long rest."
+          ],
+          "foundryImg": "icons/creatures/abilities/dragon-breath-purple.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Force Resistance",
+          "entries": [
+            "The high concentration of magical energy in your people gives you resistance to force damage."
+          ],
+          "foundryImg": "icons/magic/control/silhouette-aura-energy.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Draconic Glide",
+          "entries": [
+            "When you fall and are not incapacitated, you can use your reaction to unfurl hidden wing membranes. You take no falling damage and can glide up to 2 feet horizontally for every foot you descend."
+          ],
+          "foundryImg": "icons/magic/air/wind-tornado-wall-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Latent True Sight",
+          "entries": [
+            "At 11th level, as a bonus action, you gain {@sense truesight} out to 30 feet for 1 minute; you regain the ability to do so when you finish a long rest. At 17th level, you can use it for 10 minutes, once per short or long rest."
+          ],
+          "foundryImg": "icons/magic/perception/third-eye-blue-red.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and Draconic."
+          ],
+          "foundryImg": "icons/magic/control/energy-stream-link-spiral-teal.webp"
+        }
+      ]
+    }
+  ],
+  "subrace": [
+    {
+      "name": "Chromatic",
+      "source": "AN",
+      "raceName": "Evolved Dragon",
+      "raceSource": "AN",
+      "resist": [
+        {
+          "choose": {
+            "from": [
+              "acid",
+              "lightning"
+            ]
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "intimidation": true
+        }
+      ],
+      "foundryImg": "icons/magic/lightning/bolt-strike-blue.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Draconic Claws",
+          "entries": [
+            "Your claws are natural weapons. When you hit with them, you deal 1d4 slashing damage instead of the normal bludgeoning damage for an unarmed strike."
+          ],
+          "foundryImg": "icons/creatures/claws/claw-bear-paw-swipe-red.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Chromatic Affinity",
+          "entries": [
+            "You have resistance to acid or lightning damage (choose one when you create your character)."
+          ],
+          "foundryImg": "icons/magic/lightning/bolt-strike-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Hunter's Instinct",
+          "entries": [
+            "You are proficient in the {@skill Intimidation} skill."
+          ],
+          "foundryImg": "icons/skills/social/intimidation-impressing.webp"
+        }
+      ]
+    },
+    {
+      "name": "Gem",
+      "source": "AN",
+      "raceName": "Evolved Dragon",
+      "raceSource": "AN",
+      "skillProficiencies": [
+        {
+          "arcana": true
+        }
+      ],
+      "foundryImg": "icons/commodities/gems/gem-faceted-diamond-blue.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Crystal Mind",
+          "entries": [
+            "Your mind vibrates with the frequency of crystallized mana. You have advantage on Intelligence saving throws."
+          ],
+          "foundryImg": "icons/commodities/gems/gem-faceted-diamond-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Lesser Telepathy",
+          "entries": [
+            "You can communicate telepathically with any creature you can see within 30 feet. You cannot send complex images, and the creature cannot answer you mentally unless it has telepathy."
+          ],
+          "foundryImg": "icons/commodities/gems/gem-faceted-diamond-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Mystic Intuition",
+          "entries": [
+            "You are proficient in the {@skill Arcana} skill."
+          ],
+          "foundryImg": "icons/commodities/gems/gem-faceted-diamond-blue.webp"
+        }
+      ]
+    },
+    {
+      "name": "Metallic",
+      "source": "AN",
+      "raceName": "Evolved Dragon",
+      "raceSource": "AN",
+      "resist": [
+        {
+          "choose": {
+            "from": [
+              "fire",
+              "cold"
+            ]
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "persuasion": true
+        }
+      ],
+      "foundryImg": "icons/equipment/shield/buckler-wooden-boss-brown.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Brass Scales",
+          "entries": [
+            "When you are not wearing armor, your Armor Class is 12 + your Dexterity modifier."
+          ],
+          "foundryImg": "icons/equipment/shield/buckler-wooden-boss-brown.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Metallic Affinity",
+          "entries": [
+            "You have resistance to fire or cold damage (choose one when you create your character)."
+          ],
+          "foundryImg": "icons/equipment/shield/buckler-wooden-boss-brown.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Imposing Presence",
+          "entries": [
+            "You are proficient in the {@skill Persuasion} skill."
+          ],
+          "foundryImg": "icons/skills/social/diplomacy-handshake-blue.webp"
+        }
+      ]
+    }
+  ]
+}

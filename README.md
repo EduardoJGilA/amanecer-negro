@@ -21,6 +21,9 @@ Opciones de linaje para personajes con trasfondos oscuros o míticos:
 *   **Kindred:** La dualidad entre el Lobo y la Oveja, espíritus de la muerte con Marca de Muerte.
 *   **Pureblood Vampire:** Sangre pura de la noche con sed de vitalidad y encantos hipnóticos.
 *   **Qilin:** Sabios celestiales con magia arcana y aliento radiante.
+*   **Dragón Evolucionado:** [Evolved Dragon](races/dragon-evolucionado.json) — Dragones de Drak'zar en forma humanoide, con aliento de maná puro y 3 linajes (Cromático, Gema y Metálico).
+*   **Semielfo:** [Half-Elf](races/semielfo-an.json) — El semielfo con *Meditación* de 5 horas y descendencia Luna, Sol, Bosque o Drow.
+*   **Elfo Lunar y Elfo Solar:** [races/elfo-luna-sol.json](races/elfo-luna-sol.json) — Subrazas de elfo con rasgos propios y vínculo con sus dragones.
 *   **Estuardo:** [Estuardo](races/estuardo.json) — Linaje bendecido de origen desconocido (sustituye a la raza biológica), con mente protegida, vínculo telepático y, muy raramente, el don de una criatura ancestral (Fénix, Dragón lunar, Qilin, Unicornio, Zorro celestial o Kindred). Ver [info/estuardo.md](info/estuardo.md).
 *   **Siren:** [Siren](races/siren.json) — Hadas acuáticas con forma dual (piernas para caminar o cola para nadar velozmente), hechicería marina y canto seductor.
 

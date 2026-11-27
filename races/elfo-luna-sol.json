@@ -1,0 +1,174 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansion",
+        "authors": [
+          "MiGaki"
+        ],
+        "convertedBy": [
+          "MiGaki"
+        ],
+        "version": "1.0.0",
+        "color": "7a0016",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "ready",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "subrace": [
+    {
+      "name": "Moon Elf",
+      "source": "AN",
+      "raceName": "Elf",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "int": 1
+        }
+      ],
+      "darkvision": 120,
+      "resist": [
+        "necrotic"
+      ],
+      "skillProficiencies": [
+        {
+          "arcana": true
+        }
+      ],
+      "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ability Score Increase",
+          "entries": [
+            "Your Intelligence score increases by 1."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Superior Darkvision",
+          "entries": [
+            "Your darkvision has a radius of 120 feet."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Sunlight Sensitivity",
+          "entries": [
+            "You have disadvantage on attack rolls and on Wisdom ({@skill Perception}) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Moonlit Ward",
+          "entries": [
+            "You have resistance to necrotic damage."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Moon Lore",
+          "entries": [
+            "You are proficient in the {@skill Arcana} skill. In addition, you have advantage on Intelligence ({@skill History}), ({@skill Arcana}) or ({@skill Nature}) checks related to the moon, the stars, the tides and the passage of time."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Moon Stealth",
+          "entries": [
+            "You have advantage on Dexterity ({@skill Stealth}) checks made at night or in dim light."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Lunar Rider",
+          "entries": [
+            "You have advantage on Wisdom ({@skill Animal Handling}) checks made to calm, ride or command a lunar dragon."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        }
+      ]
+    },
+    {
+      "name": "Sun Elf",
+      "source": "AN",
+      "raceName": "Elf",
+      "raceSource": "PHB",
+      "ability": [
+        {
+          "cha": 1
+        }
+      ],
+      "resist": [
+        "radiant"
+      ],
+      "skillProficiencies": [
+        {
+          "persuasion": true
+        }
+      ],
+      "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ability Score Increase",
+          "entries": [
+            "Your Charisma score increases by 1."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Sunward Ward",
+          "entries": [
+            "You have resistance to radiant damage."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Sun Lore",
+          "entries": [
+            "You have advantage on Intelligence ({@skill History}), ({@skill Religion}) or ({@skill Nature}) checks related to the sun, light and royalty."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Solar Radiance",
+          "entries": [
+            "As a bonus action, you can shine with sunlight, shedding bright light in a 20-foot radius and dim light for an additional 20 feet for 1 minute. While you shine, you have advantage on Charisma ({@skill Persuasion}) checks. Once you use this trait, you cannot use it again until you finish a short rest."
+          ],
+          "foundryImg": "icons/magic/light/beam-rays-yellow.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Noble Pride",
+          "entries": [
+            "You are proficient in the {@skill Persuasion} skill."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Solar Rider",
+          "entries": [
+            "You have advantage on Wisdom ({@skill Animal Handling}) checks made to calm, ride or command a solar dragon."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        }
+      ]
+    }
+  ]
+}

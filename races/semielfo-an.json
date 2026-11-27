@@ -1,0 +1,284 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "AN",
+        "abbreviation": "AN",
+        "full": "Amanecer Negro Expansion",
+        "authors": [
+          "MiGaki"
+        ],
+        "convertedBy": [
+          "MiGaki"
+        ],
+        "version": "1.0.0",
+        "color": "7a0016",
+        "dateReleased": "2023-04-22"
+      }
+    ],
+    "status": "ready",
+    "dateAdded": 1682204659,
+    "dateLastModified": 1682204659
+  },
+  "race": [
+    {
+      "name": "Half-Elf",
+      "source": "AN",
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "ability": [
+        {
+          "cha": 2,
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "heightAndWeight": {
+        "baseHeight": 57,
+        "heightMod": "2d8",
+        "baseWeight": 110,
+        "weightMod": "2d4"
+      },
+      "age": {
+        "mature": 20,
+        "max": 180
+      },
+      "darkvision": 60,
+      "skillProficiencies": [
+        {
+          "any": 2
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "elvish": true,
+          "anyStandard": 1
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "Half-elves mature at the same rate humans do and reach adulthood around the age of 20. They live much longer than humans, however, often exceeding 180 years."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries": [
+            "Half-elves are about the same size as humans, ranging from 5 to 6 feet tall. Your size is Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Meditation",
+          "entries": [
+            "You do not need to sleep. Instead, you meditate deeply for 5 hours a day (an elf needs 4), remaining semiconscious, and gain the same benefit that a human does from 8 hours of sleep."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Skill Versatility",
+          "entries": [
+            "You gain proficiency in two skills of your choice."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common, Elvish, and one extra language of your choice."
+          ]
+        }
+      ]
+    }
+  ],
+  "subrace": [
+    {
+      "name": "Moon",
+      "source": "AN",
+      "raceName": "Half-Elf",
+      "raceSource": "AN",
+      "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Moon Stealth",
+          "entries": [
+            "You have advantage on Dexterity ({@skill Stealth}) checks made at night or in dim light."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Lunar Rider",
+          "entries": [
+            "You have advantage on Wisdom ({@skill Animal Handling}) checks made to calm, ride or command a lunar dragon."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-moon-blue.webp"
+        }
+      ]
+    },
+    {
+      "name": "Sun",
+      "source": "AN",
+      "raceName": "Half-Elf",
+      "raceSource": "AN",
+      "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp",
+      "skillProficiencies": [
+        {
+          "persuasion": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Noble Pride",
+          "entries": [
+            "You are proficient in the {@skill Persuasion} skill."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        },
+        {
+          "type": "entries",
+          "name": "Solar Rider",
+          "entries": [
+            "You have advantage on Wisdom ({@skill Animal Handling}) checks made to calm, ride or command a solar dragon."
+          ],
+          "foundryImg": "icons/equipment/neck/necklace-astrology-sun-gold.webp"
+        }
+      ]
+    },
+    {
+      "name": "Wood",
+      "source": "AN",
+      "raceName": "Half-Elf",
+      "raceSource": "AN",
+      "speed": 35,
+      "overwrite": {
+        "skillProficiencies": true
+      },
+      "weaponProficiencies": [
+        {
+          "longsword|phb": true,
+          "shortsword|phb": true,
+          "shortbow|phb": true,
+          "longbow|phb": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Elf Weapon Training",
+          "entries": [
+            "You have proficiency with the longsword, shortsword, shortbow, and longbow."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fleet of Foot",
+          "entries": [
+            "Your base walking speed increases to 35 feet."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mask of the Wild",
+          "entries": [
+            "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Skill Versatility",
+          "entries": [
+            "You do not gain the Skill Versatility trait: your wood elf descent replaces it."
+          ],
+          "data": {
+            "overwrite": "Skill Versatility"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Drow",
+      "source": "AN",
+      "raceName": "Half-Elf",
+      "raceSource": "AN",
+      "overwrite": {
+        "skillProficiencies": true
+      },
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "faerie fire"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "darkness"
+                ]
+              }
+            }
+          },
+          "ability": "cha",
+          "known": {
+            "1": [
+              "dancing lights#c"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Drow Magic",
+          "entries": [
+            "You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast {@spell faerie fire} once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast {@spell darkness} once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Skill Versatility",
+          "entries": [
+            "You do not gain the Skill Versatility trait: your drow descent replaces it."
+          ],
+          "data": {
+            "overwrite": "Skill Versatility"
+          }
+        }
+      ]
+    }
+  ]
+}
